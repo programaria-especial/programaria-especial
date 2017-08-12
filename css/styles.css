@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400');
+@import url('https://fonts.googleapis.com/css?family=Squada+One:400');
+
+p {
+    margin: 0;
+}
+
+.hero {
+    height: 570px;
+    background-color: #2727cc;
+}
+
+.capitulo header > h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.capitulo header > h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.39;
+    color: #dc4b4b;
+    margin: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.capitulo > article {
+    padding-bottom: 85px;
+}
+
+.capitulo > article > p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 1.72;
+    color: #4d4d4d;
+}
+
+.capitulo > article > p:not(:first-child) {
+    padding-top: 2rem;
+}
+
+.capitulo > article > blockquote {
+    padding-left: 30px;
+    border: none;
+}
+
+.capitulo > article > blockquote > p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #dc4b4b;
+}
+
+.capitulo > article > blockquote > cite {
+    font-family: 'Squada One', cursive;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #828282;
+    padding-top: 14px;
+}
+
+
+/* INTRODUCAO */
+.capitulo__introducao {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+
+/* QUESTIONARIO */
+.capitulo__questionario {
+    padding: 0 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo__questionario h3 {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2727cc;
+    margin-top: 0;
+}
+
+.capitulo__questionario ol {
+    margin: 0;
+    padding-left: 1em;
+}
+
+.capitulo__questionario ol li {
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #4d4d4d;
+}
+
+.capitulo__questionario input[type=range] {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 96px;
+    background-color: #94eac4;
+    border-radius: 3px;
+    position: relative;
+}
+
+.capitulo__questionario input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.capitulo__questionario input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.capitulo__questionario input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+.capitulo__questionario input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 29px;
+    height: 76px;
+    margin-top: 86px;
+    background: url("../img/mao_resposta.svg") no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+.capitulo__questionario input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.capitulo__questionario input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.capitulo__questionario .button-outline {
+    font-family: Lato;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #828282;
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin-left: auto;
+    border: solid 1px #828282;
+    border-radius: 2px;
+}
+
+
+/* BONECAS x COMPUTADORES */
+.capitulo__bonecas-x-computadores {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo__bonecas-x-computadores img {
+    margin-bottom: 30px;
+}
+
+
+/* INFOGRAFICO */
+.capitulo__infografico {
+    padding: 20px;
+    background-color: #8d8cbf;
+}
+
+
+/* ESCOLA E ESTERIOTIPOS */
+.capitulo__escola-e-esteriotipos {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
