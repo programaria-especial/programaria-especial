@@ -2,13 +2,91 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400');
 @import url('https://fonts.googleapis.com/css?family=Squada+One:400');
 
+body {
+    margin: 0;
+}
 p {
     margin: 0;
 }
 
+/* GRAFICO */
+.grafico {
+    margin: 0 0 16px 0;
+}
+.grafico figcaption {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    line-height: 1.15;
+    text-align: left;
+    color: #4d4d4d;
+    margin: 0 0 30px 0;
+}
+
+
+/* CAROUSEL */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+[id^="carousel__slide"] + figure {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .6s ease-out;
+}
+[id^="carousel__slide"] + figure img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+[id^="carousel__slide"]:checked + figure {
+    position: static;
+    opacity: 100
+}
+[class^="carousel__controle"] {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    text-align: center;
+    line-height: 28px;
+    color: #2727cc;
+    height: 30px;
+    width: 30px;
+    border: solid 1px #2727cc;
+}
+[class^="carousel__controle"]:hover {
+    background: #2727cc;
+    color: #ffffff;
+}
+[class^="carousel__controle"]:nth-child(odd) {
+    left: 0;
+}
+[class^="carousel__controle"]:nth-child(even) {
+    right: 0;
+}
+#carousel__slide1:checked ~ .carousel__controle1,
+#carousel__slide2:checked ~ .carousel__controle2,
+#carousel__slide3:checked ~ .carousel__controle3,
+#carousel__slide4:checked ~ .carousel__controle4,
+#carousel__slide5:checked ~ .carousel__controle5,
+#carousel__slide6:checked ~ .carousel__controle6,
+#carousel__slide7:checked ~ .carousel__controle7,
+#carousel__slide8:checked ~ .carousel__controle8,
+#carousel__slide9:checked ~ .carousel__controle9 {
+    display: block;
+}
+
+
+/* HERO */
 .hero {
     height: 570px;
-    background-color: #2727cc;
+    background: url("../img/02-header-mobile.svg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .capitulo header > h1 {
@@ -69,40 +147,40 @@ p {
 
 
 /* INTRODUCAO */
-.capitulo__introducao {
+.capitulo-introducao {
     padding: 40px 20px 0 30px;
     background-color: #f6f6f4;
 }
 
 
 /* QUESTIONARIO */
-.capitulo__questionario {
+.capitulo-questionario {
     padding: 0 20px 0 30px;
     background-color: #f6f6f4;
 }
 
-.capitulo__questionario h3 {
-    font-family: Lato;
+.capitulo-questionario h3 {
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #2727cc;
     margin-top: 0;
 }
 
-.capitulo__questionario ol {
+.capitulo-questionario ol {
     margin: 0;
     padding-left: 1em;
 }
 
-.capitulo__questionario ol li {
-    font-family: Lato;
+.capitulo-questionario ol li {
+    font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: bold;
     line-height: 1.33;
     color: #4d4d4d;
 }
 
-.capitulo__questionario input[type=range] {
+.capitulo-questionario input[type=range] {
     -webkit-appearance: none;
     height: 10px;
     width: 100%;
@@ -113,15 +191,15 @@ p {
     position: relative;
 }
 
-.capitulo__questionario input[type=range]::-webkit-slider-thumb {
+.capitulo-questionario input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
 }
 
-.capitulo__questionario input[type=range]:focus {
+.capitulo-questionario input[type=range]:focus {
     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
 
-.capitulo__questionario input[type=range]::-ms-track {
+.capitulo-questionario input[type=range]::-ms-track {
     width: 100%;
     cursor: pointer;
 
@@ -132,7 +210,7 @@ p {
 }
 
 /* Special styling for WebKit/Blink */
-.capitulo__questionario input[type=range]::-webkit-slider-thumb {
+.capitulo-questionario input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 29px;
     height: 76px;
@@ -143,7 +221,7 @@ p {
 }
 
 /* All the same stuff for Firefox */
-.capitulo__questionario input[type=range]::-moz-range-thumb {
+.capitulo-questionario input[type=range]::-moz-range-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 36px;
@@ -154,7 +232,7 @@ p {
 }
 
 /* All the same stuff for IE */
-.capitulo__questionario input[type=range]::-ms-thumb {
+.capitulo-questionario input[type=range]::-ms-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 36px;
@@ -164,8 +242,8 @@ p {
     cursor: pointer;
 }
 
-.capitulo__questionario .button-outline {
-    font-family: Lato;
+.capitulo-questionario .button-outline {
+    font-family: 'Lato', sans-serif;
     font-size: 10px;
     line-height: 16px;
     text-align: center;
@@ -182,25 +260,287 @@ p {
 
 
 /* BONECAS x COMPUTADORES */
-.capitulo__bonecas-x-computadores {
+.capitulo-bonecas-x-computadores {
     padding: 40px 20px 0 30px;
     background-color: #f6f6f4;
 }
 
-.capitulo__bonecas-x-computadores img {
+.capitulo-bonecas-x-computadores img {
     margin-bottom: 30px;
 }
 
 
 /* INFOGRAFICO */
-.capitulo__infografico {
+.capitulo-infografico {
     padding: 20px;
     background-color: #8d8cbf;
+}
+.capitulo-infografico h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.capitulo-infografico img {
+    width: 100%;
 }
 
 
 /* ESCOLA E ESTERIOTIPOS */
-.capitulo__escola-e-esteriotipos {
+.capitulo-escola-e-esteriotipos {
     padding: 40px 20px 0 30px;
     background-color: #f6f6f4;
+}
+
+.capitulo-escola-e-esteriotipos img {
+    margin-bottom: 30px;
+}
+
+
+/* DIFICULDADE EM MATEMATICA */
+.subcapitulo {
+    padding: 0 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.subcapitulo h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.09;
+    color: #8d8cbf;
+    margin: 0;
+}
+
+.subcapitulo h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.54;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.subcapitulo blockquote {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.subcapitulo blockquote cite {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    color: #8d8cbf;
+    display: block;
+    margin-bottom: 44px;
+}
+
+.subcapitulo article > p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 1.72;
+    text-align: left;
+    color: #4d4d4d;
+    padding-bottom: 40px;
+}
+
+.subcapitulo-leitura-por-diversao blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subcapitulo-leitura-por-diversao figure {
+    width: 45%;
+}
+
+
+/* EXCLUSAO E PRECOCEITO */
+.capitulo-exclusao-e-preconceito {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo-exclusao-e-preconceito img {
+    margin-bottom: 30px;
+}
+
+
+/* VAGAS SELETIVAS */
+.capitulo-vagas-seletivas {
+    padding: 20px;
+    background-color: #8d8cbf;
+}
+.capitulo-vagas-seletivas h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    text-transform: uppercase;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.capitulo-vagas-seletivas .carousel figure {
+    margin: 0;
+}
+.capitulo-vagas-seletivas .carousel figcaption {
+    font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.07;
+	text-align: center;
+	color: #f6f6f4;
+}
+
+
+/* DESAFIOS DE CARREIRA */
+.capitulo-desafios-de-carreira {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo-desafios-de-carreira img {
+    margin-bottom: 30px;
+}
+
+
+/* CITE */
+.capitulo-cite {
+    padding: 45px 45px 45px 55px;
+}
+.capitulo-cite blockquote {
+    margin: 0;
+}
+.capitulo-cite blockquote p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+	font-weight: bold;
+	line-height: 1.36;
+    margin-bottom: 18px;
+}
+.capitulo-cite blockquote cite {
+    font-family: 'Squada One', cursive;
+	font-size: 16px;
+	line-height: 1.25;
+}
+.capitulo-cite.blue {
+    background-color: #2727cc;
+}
+.capitulo-cite.blue blockquote p {
+    color: #5ae091;
+}
+.capitulo-cite.blue blockquote cite {
+    color: #cccccc;
+}
+.capitulo-cite.green {
+    background-color: #5ae091;
+}
+.capitulo-cite.green blockquote p {
+    color: #2727cc;
+}
+.capitulo-cite.green blockquote cite {
+    color: #828282;
+}
+
+
+/* PORQUE IMPORTA */
+.capitulo-porque-importa {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo-porque-importa img {
+    margin-bottom: 30px;
+}
+
+
+/* BOAS PRATICAS */
+.capitulo-boas-praticas {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo-boas-praticas img {
+    margin-bottom: 30px;
+}
+
+
+/* LINHA DO TEMPO */
+.capitulo-linha-do-tempo {
+    padding: 20px;
+    background-color: #8d8cbf;
+}
+.capitulo-linha-do-tempo h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.capitulo-linha-do-tempo iframe {
+	height: 550px;
+    width: 100%;
+}
+
+
+/* COMPARTILHE */
+.compartilhe {
+    padding: 20px 30px;
+    background-color: #94eac4;
+}
+.compartilhe  h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.compartilhe a {
+    display: inline-block;
+    max-height: 35px;
+    max-width: 35px;
+    text-decoration: none;
+}
+.compartilhe img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/* CREDITOS */
+.creditos {
+    padding: 40px 30px 100px 30px;
+    background-color: #f6f6f4;
+}
+.creditos h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.creditos dl {
+    margin: 0;
+}
+.creditos dt {
+    color: #2727cc;
+    margin-right: .5rem;
+}
+.creditos dd {
+	color: #dc4b4b;
+}
+.creditos dt, dd {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-left: 0;
 }
