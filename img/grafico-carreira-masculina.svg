@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<rect width="200" height="70" fill='#e6e6e6'></rect>
+		<rect width="40" height="70" fill='#5ae091'>
+			<animate attributeName="width" from="0" to="40" dur="0.7s" fill="freeze" />
+		</rect>
+	</g>
+	<text x="100" y="35" text-anchor="middle" alignment-baseline="central" fill="#5ae091">
+		20% dos meninos
+	</text>
+</svg>

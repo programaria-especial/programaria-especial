@@ -1,0 +1,9 @@
+<svg viewBox="0 0 150 200" xmlns="http://www.w3.org/2000/svg">
+	<g transform="scale(1,-1) translate(0,-200)">
+		<rect width="150" height="200" fill='#e6e6e6'></rect>
+		<rect width="150" height="150" fill='#8d8cbf'>
+			<animate attributeName="height" from="0" to="150" dur="0.7s" fill="freeze" />
+		</rect>
+	</g>
+	<text x="75" y="180" text-anchor="middle" fill="#ffffff" stroke="#ffffff">75%</text>
+</svg>

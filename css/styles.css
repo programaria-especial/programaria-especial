@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
 @import url('https://fonts.googleapis.com/css?family=Squada+One:400');
 
 body {
@@ -7,6 +7,9 @@ body {
 }
 p {
     margin: 0;
+}
+strong {
+    font-weight: 700;
 }
 
 /* GRAFICO */
@@ -83,12 +86,33 @@ p {
 
 /* HERO */
 .hero {
+    position: relative;
     height: 570px;
     background: url("../img/02-header-mobile.svg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+.hero h1 {
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    font-family: 'Squada One', cursive;
+    font-size: 35px;
+	line-height: 1.0;
+	color: #dc4b4b;
+}
 
+
+/* CONTAINER */
+@media (min-width: 768px) {
+    .container section header, 
+    .container section article {
+        max-width: 80%;
+    }
+}
+
+
+/* CAPITULOS */
 .capitulo header > h1 {
     font-family: 'Squada One', cursive;
     font-size: 42px;
@@ -97,38 +121,29 @@ p {
     margin: 0;
     padding-bottom: 12px;
 }
-
 .capitulo header > h2 {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    font-style: italic;
+    font-weight: 300;
+    font-style: italic; 
     line-height: 1.39;
     color: #dc4b4b;
     margin: 0;
     padding-right: 20px;
     padding-bottom: 20px;
 }
-
-.capitulo > article {
-    padding-bottom: 85px;
-}
-
 .capitulo > article > p {
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
     line-height: 1.72;
     color: #4d4d4d;
 }
-
 .capitulo > article > p:not(:first-child) {
     padding-top: 2rem;
 }
-
 .capitulo > article > blockquote {
-    padding-left: 30px;
     border: none;
 }
-
 .capitulo > article > blockquote > p {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
@@ -136,7 +151,6 @@ p {
     line-height: 1.36;
     color: #dc4b4b;
 }
-
 .capitulo > article > blockquote > cite {
     font-family: 'Squada One', cursive;
     font-size: 16px;
@@ -146,41 +160,173 @@ p {
 }
 
 
-/* INTRODUCAO */
 .capitulo-introducao {
     padding: 40px 20px 0 30px;
     background-color: #f6f6f4;
 }
 
 
-/* QUESTIONARIO */
-.capitulo-questionario {
-    padding: 0 20px 0 30px;
+.capitulo-bonecas-x-computadores {
+    padding: 42px 20px 70px 30px;
+    background-color: #f6f6f4;
+}
+.capitulo-bonecas-x-computadores header img {
+	height: 143.7px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.capitulo-bonecas-x-computadores article img {
+	display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.capitulo-escola-e-esteriotipos {
+    padding: 40px 20px 0 30px;
     background-color: #f6f6f4;
 }
 
-.capitulo-questionario h3 {
+.capitulo-escola-e-esteriotipos img {
+    height: 143.7px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+
+/* SUBCAPITULOS */
+.subcapitulo {
+    padding: 0 20px 0 30px;
+    background-color: #f6f6f4;
+}
+.subcapitulo h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.09;
+    color: #8d8cbf;
+    margin: 0;
+}
+.subcapitulo h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.54;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.subcapitulo blockquote {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.subcapitulo blockquote cite {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    color: #8d8cbf;
+    display: block;
+    margin-bottom: 44px;
+}
+.subcapitulo article > p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 1.72;
+    text-align: left;
+    color: #4d4d4d;
+    padding-bottom: 40px;
+}
+
+
+.subcapitulo-leitura-por-diversao blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subcapitulo-leitura-por-diversao figure {
+    width: 45%;
+}
+
+
+.capitulo-exclusao-e-preconceito {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+.capitulo-exclusao-e-preconceito img {
+    margin-bottom: 30px;
+}
+
+
+.capitulo-desafios-de-carreira {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+.capitulo-desafios-de-carreira img {
+    margin-bottom: 30px;
+}
+
+.capitulo-porque-importa {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+.capitulo-porque-importa img {
+    margin-bottom: 30px;
+}
+
+
+.capitulo-boas-praticas {
+    padding: 40px 20px 0 30px;
+    background-color: #f6f6f4;
+}
+.capitulo-boas-praticas img {
+    margin-bottom: 30px;
+}
+
+
+/* OUTROS */
+.logo-ca-technologies {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 194px;
+    border-top: 2px solid #d8d8d8;
+    border-bottom: 2px solid #d8d8d8;
+    margin: 0 0 30px 0;
+}
+.logo-ca-technologies p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.07;
+    color: #828282;
+}
+
+.questionario {
+    margin-bottom: 44px;
+    background-color: #f6f6f4;
+}
+.questionario h3 {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #2727cc;
-    margin-top: 0;
+    margin-top: 48px;
 }
-
-.capitulo-questionario ol {
+.questionario ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding-left: 1em;
 }
-
-.capitulo-questionario ol li {
+.questionario ul li {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: bold;
     line-height: 1.33;
     color: #4d4d4d;
 }
-
-.capitulo-questionario input[type=range] {
+.questionario input[type=range] {
     -webkit-appearance: none;
     height: 10px;
     width: 100%;
@@ -190,59 +336,7 @@ p {
     border-radius: 3px;
     position: relative;
 }
-
-.capitulo-questionario input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-}
-
-.capitulo-questionario input[type=range]:focus {
-    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-.capitulo-questionario input[type=range]::-ms-track {
-    width: 100%;
-    cursor: pointer;
-
-    /* Hides the slider so custom styles can be added */
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-}
-
-/* Special styling for WebKit/Blink */
-.capitulo-questionario input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 29px;
-    height: 76px;
-    margin-top: 86px;
-    background: url("../img/mao_resposta.svg") no-repeat;
-    background-size: 100%;
-    cursor: pointer;
-}
-
-/* All the same stuff for Firefox */
-.capitulo-questionario input[type=range]::-moz-range-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1px solid #000000;
-    height: 36px;
-    width: 16px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-}
-
-/* All the same stuff for IE */
-.capitulo-questionario input[type=range]::-ms-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1px solid #000000;
-    height: 36px;
-    width: 16px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-}
-
-.capitulo-questionario .button-outline {
+.questionario .button-outline {
     font-family: 'Lato', sans-serif;
     font-size: 10px;
     line-height: 16px;
@@ -257,25 +351,63 @@ p {
     border: solid 1px #828282;
     border-radius: 2px;
 }
-
-
-/* BONECAS x COMPUTADORES */
-.capitulo-bonecas-x-computadores {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
+.questionario input[type=range]:focus {
+    outline: none;
+}
+.questionario input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 29px;
+    height: 76px;
+    margin-top: 86px;
+    background: url("../img/mao_resposta.svg") no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.questionario input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.questionario input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.questionario input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
 }
 
-.capitulo-bonecas-x-computadores img {
-    margin-bottom: 30px;
+
+.painel {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #cccccc;
+    padding: 25px;
+    margin-bottom: 42px;
+    background-color: #8d8cbf;
+    border-radius: 8px;
 }
 
 
-/* INFOGRAFICO */
-.capitulo-infografico {
+.infografico {
     padding: 20px;
     background-color: #8d8cbf;
 }
-.capitulo-infografico h1 {
+.infografico h1 {
     font-family: 'Squada One', cursive;
     font-size: 42px;
     line-height: 0.83;
@@ -283,99 +415,16 @@ p {
     margin: 0;
     padding-bottom: 12px;
 }
-.capitulo-infografico img {
+.infografico img {
     width: 100%;
 }
 
 
-/* ESCOLA E ESTERIOTIPOS */
-.capitulo-escola-e-esteriotipos {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-escola-e-esteriotipos img {
-    margin-bottom: 30px;
-}
-
-
-/* DIFICULDADE EM MATEMATICA */
-.subcapitulo {
-    padding: 0 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.subcapitulo h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.09;
-    color: #8d8cbf;
-    margin: 0;
-}
-
-.subcapitulo h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.54;
-    color: #333333;
-    margin-bottom: 24px;
-}
-
-.subcapitulo blockquote {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-.subcapitulo blockquote cite {
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    line-height: 1.25;
-    text-align: left;
-    color: #8d8cbf;
-    display: block;
-    margin-bottom: 44px;
-}
-
-.subcapitulo article > p {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
-    line-height: 1.72;
-    text-align: left;
-    color: #4d4d4d;
-    padding-bottom: 40px;
-}
-
-.subcapitulo-leitura-por-diversao blockquote {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.subcapitulo-leitura-por-diversao figure {
-    width: 45%;
-}
-
-
-/* EXCLUSAO E PRECOCEITO */
-.capitulo-exclusao-e-preconceito {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-exclusao-e-preconceito img {
-    margin-bottom: 30px;
-}
-
-
-/* VAGAS SELETIVAS */
-.capitulo-vagas-seletivas {
+.vagas-seletivas {
     padding: 20px;
     background-color: #8d8cbf;
 }
-.capitulo-vagas-seletivas h1 {
+.vagas-seletivas h1 {
     font-family: 'Squada One', cursive;
     font-size: 42px;
     line-height: 0.83;
@@ -384,10 +433,10 @@ p {
     margin: 0;
     padding-bottom: 12px;
 }
-.capitulo-vagas-seletivas .carousel figure {
+.vagas-seletivas .carousel figure {
     margin: 0;
 }
-.capitulo-vagas-seletivas .carousel figcaption {
+.vagas-seletivas .carousel figcaption {
     font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	line-height: 1.07;
@@ -396,98 +445,71 @@ p {
 }
 
 
-/* DESAFIOS DE CARREIRA */
-.capitulo-desafios-de-carreira {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-desafios-de-carreira img {
-    margin-bottom: 30px;
-}
-
-
-/* CITE */
-.capitulo-cite {
+.cite {
     padding: 45px 45px 45px 55px;
 }
-.capitulo-cite blockquote {
+.cite blockquote {
     margin: 0;
 }
-.capitulo-cite blockquote p {
+.cite blockquote p {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
 	font-weight: bold;
 	line-height: 1.36;
     margin-bottom: 18px;
 }
-.capitulo-cite blockquote cite {
+.cite blockquote cite {
     font-family: 'Squada One', cursive;
 	font-size: 16px;
 	line-height: 1.25;
 }
-.capitulo-cite.blue {
+.cite.blue {
     background-color: #2727cc;
 }
-.capitulo-cite.blue blockquote p {
+.cite.blue blockquote p {
     color: #5ae091;
 }
-.capitulo-cite.blue blockquote cite {
+.cite.blue blockquote cite {
     color: #cccccc;
 }
-.capitulo-cite.green {
+.cite.green {
     background-color: #5ae091;
 }
-.capitulo-cite.green blockquote p {
+.cite.green blockquote p {
     color: #2727cc;
 }
-.capitulo-cite.green blockquote cite {
+.cite.green blockquote cite {
     color: #828282;
 }
 
 
-/* PORQUE IMPORTA */
-.capitulo-porque-importa {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-porque-importa img {
-    margin-bottom: 30px;
-}
-
-
-/* BOAS PRATICAS */
-.capitulo-boas-praticas {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-boas-praticas img {
-    margin-bottom: 30px;
-}
-
-
-/* LINHA DO TEMPO */
-.capitulo-linha-do-tempo {
+.linha-do-tempo {
     padding: 20px;
     background-color: #8d8cbf;
 }
-.capitulo-linha-do-tempo h1 {
-    font-family: 'Squada One', cursive;
-    font-size: 42px;
-    line-height: 0.83;
-    color: #2727cc;
+.linha-do-tempo h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+	font-weight: bold;
+	line-height: 1.09;
+    color: #f0f0f0;
     margin: 0;
     padding-bottom: 12px;
 }
-.capitulo-linha-do-tempo iframe {
+.linha-do-tempo p {
+    font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.25;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+.linha-do-tempo iframe {
 	height: 550px;
     width: 100%;
 }
 
 
-/* COMPARTILHE */
 .compartilhe {
     padding: 20px 30px;
     background-color: #94eac4;
@@ -514,7 +536,6 @@ p {
 }
 
 
-/* CREDITOS */
 .creditos {
     padding: 40px 30px 100px 30px;
     background-color: #f6f6f4;
