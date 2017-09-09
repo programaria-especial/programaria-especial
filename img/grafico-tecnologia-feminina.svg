@@ -7,5 +7,7 @@
 			<animate attributeName="stroke-dasharray" from="0 10000" to="75.398 10000" dur="2.5s" fill="freeze" />
 		</circle>
 	</g>
-	<text x="140" y="60" text-anchor="middle" fill="#ffffff" stroke="#ffffff">20%</text>
+	<text x="140" y="60" text-anchor="middle" fill="#ffffff" stroke="#ffffff" style="font-family: 'Squada One', cursive; font-size: 18px">
+		20%
+	</text>
 </svg>

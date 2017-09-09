@@ -5,7 +5,7 @@
 			<animate attributeName="width" from="0" to="40" dur="0.7s" fill="freeze" />
 		</rect>
 	</g>
-	<text x="100" y="35" text-anchor="middle" alignment-baseline="central" fill="#5ae091">
+	<text x="100" y="35" text-anchor="middle" alignment-baseline="central" fill="#5ae091" style="font-family: 'Squada One', cursive; font-size: 18px">
 		20% dos meninos
 	</text>
 </svg>

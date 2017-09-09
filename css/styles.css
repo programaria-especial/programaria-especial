@@ -101,6 +101,11 @@ strong {
 	line-height: 1.0;
 	color: #dc4b4b;
 }
+@media (min-width: 768px) {
+    .hero h1 {
+        max-width: 45%;
+    }
+}
 
 
 /* CONTAINER */
@@ -110,10 +115,20 @@ strong {
         max-width: 80%;
     }
 }
+@media (min-width: 992px) {
+    .container section header, 
+    .container section article {
+        max-width: 58%;
+        margin-left: 8%;
+    }
+}
 
 
 /* CAPITULOS */
-.capitulo header > h1 {
+.capitulo {
+    position: relative;
+}
+.capitulo > header > h1 {
     font-family: 'Squada One', cursive;
     font-size: 42px;
     line-height: 0.83;
@@ -121,7 +136,7 @@ strong {
     margin: 0;
     padding-bottom: 12px;
 }
-.capitulo header > h2 {
+.capitulo > header > h2 {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -158,39 +173,47 @@ strong {
     color: #828282;
     padding-top: 14px;
 }
-
-
-.capitulo-introducao {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-
-.capitulo-bonecas-x-computadores {
+.capitulo-introducao,
+.capitulo-bonecas-computadores,
+.capitulo-escola-esteriotipos,
+.capitulo-exclusao-preconceito,
+.capitulo-desafios-carreira,
+.capitulo-porque-importa,
+.capitulo-boas-praticas {
     padding: 42px 20px 70px 30px;
     background-color: #f6f6f4;
 }
-.capitulo-bonecas-x-computadores header img {
+.capitulo-bonecas-computadores > article > img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .capitulo-bonecas-computadores > article > img {
+        max-width: 355px;
+    }
+}
+.capitulo-bonecas-computadores > header > img,
+.capitulo-escola-esteriotipos > header > img,
+.capitulo-exclusao-preconceito > header > img,
+.capitulo-desafios-carreira > header > img,
+.capitulo-porque-importa > header > img,
+.capitulo-boas-praticas > header > img {
 	height: 143.7px;
     width: 200px;
     margin-bottom: 30px;
 }
-.capitulo-bonecas-x-computadores article img {
-	display: block;
-    width: 100%;
-    margin-top: 40px;
-}
-
-
-.capitulo-escola-e-esteriotipos {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-
-.capitulo-escola-e-esteriotipos img {
-    height: 143.7px;
-    width: 200px;
-    margin-bottom: 30px;
+@media (min-width: 992px) {
+    .capitulo > article > blockquote,
+    .capitulo-bonecas-computadores > header > img,
+    .capitulo-escola-esteriotipos > header > img,
+    .capitulo-exclusao-preconceito > header > img,
+    .capitulo-desafios-carreira > header > img,
+    .capitulo-porque-importa > header > img,
+    .capitulo-boas-praticas > header > img,
+    .capitulo-bonecas-computadores > article > img {
+        position: absolute;
+        left: 66%;
+        width: 26%;
+    }
 }
 
 
@@ -199,7 +222,7 @@ strong {
     padding: 0 20px 0 30px;
     background-color: #f6f6f4;
 }
-.subcapitulo h1 {
+.subcapitulo > header > h1 {
     font-family: 'Lato', sans-serif;
     font-size: 32px;
     font-weight: bold;
@@ -207,7 +230,7 @@ strong {
     color: #8d8cbf;
     margin: 0;
 }
-.subcapitulo h3 {
+.subcapitulo > header > h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 13px;
     font-weight: bold;
@@ -215,12 +238,20 @@ strong {
     color: #333333;
     margin-bottom: 24px;
 }
-.subcapitulo blockquote {
+.subcapitulo > article > p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 1.72;
+    text-align: left;
+    color: #4d4d4d;
+    padding-bottom: 40px;
+}
+.subcapitulo > blockquote {
     padding: 0;
     margin: 0;
     border: none;
 }
-.subcapitulo blockquote cite {
+.subcapitulo > blockquote > cite {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     line-height: 1.25;
@@ -229,60 +260,26 @@ strong {
     display: block;
     margin-bottom: 44px;
 }
-.subcapitulo article > p {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
-    line-height: 1.72;
-    text-align: left;
-    color: #4d4d4d;
-    padding-bottom: 40px;
-}
-
-
-.subcapitulo-leitura-por-diversao blockquote {
+.subcapitulo-leitura-diversao blockquote {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.subcapitulo-leitura-por-diversao figure {
+.subcapitulo-leitura-diversao figure {
     width: 45%;
 }
-
-
-.capitulo-exclusao-e-preconceito {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
+@media (min-width: 768px) {
+    .subcapitulo-dificuldade-matematica blockquote,
+    .subcapitulo-carreira-tecnologia blockquote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .subcapitulo-dificuldade-matematica figure,
+    .subcapitulo-carreira-tecnologia figure {
+        width: 45%;
+    }
 }
-.capitulo-exclusao-e-preconceito img {
-    margin-bottom: 30px;
-}
-
-
-.capitulo-desafios-de-carreira {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-.capitulo-desafios-de-carreira img {
-    margin-bottom: 30px;
-}
-
-.capitulo-porque-importa {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-.capitulo-porque-importa img {
-    margin-bottom: 30px;
-}
-
-
-.capitulo-boas-praticas {
-    padding: 40px 20px 0 30px;
-    background-color: #f6f6f4;
-}
-.capitulo-boas-praticas img {
-    margin-bottom: 30px;
-}
-
 
 /* OUTROS */
 .logo-ca-technologies {
@@ -302,6 +299,7 @@ strong {
     line-height: 1.07;
     color: #828282;
 }
+
 
 .questionario {
     margin-bottom: 44px;
@@ -403,19 +401,29 @@ strong {
 }
 
 
-.infografico {
+.linha-tempo {
     padding: 20px;
     background-color: #8d8cbf;
 }
-.infografico h1 {
-    font-family: 'Squada One', cursive;
-    font-size: 42px;
-    line-height: 0.83;
-    color: #2727cc;
+.linha-tempo h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+	font-weight: bold;
+	line-height: 1.09;
+    color: #f0f0f0;
     margin: 0;
     padding-bottom: 12px;
 }
-.infografico img {
+.linha-tempo p {
+    font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.25;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+.linha-tempo iframe {
+	height: 550px;
     width: 100%;
 }
 
@@ -441,7 +449,7 @@ strong {
 	font-size: 14px;
 	line-height: 1.07;
 	text-align: center;
-	color: #f6f6f4;
+	color: #2727cc;
 }
 
 
@@ -483,29 +491,19 @@ strong {
 }
 
 
-.linha-do-tempo {
+.infografico {
     padding: 20px;
     background-color: #8d8cbf;
 }
-.linha-do-tempo h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-	font-weight: bold;
-	line-height: 1.09;
-    color: #f0f0f0;
+.infografico h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
     margin: 0;
     padding-bottom: 12px;
 }
-.linha-do-tempo p {
-    font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	font-style: italic;
-	line-height: 1.25;
-    color: #cccccc;
-    margin-bottom: 20px;
-}
-.linha-do-tempo iframe {
-	height: 550px;
+.infografico img {
     width: 100%;
 }
 
