@@ -12,6 +12,42 @@ strong {
     font-weight: 700;
 }
 
+
+/* RANGE */
+.range {
+    position: relative;
+}
+.range ul {
+    position: absolute;
+    top: 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.range ul li {
+    height: 15px;
+    width: 2px;
+    margin-left: 2px;
+    background-color: #2727cc;
+}
+.range ul li:before {
+    position: absolute;
+    content: attr(data-numbero);
+    top: -1em;
+}
+.range ul li:nth-child(1):before {
+    margin-left: -4px; 
+}
+.range ul li:nth-child(2):before,
+.range ul li:nth-child(3):before,
+.range ul li:nth-child(4):before {
+    margin-left: -8px; 
+}
+.range ul li:nth-child(5):before {
+    margin-left: -12px; 
+}
+
+
 /* GRAFICO */
 .grafico {
     margin: 0 0 16px 0;
@@ -92,6 +128,11 @@ strong {
     background-size: cover;
     background-attachment: fixed;
 }
+@media (min-width: 992px) {
+    .hero {
+        background: url("../img/01-header-desktop.svg") no-repeat;
+    }
+}
 .hero h1 {
     position: absolute;
     left: 30px;
@@ -99,11 +140,17 @@ strong {
     font-family: 'Squada One', cursive;
     font-size: 35px;
 	line-height: 1.0;
-	color: #dc4b4b;
+    color: #f0f0f0;
+    text-shadow: 0 0 #dc4b4b, 0 2px #dc4b4b, 2px 0 #dc4b4b, 0 0 #dc4b4b;
 }
 @media (min-width: 768px) {
     .hero h1 {
         max-width: 45%;
+    }
+}
+@media (min-width: 992px) {
+    .hero h1 {
+        margin-left: 8%;
     }
 }
 
@@ -213,6 +260,15 @@ strong {
         position: absolute;
         left: 66%;
         width: 26%;
+    }
+    .capitulo-bonecas-computadores > article > img {
+        bottom: 70px;
+    }
+    .capitulo-escola-esteriotipos > article > blockquote {
+        margin-top: 8%;
+    }
+    .capitulo-exclusao-preconceito > article > blockquote {
+        top: 50%;
     }
 }
 
