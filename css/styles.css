@@ -96,13 +96,14 @@ strong {
 .cabecalho {
     position: relative;
     height: 570px;
-    background: url("../img/cabecalho/cabecalho-pequena.svg") no-repeat;
+    background: url("../img/cabecalho/cabecalho-pequena.svg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 @media (min-width: 992px) {
     .cabecalho {
-        background: url("../img/cabecalho/cabecalho-grande.svg") no-repeat;
+        background-image: url("../img/cabecalho/cabecalho-grande.svg");
     }
 }
 .cabecalho h1, .cabecalho h1:before {
