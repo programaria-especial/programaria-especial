@@ -1,0 +1,12 @@
+	<g transform="scale(1,-1) translate(0,-200)">
+		<rect width="150" height="200" fill='#8d8cbf'>
+			<!-- <animate attributeName="height" from="0" to="150" dur="0.7s" fill="freeze" /> -->
+		</rect>
+		<rect width="150" height="150" fill='#5ae091'>
+			<!-- <animate attributeName="height" from="0" to="150" dur="0.7s" fill="freeze" /> -->
+		</rect>
+	</g>
+	<text x="75" y="180" text-anchor="middle" fill="#ffffff" stroke="#ffffff" style="font-family: 'Squada One', cursive; font-size: 18px">
+		75%
+	</text>
+</svg>

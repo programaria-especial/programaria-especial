@@ -161,7 +161,7 @@ strong {
     position: relative;
 }
 .capitulo__titulo {
-    font-family: 'Squada One';
+    font-family: 'Squada One', cursive;
     font-size: 42px;
     line-height: 0.83;
     color: #2727cc;
@@ -202,6 +202,12 @@ strong {
     color: #828282;
     padding-top: 14px;
 }
+.capitulo-introducao .logo-ca-technologies {
+    margin: 0 0 31.5px 0;
+}
+.capitulo-introducao .capitulo__subtitulo {
+    margin-bottom: 68.3px;
+}
 .capitulo-introducao,
 .capitulo-bonecas-computadores,
 .capitulo-escola-esteriotipos,
@@ -214,15 +220,6 @@ strong {
 }
 .capitulo-bonecas-computadores > article > img {
     width: 100%;
-}
-.capitulo-introducao .logo-ca-technologies {
-    margin: 0 0 31.5px 0;
-}
-.capitulo-introducao .capitulo__subtitulo {
-    margin-bottom: 68.3px;
-}
-.capitulo-bonecas-computadores {
-    padding-top: 0;
 }
 @media (min-width: 768px) {
     .capitulo-bonecas-computadores > article > img {
@@ -334,14 +331,11 @@ strong {
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: space-between;
-    width: 150px;
+    width: 200px;
     border-top: 3px solid #d8d8d8;
     border-bottom: 3px solid #d8d8d8;
     padding: 15px 0 16px 0;
 
-}
-.logo-ca-technologies img {
-    height: 41.5px;
 }
 .logo-ca-technologies p {
     font-family: 'Lato', sans-serif;
@@ -380,197 +374,117 @@ strong {
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
-    color: #5ae091;
+    color: #828282;
     display: block;
     height: 19.9px;
     width: 39.7px;
     padding: 0;
     margin-left: auto;
-    border: solid 1px #5ae091;
-    border-radius: 2px;
-    background-color: #f6f6f4;
-}
-.teste__pergunta__botao:hover {
-    color: #ffffff;
-    border-color: #5ae091;
-    background-color: #5ae091;
-}
-.teste__pergunta__botao:disabled {
-    color: #828282;
     border: solid 1px #828282;
-}
-.teste__pergunta__botao:hover:disabled {
-    background-color: #f6f6f4;
+    border-radius: 2px;
+    background: #f6f6f4;
 }
 .teste__pergunta__respostas {
     position: relative;
-}
-.teste__pergunta__explicacao {
-    display: none;
-    font-family: 'Libre Baskerville';
-    font-size: 11px;
-    line-height: 1.36;
-    color: #4d4d4d;
-}
-.teste__pergunta__explicacao.show {
-    display: inline-block;
-    width: 70.37%;
-}
-.teste__pergunta__explicacao.show + .teste__pergunta__botao {
-    vertical-align: top;
-    float: right;
 }
 
 
 .range {
     position: relative;
-    margin-top: 42px;
-    margin-bottom: 100px;
 }
-.range__input {
-    -webkit-appearance: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-}
-.range__input:focus {
-    outline: none;
-}
-.range__input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    cursor: pointer;
-    position: relative;
-    height: 90px;
-    width: 53px;
-    padding: 0;
-    margin: 5px 0 0 0;
-    background-image: url(../img/mao_resposta_inicial.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.range__input::-moz-range-thumb {
-    -webkit-appearance: none;
-    cursor: pointer;
-    height: 31.7px;
-    width: 1.8px;
-    padding: 0;
-    margin: 0;
-    background-color: #5ae091;
-}
-.range__input::-ms-thumb {
-    -webkit-appearance: none;
-    cursor: pointer;
-    height: 31.7px;
-    width: 1.8px;
-    padding: 0;
-    margin: 0;
-    background-color: #5ae091;
-}
-.range__input::-webkit-slider-runnable-track {
+.range__barra {
     height: 10px;
+    background-color: #94eac4;
+}
+.range__cursor {
+    position: absolute;
+    cursor: pointer;
+	height: 31.7px;
+    width: 1.8px;
     background-color: #5ae091;
 }
-.range__input::-ms-track {
-    cursor: pointer;
-    color: transparent;
-    width: 100%;
-    background: transparent; 
-    border-color: transparent;
+.range__cursor:before {
+    content: '';
+    position: absolute;
+    top: 31.7px;
+    left: -16px;
+    width: 37.7px;
+    height: 42.2px;
+    background-image: url(../img/mao_resposta.png);
+    background-repeat: no-repeat;
+    background-position: 9px 0px;
 }
-.range__porcentagens {
+.range__cursor:after {
+    pointer-events: none;
+}
+.range__cursor.left:after,
+.range__cursor.right:after,
+.range__cursor.center:after {
+    position: absolute;
+    width: 200px;
+    content: 'sua reposta é 'attr(data-porcentagem);
+    color: #5ae091;
+}
+.range__cursor.left:after,
+.range__cursor.right:after {
+    top: 50px;
+}
+.range__cursor.left:after {
+    right: 22px;
+    text-align: right;
+}
+.range__cursor.right:after {
+    left: 35px;
+    text-align: left;
+}
+.range__cursor.center:after {
+    top: 80px;
+    right: -100px;
+    text-align: center;
+}
+.range__labels {
     position: absolute;
     top: -9px;
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 51px);
+    width: 100%;
     padding: 0;
-    margin: 0 34px 0 17px;
+    margin: 0;
     list-style: none;
 }
-.range__porcentagens li {
+.range__labels li {
     height: 15px;
     width: 2px;
     background-color: #2727cc;
 }
-.range__porcentagens li:before {
+.range__labels li:before {
     position: absolute;
     content: attr(data-numbero);
     top: -1em;
 }
-.range__porcentagens li:nth-child(1):before {
+.range__labels li:nth-child(1):before {
     margin-left: -4px; 
 }
-.range__porcentagens li:nth-child(2):before,
-.range__porcentagens li:nth-child(3):before,
-.range__porcentagens li:nth-child(4):before {
+.range__labels li:nth-child(2):before,
+.range__labels li:nth-child(3):before,
+.range__labels li:nth-child(4):before {
     margin-left: -8px; 
 }
-.range__porcentagens li:nth-child(5):before {
+.range__labels li:nth-child(5):before {
     margin-left: -12px; 
-}
-.range__porcentagem {
-    position: absolute;
-    top: 85px;
-    font-family: 'Lato';
-	font-size: 12px;
-	font-weight: bold;
-	color: #5ae091;
-}
-.range__resposta-certa {
-    display: none;
-    position: absolute;
-    top: -36px;
-    height: 43px;
-    width: 2px;
-    background-color: #2727cc;
-}
-.range__resposta-certa:after {
-    position: absolute;
-    top: -5px;
-    width: 200px;
-    font-family: Lato;
-	font-size: 12px;
-	font-weight: bold;
-	color: #2727cc;
-}
-.range__resposta-certa.show {
-    display: block;
-}
-#range1 ~ .range__resposta-certa {
-    text-align: right;
-    left: calc(17% + 7px);
-}
-#range1 ~ .range__resposta-certa:after {
-    content: 'a resposta certa é 17%';
-    margin-left: 10px;
-    text-align: left;
-}
-#range2 ~ .range__resposta-certa {
-    text-align: left;
-    left: calc(79% - 24px);
-}
-#range2 ~ .range__resposta-certa:after {
-    content: 'a resposta certa é 79%';
-    margin-left: -210px;
-    text-align: right;
 }
 
 
 .painel {
-    display: none;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: bold;
     line-height: 1.33;
     color: #cccccc;
     padding: 25px;
-    margin-bottom: 42.1px;
+    margin-bottom: 42px;
     background-color: #8d8cbf;
     border-radius: 8px;
-}
-.painel.show {
-    display: block;
 }
 
 
@@ -665,104 +579,19 @@ strong {
 
 
 .infografico {
-    background-color: #94eac4;
-}
-.infografico main {
-    position: relative;
-    padding: 30px 38px 20px 62px;
-}
-.infografico main:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 31px;
-    content: '';
-    background-image: url('../img/detalhe-esquerda.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 20px;
+    background-color: #8d8cbf;
 }
 .infografico h1 {
-    font-family: 'Lato';
-	font-size: 18px;
-	font-weight: bold;
-    color: #8d8cbf;
-    margin-bottom: 45.7px;
-}
-.infografico blockquote {
+    font-family: 'Squada One', cursive;
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
     margin: 0;
+    padding-bottom: 12px;
 }
 .infografico img {
-    display: block;
-    width: 100px;
-    margin-bottom: 10px;
-    object-fit: contain;
-	border: 1px solid #979797;
-}
-.infografico figure {
-    margin: 0;
-}
-.infografico figcaption {
-    font-family: 'Lato';
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 1.43;
-    color: #8d8cbf;
-}
-.infografico figure:not(:last-child) figcaption {
-    margin-bottom: 30px;
-}
-.infografico cite {
-    font-family: 'Lato';
-	font-size: 13px;
-	line-height: 1.15;
-	color: #4d4d4d;
-}
-@media (min-width: 768px) {
-    .infografico figure {
-        display: flex;
-        align-items: center;
-    }
-    .infografico figure:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    .infografico figure:nth-child(odd) img {
-        margin-right: 15px; 
-    }
-    .infografico figure:nth-child(even) img {
-        margin-left: 15px; 
-    }
-}
-@media (min-width: 992px) {
-    .infografico main {
-        width: 73%;
-        margin: 0 auto;
-    }
-    .infografico blockquote {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .infografico figure {
-        width: 48%;
-    }
-    .infografico figure:nth-child(even) {
-        flex-direction: row;
-    }
-    .infografico figure:nth-child(even) img {
-        margin-left: 0; 
-        margin-right: 15px; 
-    }
-    .infografico figure:nth-child(3), .infografico figure:nth-child(4) {
-        flex-direction: row-reverse;
-    }
-    .infografico figure:nth-child(3) img, .infografico figure:nth-child(4) img {
-        margin-left: 15px;
-    }
-    .infografico cite {
-        width: 100%;
-        text-align: center;
-    }
+    width: 100%;
 }
 
 
@@ -770,7 +599,7 @@ strong {
     padding: 20px 30px;
     background-color: #94eac4;
 }
-.compartilhe h1 {
+.compartilhe  h1 {
     font-family: 'Squada One', cursive;
     font-size: 42px;
     line-height: 0.83;
@@ -820,62 +649,4 @@ strong {
     font-size: 18px;
     line-height: 1.67;
     margin-left: 0;
-}
-
-.menu {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.menu a {    
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 30px;
-    min-width: 200px;
-    color: transparent;
-    text-decoration: none;
-}
-.menu a:after {
-    background-color: #cccccc;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 20px;
-    margin-left: auto;
-    transition: width .25s ease-in-out,background-color .25s ease-in-out;
-}
-.menu a.active:after {
-    background-color: #5ae091;
-}
-.menu a:hover {
-    color: #5ae091;
-}
-.menu a:hover:after {
-    width: 60px;
-    animation-fill-mode: forwards;
-}
-.menu a span {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 70px;
-    font-family: 'Squada One';
-	font-size: 20px;
-	text-align: right;
-	color: #5ae091;
-    opacity: 0;
-    white-space: nowrap;
-    will-change: transform;
-    transition: transform .25s ease-in-out,opacity .25s ease-in-out;
-}
-.menu a:hover span {
-    opacity: 1;
-    transform: translate(-20px,-50%);
 }
