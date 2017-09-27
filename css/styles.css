@@ -178,10 +178,18 @@ strong {
     margin: 0;
 }
 .capitulo__texto-corrido {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville';
     font-size: 15px;
     line-height: 1.72;
     color: #4d4d4d;
+}
+.capitulo__texto-corrido strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+.capitulo__texto-corrido a {
+    text-decoration: none;
+    border-bottom: 4px solid #5ae091;
 }
 .capitulo > article > p:not(:first-child) {
     padding-top: 2rem;
@@ -241,6 +249,10 @@ strong {
     margin-bottom: 30px;
 }
 @media (min-width: 992px) {
+    .capitulo > article, .capitulo > header {
+        position: relative;
+    }
+
     .capitulo > article > blockquote,
     .capitulo-bonecas-computadores > header > img,
     .capitulo-escola-esteriotipos > header > img,
@@ -250,8 +262,10 @@ strong {
     .capitulo-boas-praticas > header > img,
     .capitulo-bonecas-computadores > article > img {
         position: absolute;
-        left: 66%;
+        left: 100%;
         width: 26%;
+        padding-left: 20px;
+        margin: 0;
     }
     .capitulo-bonecas-computadores > article > img {
         bottom: 70px;
@@ -603,7 +617,7 @@ strong {
 
 
 .vagas-seletivas {
-    padding: 20px;
+    padding: 41.2px 20px 42.9px 30px;
     background-color: #8d8cbf;
 }
 .vagas-seletivas h1 {
@@ -625,10 +639,16 @@ strong {
 	text-align: center;
 	color: #2727cc;
 }
+@media (min-width: 992px) {
+    .vagas-seletivas h1, .vagas-seletivas .carrossel {
+        width: 84%;
+        margin-left: 8%;
+    }
+}
 
 
 .cite {
-    padding: 45px 45px 45px 55px;
+    padding: 41.2px 20px 42.9px 30px
 }
 .cite blockquote {
     margin: 0;
@@ -666,18 +686,19 @@ strong {
 
 
 .infografico {
+    padding: 41.2px 20px 42.9px 30px;
     background-color: #94eac4;
 }
 .infografico main {
     position: relative;
-    padding: 30px 38px 20px 62px;
+    padding-left: 30px;
 }
 .infografico main:before {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 31px;
+    width: 20px;
     content: '';
     background-image: url('../img/detalhe-esquerda.svg');
     background-repeat: no-repeat;
@@ -736,8 +757,8 @@ strong {
 }
 @media (min-width: 992px) {
     .infografico main {
-        width: 73%;
-        margin: 0 auto;
+        width: 84%;
+        margin-left: 8%;
     }
     .infografico blockquote {
         display: flex;
