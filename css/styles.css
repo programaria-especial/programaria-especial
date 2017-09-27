@@ -112,7 +112,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url(../img/mao_resposta_inicial.svg);
+    background-image: url('../img/mao_resposta.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -123,7 +123,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url(../img/mao_resposta_inicial.svg);
+    background-image: url('../img/mao_respostal.svg');
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: 0px 58px;
@@ -137,7 +137,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url(../img/mao_resposta_inicial.svg);
+    background-image: url('../img/mao_resposta.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -236,7 +236,7 @@ strong {
 .cabecalho {
     position: relative;
     height: 570px;
-    background: url("../img/cabecalho/cabecalho-pequena.svg");
+    background: url('../img/cabecalho/cabecalho-pequena.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -271,7 +271,7 @@ strong {
 }
 @media (min-width: 992px) {
     .cabecalho {
-        background-image: url("../img/cabecalho/cabecalho-grande.svg");
+        background-image: url('../img/cabecalho/cabecalho-grande.svg');
     }
     .cabecalho__titulo {
         margin-left: 8%;
