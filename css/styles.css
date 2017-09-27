@@ -117,33 +117,41 @@ strong {
     background-size: 100% 100%;
 }
 .range__input::-moz-range-thumb {
-    -webkit-appearance: none;
     cursor: pointer;
-    height: 31.7px;
-    width: 1.8px;
+    position: relative;
+    height: 120px;
+    width: 53px;
     padding: 0;
-    margin: 0;
-    background-color: #5ae091;
+    margin: 5px 0 0 0;
+    background-image: url(../img/mao_resposta_inicial.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0px 58px;
+    background-color: transparent;
+    border: none;
 }
 .range__input::-ms-thumb {
-    -webkit-appearance: none;
     cursor: pointer;
-    height: 31.7px;
-    width: 1.8px;
+    position: relative;
+    height: 90px;
+    width: 53px;
     padding: 0;
-    margin: 0;
-    background-color: #5ae091;
+    margin: 5px 0 0 0;
+    background-image: url(../img/mao_resposta_inicial.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .range__input::-webkit-slider-runnable-track {
     height: 10px;
     background-color: #5ae091;
 }
+.range__input::-moz-range-track {
+    height: 10px;
+    background-color: #5ae091;
+}
 .range__input::-ms-track {
-    cursor: pointer;
-    color: transparent;
-    width: 100%;
-    background: transparent; 
-    border-color: transparent;
+    height: 10px;
+    background-color: #5ae091;
 }
 .range__porcentagens {
     position: absolute;
