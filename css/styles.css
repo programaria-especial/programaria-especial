@@ -1,14 +1,10 @@
+/* FONTES */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
 @import url('https://fonts.googleapis.com/css?family=Squada+One:400');
 
-/* VARIAVEIS*/
-:root {
-    font-squada-one: 'Squada One';
-    font-normal: normal;
-    font-regular: 400;
-}
 
+/* RESET */
 body {
     margin: 0;
 }
@@ -92,351 +88,7 @@ strong {
 }
 
 
-/* CABECALHO */
-.cabecalho {
-    position: relative;
-    height: 570px;
-    background: url("../img/cabecalho/cabecalho-pequena.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-@media (min-width: 992px) {
-    .cabecalho {
-        background-image: url("../img/cabecalho/cabecalho-grande.svg");
-    }
-}
-.cabecalho h1, .cabecalho h1:before {
-    font-family: 'Squada One';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    line-height: 1.0;
-}
-.cabecalho h1 {
-    position: absolute;
-    left: 31px;
-    right: 39px;
-    bottom: 44.2px;
-    color: #dc4b4b;
-    margin: 0;
-}
-.cabecalho h1:before {
-    position: absolute;
-    bottom: 1px;
-    left: -1px;
-    content: 'Por que o machismo cria barreiras para as mulheres na tecnologia';
-    color: #f0f0f0;
-}
-
-@media (min-width: 768px) {
-    .cabecalho h1 {
-        max-width: 45%;
-    }
-}
-@media (min-width: 992px) {
-    .cabecalho h1 {
-        margin-left: 8%;
-    }
-}
-
-
-/* CONTAINER */
-@media (min-width: 768px) {
-    .container section header, 
-    .container section article {
-        max-width: 80%;
-    }
-}
-@media (min-width: 992px) {
-    .container section header, 
-    .container section article {
-        max-width: 58%;
-        margin-left: 8%;
-    }
-}
-
-
-/* CAPITULOS */
-.capitulo {
-    position: relative;
-}
-.capitulo__titulo {
-    font-family: 'Squada One';
-    font-size: 42px;
-    line-height: 0.83;
-    color: #2727cc;
-    margin: 0;
-    padding-bottom: 12px;
-}
-.capitulo__subtitulo {
-    font-family: 'Lato';
-    font-size: 18px;
-    font-style: italic; 
-    line-height: 1.39;
-    color: #dc4b4b;
-    margin: 0;
-}
-.capitulo__texto-corrido {
-    font-family: 'Libre Baskerville';
-    font-size: 15px;
-    line-height: 1.72;
-    color: #4d4d4d;
-}
-.capitulo__texto-corrido strong {
-    font-weight: bold;
-    font-size: 18px;
-}
-.capitulo__texto-corrido a {
-    text-decoration: none;
-    border-bottom: 4px solid #5ae091;
-}
-.capitulo > article > p:not(:first-child) {
-    padding-top: 2rem;
-}
-.capitulo > article > blockquote {
-    border: none;
-}
-.capitulo > article > blockquote > p {
-    font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 1.36;
-    color: #dc4b4b;
-}
-.capitulo > article > blockquote > cite {
-    font-family: 'Squada One', cursive;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #828282;
-    padding-top: 14px;
-}
-.capitulo-introducao,
-.capitulo-bonecas-computadores,
-.capitulo-escola-esteriotipos,
-.capitulo-exclusao-preconceito,
-.capitulo-desafios-carreira,
-.capitulo-porque-importa,
-.capitulo-boas-praticas {
-    padding: 41.2px 20px 42.9px 30px;
-    background-color: #f6f6f4;
-}
-.capitulo-bonecas-computadores > article > img {
-    width: 100%;
-}
-.capitulo-introducao .logo-ca-technologies {
-    margin: 0 0 31.5px 0;
-}
-.capitulo-introducao .capitulo__subtitulo {
-    margin-bottom: 68.3px;
-}
-.capitulo-bonecas-computadores {
-    padding-top: 0;
-}
-@media (min-width: 768px) {
-    .capitulo-bonecas-computadores > article > img {
-        max-width: 355px;
-    }
-}
-.capitulo-bonecas-computadores > header > img,
-.capitulo-escola-esteriotipos > header > img,
-.capitulo-exclusao-preconceito > header > img,
-.capitulo-desafios-carreira > header > img,
-.capitulo-porque-importa > header > img,
-.capitulo-boas-praticas > header > img {
-	height: 143.7px;
-    width: 200px;
-    margin-bottom: 30px;
-}
-@media (min-width: 992px) {
-    .capitulo > article, .capitulo > header {
-        position: relative;
-    }
-
-    .capitulo > article > blockquote,
-    .capitulo-bonecas-computadores > header > img,
-    .capitulo-escola-esteriotipos > header > img,
-    .capitulo-exclusao-preconceito > header > img,
-    .capitulo-desafios-carreira > header > img,
-    .capitulo-porque-importa > header > img,
-    .capitulo-boas-praticas > header > img,
-    .capitulo-bonecas-computadores > article > img {
-        position: absolute;
-        left: 100%;
-        width: 26%;
-        padding-left: 20px;
-        margin: 0;
-    }
-    .capitulo-bonecas-computadores > article > img {
-        bottom: 70px;
-    }
-    .capitulo-escola-esteriotipos > article > blockquote {
-        margin-top: 8%;
-    }
-    .capitulo-exclusao-preconceito > article > blockquote {
-        top: 50%;
-    }
-}
-
-
-/* SUBCAPITULOS */
-.subcapitulo {
-    padding: 0 20px 0 30px;
-    background-color: #f6f6f4;
-}
-.subcapitulo > header > h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.09;
-    color: #8d8cbf;
-    margin: 0;
-}
-.subcapitulo > header > h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.54;
-    color: #333333;
-    margin-bottom: 24px;
-}
-.subcapitulo > article > p {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
-    line-height: 1.72;
-    text-align: left;
-    color: #4d4d4d;
-    padding-bottom: 40px;
-}
-.subcapitulo > blockquote {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-.subcapitulo > blockquote > cite {
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    line-height: 1.25;
-    text-align: left;
-    color: #8d8cbf;
-    display: block;
-    margin-bottom: 44px;
-}
-.subcapitulo-leitura-diversao blockquote {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.subcapitulo-leitura-diversao figure {
-    width: 45%;
-}
-@media (min-width: 768px) {
-    .subcapitulo-dificuldade-matematica blockquote,
-    .subcapitulo-carreira-tecnologia blockquote {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .subcapitulo-dificuldade-matematica figure,
-    .subcapitulo-carreira-tecnologia figure {
-        width: 45%;
-    }
-}
-
-/* OUTROS */
-.logo-ca-technologies {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 150px;
-    border-top: 3px solid #d8d8d8;
-    border-bottom: 3px solid #d8d8d8;
-    padding: 15px 0 16px 0;
-
-}
-.logo-ca-technologies img {
-    height: 41.5px;
-}
-.logo-ca-technologies p {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.07;
-    color: #828282;
-    padding-bottom: 5px;
-}
-
-
-.teste {
-    margin-bottom: 44px;
-    background-color: #f6f6f4;
-}
-.teste__titulo {
-    font-family: 'Lato';
-    font-size: 18px;
-    font-weight: bold;
-    color: #2727cc;
-    margin: 0 0 15px 0;
-}
-.teste__pergunta + .teste__pergunta {
-    margin-top: 59px;
-}
-.teste__pergunta__enunciado {
-    font-family: 'Lato';
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.33;
-    color: #4d4d4d;
-}
-.teste__pergunta__botao {
-    font-family: 'Lato';
-    font-size: 10px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #5ae091;
-    display: block;
-    height: 19.9px;
-    width: 39.7px;
-    padding: 0;
-    margin-left: auto;
-    border: solid 1px #5ae091;
-    border-radius: 2px;
-    background-color: #f6f6f4;
-}
-.teste__pergunta__botao:hover {
-    color: #ffffff;
-    border-color: #5ae091;
-    background-color: #5ae091;
-}
-.teste__pergunta__botao:disabled {
-    color: #828282;
-    border: solid 1px #828282;
-}
-.teste__pergunta__botao:hover:disabled {
-    background-color: #f6f6f4;
-}
-.teste__pergunta__respostas {
-    position: relative;
-}
-.teste__pergunta__explicacao {
-    display: none;
-    font-family: 'Libre Baskerville';
-    font-size: 11px;
-    line-height: 1.36;
-    color: #4d4d4d;
-}
-.teste__pergunta__explicacao.show {
-    display: inline-block;
-    width: 70.37%;
-}
-.teste__pergunta__explicacao.show + .teste__pergunta__botao {
-    vertical-align: top;
-    float: right;
-}
-
-
+/* RANGE */
 .range {
     position: relative;
     margin-top: 42px;
@@ -572,6 +224,394 @@ strong {
 }
 
 
+/* CABECALHO */
+.cabecalho {
+    position: relative;
+    height: 570px;
+    background: url("../img/cabecalho/cabecalho-pequena.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cabecalho__titulo {
+    position: absolute;
+    left: 31px;
+    right: 39px;
+    bottom: 44.2px;
+    color: #dc4b4b;
+    margin: 0;
+}
+.cabecalho__titulo:before {
+    position: absolute;
+    bottom: 1px;
+    left: -1px;
+    content: 'Por que o machismo cria barreiras para as mulheres na tecnologia';
+    color: #f0f0f0;
+}
+.cabecalho__titulo, 
+.cabecalho__titulo:before {
+    font-family: 'Squada One';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1.0;
+}
+@media (min-width: 768px) {
+    .cabecalho__titulo {
+        max-width: 45%;
+    }
+}
+@media (min-width: 992px) {
+    .cabecalho {
+        background-image: url("../img/cabecalho/cabecalho-grande.svg");
+    }
+    .cabecalho__titulo {
+        margin-left: 8%;
+    }
+}
+
+
+/* CONTAINER */
+@media (min-width: 768px) {
+    .container {
+        position: relative;
+        max-width: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 58%;
+        margin-left: 8%;
+    }
+}
+
+
+/* CAPITULOS */
+.capitulo {
+    position: relative;
+}
+.capitulo__titulo {
+    font-family: 'Squada One';
+    font-size: 42px;
+    line-height: 0.83;
+    color: #2727cc;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.capitulo__subtitulo {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-style: italic; 
+    line-height: 1.39;
+    color: #dc4b4b;
+    margin: 0 0 30px 0;
+}
+.capitulo__texto-corrido {
+    font-family: 'Libre Baskerville';
+    font-size: 15px;
+    line-height: 1.72;
+    color: #4d4d4d;
+}
+.capitulo__texto-corrido + .capitulo__texto-corrido {
+    padding-top: 2rem;
+}
+.capitulo__texto-corrido strong {
+    font-weight: bold;
+    font-size: 12pt;
+}
+.capitulo__texto-corrido a {
+    text-decoration: none;
+    border-bottom: 4px solid #5ae091;
+}
+.capitulo__texto-corrido a, 
+.capitulo__texto-corrido a:hover,
+.capitulo__texto-corrido a:active {
+    color: currentColor;
+}
+.capitulo__citacao {
+    margin: 35px 0 37px 30px;
+    border: none;
+}
+.capitulo__citacao p {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #dc4b4b;
+}
+.capitulo__citacao cite {
+    font-family: 'Squada One', cursive;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #828282;
+    display: block;
+    padding-top: 14px;
+}
+.capitulo-introducao,
+.capitulo-bonecas-computadores,
+.capitulo-escola-esteriotipos,
+.capitulo-exclusao-preconceito,
+.capitulo-desafios-carreira,
+.capitulo-porque-importa,
+.capitulo-reprogramando-tecnologia,
+.capitulo-continuacao {
+    padding: 41.2px 20px 42.9px 30px;
+    background-color: #f6f6f4;
+}
+
+.capitulo-introducao .logo-ca-technologies {
+    margin: 0 0 31.5px 0;
+}
+.capitulo-introducao .capitulo__subtitulo {
+    margin-bottom: 68.3px;
+}
+
+.capitulo-bonecas-computadores {
+    padding-top: 0;
+}
+.capitulo-bonecas-computadores .container_conteudo > img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .capitulo-bonecas-computadores .container_conteudo > img {
+        max-width: 355px;
+    }
+}
+.capitulo-bonecas-computadores .capitulo__ilustracao,
+.capitulo-escola-esteriotipos .capitulo__ilustracao,
+.capitulo-exclusao-preconceito .capitulo__ilustracao,
+.capitulo-desafios-carreira .capitulo__ilustracao,
+.capitulo-porque-importa .capitulo__ilustracao,
+.capitulo-reprogramando-tecnologia .capitulo__ilustracao {
+	height: 143.7px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+    .capitulo .container_cabecalho, .capitulo .container_conteudo {
+        position: relative;
+    }
+
+    .capitulo .capitulo__citacao,
+    .capitulo-bonecas-computadores .capitulo__ilustracao,
+    .capitulo-escola-esteriotipos .capitulo__ilustracao,
+    .capitulo-exclusao-preconceito .capitulo__ilustracao,
+    .capitulo-desafios-carreira .capitulo__ilustracao,
+    .capitulo-porque-importa .capitulo__ilustracao,
+    .capitulo-reprogramando-tecnologia .capitulo__ilustracao,
+    .capitulo-bonecas-computadores .container_conteudo img {
+        position: absolute;
+        left: 100%;
+        width: 26%;
+        padding-left: 20px;
+        margin: 0;
+    }
+    .capitulo-bonecas-computadores .container_conteudo img {
+        bottom: 70px;
+    }
+    
+    .capitulo-escola-esteriotipos .capitulo__citacao {
+        margin-top: 8%;
+    }
+    
+    .capitulo-exclusao-preconceito .capitulo__citacao {
+        top: 50%;
+    }
+}
+
+
+/* SUBCAPITULOS */
+.subcapitulo {
+    padding: 0 20px 42.9px 30px;
+    background-color: #f6f6f4;
+}
+.subcapitulo__titulo {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.09;
+    color: #8d8cbf;
+    margin: 0;
+}
+.subcapitulo__subtitulo {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.54;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.subcapitulo__texto-corrido {
+    font-family: 'Libre Baskerville';
+    font-size: 15px;
+    line-height: 1.72;
+    color: #4d4d4d;
+}
+.subcapitulo__texto-corrido + .subcapitulo__texto-corrido {
+    padding-top: 2rem;
+}
+.subcapitulo__texto-corrido strong {
+    font-weight: bold;
+    font-size: 12pt;
+}
+.subcapitulo__texto-corrido a {
+    text-decoration: none;
+    border-bottom: 4px solid #5ae091;
+}
+.subcapitulo__texto-corrido a, 
+.subcapitulo__texto-corrido a:hover,
+.subcapitulo__texto-corrido a:active {
+    color: currentColor;
+}
+.subcapitulo__citacao {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.subcapitulo__citacao cite {
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    color: #8d8cbf;
+    display: block;
+    width: 100%;
+    margin-bottom: 44px;
+}
+.subcapitulo-leitura-diversao .subcapitulo__citacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subcapitulo-leitura-diversao .subcapitulo__citacao figure {
+    width: 45%;
+}
+@media (min-width: 768px) {
+    .subcapitulo-dificuldade-matematica .subcapitulo__citacao,
+    .subcapitulo-carreira-tecnologia .subcapitulo__citacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .subcapitulo-dificuldade-matematica .subcapitulo__citacao figure,
+    .subcapitulo-carreira-tecnologia .subcapitulo__citacao figure {
+        width: 45%;
+    }
+}
+@media (min-width: 1024px) {
+    .subcapitulo-dificuldade-matematica .subcapitulo__citacao,
+    .subcapitulo-leitura-diversao .subcapitulo__citacao,
+    .subcapitulo-carreira-tecnologia .subcapitulo__citacao {
+        justify-content: flex-start;
+    }
+    .subcapitulo-dificuldade-matematica .subcapitulo__citacao figure, 
+    .subcapitulo-carreira-tecnologia .subcapitulo__citacao figure {
+        width: 30%;
+        margin-right: 30px;
+    }
+    .subcapitulo-leitura-diversao .subcapitulo__citacao figure {
+        width: 20%;
+        margin-right: 70px;
+    }
+    .subcapitulo-futura-carreira .subcapitulo__citacao figure {
+        width: 50%;
+    }
+}
+
+/* OUTROS */
+.logo-ca-technologies {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 150px;
+    border-top: 3px solid #d8d8d8;
+    border-bottom: 3px solid #d8d8d8;
+    padding: 15px 0 16px 0;
+
+}
+.logo-ca-technologies img {
+    height: 41.5px;
+}
+.logo-ca-technologies p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.07;
+    color: #828282;
+    padding-bottom: 5px;
+}
+
+
+.teste {
+    margin-bottom: 44px;
+    background-color: #f6f6f4;
+}
+.teste__titulo {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: bold;
+    color: #2727cc;
+    margin: 0 0 15px 0;
+}
+.teste__pergunta + .teste__pergunta {
+    margin-top: 59px;
+}
+.teste__pergunta__enunciado {
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #4d4d4d;
+}
+.teste__pergunta__botao {
+    font-family: 'Lato';
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5ae091;
+    display: block;
+    height: 19.9px;
+    width: 39.7px;
+    padding: 0;
+    margin-left: auto;
+    border: solid 1px #5ae091;
+    border-radius: 2px;
+    background-color: #f6f6f4;
+}
+.teste__pergunta__botao:hover {
+    color: #ffffff;
+    border-color: #5ae091;
+    background-color: #5ae091;
+}
+.teste__pergunta__botao:disabled {
+    color: #828282;
+    border: solid 1px #828282;
+}
+.teste__pergunta__botao:hover:disabled {
+    background-color: #f6f6f4;
+}
+.teste__pergunta__respostas {
+    position: relative;
+}
+.teste__pergunta__explicacao {
+    display: none;
+    font-family: 'Libre Baskerville';
+    font-size: 11px;
+    line-height: 1.36;
+    color: #4d4d4d;
+}
+.teste__pergunta__explicacao.show {
+    display: inline-block;
+    width: 70.37%;
+}
+.teste__pergunta__explicacao.show + .teste__pergunta__botao {
+    vertical-align: top;
+    float: right;
+}
+
+
 .painel {
     display: none;
     font-family: 'Lato', sans-serif;
@@ -590,7 +630,7 @@ strong {
 
 
 .linha-tempo {
-    padding: 20px;
+    padding: 41.2px 20px 42.9px 30px;
     background-color: #8d8cbf;
 }
 .linha-tempo h1 {
@@ -689,11 +729,11 @@ strong {
     padding: 41.2px 20px 42.9px 30px;
     background-color: #94eac4;
 }
-.infografico main {
+.infografico .container {
     position: relative;
     padding-left: 30px;
 }
-.infografico main:before {
+.infografico .container:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -756,10 +796,6 @@ strong {
     }
 }
 @media (min-width: 992px) {
-    .infografico main {
-        width: 84%;
-        margin-left: 8%;
-    }
     .infografico blockquote {
         display: flex;
         justify-content: space-between;
@@ -815,7 +851,7 @@ strong {
 
 
 .creditos {
-    padding: 40px 30px 100px 30px;
+    padding: 47.6px 30px 64px 30px;
     background-color: #f6f6f4;
 }
 .creditos h1 {

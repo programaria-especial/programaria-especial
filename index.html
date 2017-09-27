@@ -9,679 +9,767 @@
     </head>
     <body>
         <header class="cabecalho">
-            <h1>Por que o machismo cria barreiras para as mulheres na tecnologia</h1>
+            <h1 class="cabecalho__titulo">Por que o machismo cria barreiras para as mulheres na tecnologia</h1>
         </header>
-        <main class="container">
+        <main>
             <section id="introducao" class="capitulo capitulo-introducao">
-                <header>
-                    <figure class="logo-ca-technologies">
-                        <img src="img/logo-ca-technologies.svg" alt="Logo da CA Technologies">
-                        <figcaption>
-                            <p>Esta matéria tem o apoio de</p>
-                        </figcaption>
-                    </figure>
-                    <h2 class="capitulo__subtitulo">
-                        O futuro está sendo escrito em linhas de código. E o público feminino, apesar de usuário de apps, 
-                        redes sociais e dispositivos digitais, não participa da produção da tecnologia. Precisamos falar 
-                        sobre os desafios das mulheres na área e o que fazer para aumentar sua participação.                            
-                    </h2>
-                </header>
-                <article>
-                    <div class="teste">
-                        <h3 class="teste__titulo">
-                            Você sabe qual é o tamanho da disparidade entre  os gêneros na tecnologia?
-                        </h3>
-                        <form class="teste__pergunta">
-                            <label class="teste__pergunta__enunciado" for="range1">
-                                1. Quantos programadores no mercado brasileiro de TI são mulheres?
-                            </label>
-                            <div class="range">
-                                <input id="range1" class="range__input" type="range" min="0" max="100"/>
-                                <ul class="range__porcentagens">
-                                    <li data-numbero="0"></li>
-                                    <li data-numbero="25"></li>
-                                    <li data-numbero="50"></li>
-                                    <li data-numbero="75"></li>
-                                    <li data-numbero="100"></li>
-                                </ul>
-                                <small class="range__porcentagem"></small>
-                                <small class="range__resposta-certa"></small>
-                            </div>
-                            <p class="teste__pergunta__explicacao">
-                                Há uma grande disparidade no setor. Apenas 17% do mercado são mulheres. 
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <figure class="logo-ca-technologies">
+                            <img src="img/logo-ca-technologies.svg" alt="Logo da CA Technologies">
+                            <figcaption>
+                                <p>Esta matéria tem o apoio de</p>
+                            </figcaption>
+                        </figure>
+                        <h2 class="capitulo__subtitulo">
+                            O futuro está sendo escrito em linhas de código. E o público feminino, apesar de usuário de apps, 
+                            redes sociais e dispositivos digitais, não participa da produção da tecnologia. Precisamos falar 
+                            sobre os desafios das mulheres na área e o que fazer para aumentar sua participação.                            
+                        </h2>
+                    </header>
+                    <article class="container_conteudo">
+                        <div class="teste">
+                            <h3 class="teste__titulo">
+                                Você sabe qual é o tamanho da disparidade entre  os gêneros na tecnologia?
+                            </h3>
+                            <form class="teste__pergunta">
+                                <label class="teste__pergunta__enunciado" for="range1">
+                                    1. Quantos programadores no mercado brasileiro de TI são mulheres?
+                                </label>
+                                <div class="range">
+                                    <input id="range1" class="range__input" type="range" min="0" max="100"/>
+                                    <ul class="range__porcentagens">
+                                        <li data-numbero="0"></li>
+                                        <li data-numbero="25"></li>
+                                        <li data-numbero="50"></li>
+                                        <li data-numbero="75"></li>
+                                        <li data-numbero="100"></li>
+                                    </ul>
+                                    <span class="range__porcentagem"></small>
+                                    <span class="range__resposta-certa"></small>
+                                </div>
+                                <p class="teste__pergunta__explicacao">
+                                    Há uma grande disparidade no setor. Apenas 17% do mercado são mulheres. 
+                                </p>
+                                <button class="teste__pergunta__botao" type="submit">ok</button>
+                            </form>
+                            <form class="teste__pergunta">
+                                <label class="teste__pergunta__enunciado" for="range2">
+                                    2. Quantas meninas abandonam os cursos relacionados à tecnologia no primeiro ano?
+                                </label>
+                                <div class="range">
+                                    <input id="range2" class="range__input" type="range" min="0" max="100"/>
+                                    <ul class="range__porcentagens">
+                                        <li data-numbero="0"></li>
+                                        <li data-numbero="25"></li>
+                                        <li data-numbero="50"></li>
+                                        <li data-numbero="75"></li>
+                                        <li data-numbero="100"></li>
+                                    </ul>
+                                    <span class="range__porcentagem"></small>
+                                    <span class="range__resposta-certa"></small>
+                                </div>
+                                <p class="teste__pergunta__explicacao">
+                                    79% abandona o curso no primeiro ano devido ao ambiente hostil e falta de apoio.
+                                </p>
+                                <button class="teste__pergunta__botao" type="submit">ok</button>
+                            </form>
+                        </div>
+                        <div class="painel">
+                            <p>
+                                O ingresso e permanência das mulheres no setor de TI mais parece uma corrida de obstáculos, que 
+                                começa ainda na infância. Conheça os principais desafios e o que fazer para superá-los a seguir.
                             </p>
-                            <button class="teste__pergunta__botao" type="submit">
-                                ok
-                            </button>
-                        </form>
-                        <form class="teste__pergunta">
-                            <label class="teste__pergunta__enunciado" for="range2">
-                                2. Quantas meninas abandonam os cursos relacionados à tecnologia no primeiro ano?
-                            </label>
-                            <div class="range">
-                                <input id="range2" class="range__input" type="range" min="0" max="100"/>
-                                <ul class="range__porcentagens">
-                                    <li data-numbero="0"></li>
-                                    <li data-numbero="25"></li>
-                                    <li data-numbero="50"></li>
-                                    <li data-numbero="75"></li>
-                                    <li data-numbero="100"></li>
-                                </ul>
-                                <small class="range__porcentagem"></small>
-                                <small class="range__resposta-certa"></small>
-                            </div>
-                            <p class="teste__pergunta__explicacao">
-                                79% abandona o curso no primeiro ano devido ao ambiente hostil e falta de apoio.
-                            </p>
-                            <button class="teste__pergunta__botao" type="submit">ok</button>
-                        </form>
-                    </div>
-                    <div class="painel">
-                        <p>
-                            O ingresso e permanência das mulheres no setor de TI mais parece uma corrida de obstáculos, que 
-                            começa ainda na infância. Conheça os principais desafios e o que fazer para superá-los a seguir.
+                        </div>
+                        <p class="capitulo__texto-corrido">
+                            <strong>
+                                As diferentes trajetórias educacionais de meninos e meninas têm grande impacto na trajetória 
+                                delas nas escolas, faculdades e empresas. 
+                            </strong> 
                         </p>
-                    </div>
-                    <p class="capitulo__texto-corrido">
-                        <strong>
-                            As diferentes trajetórias educacionais de meninos e meninas têm grande impacto na trajetória 
-                            delas nas escolas, faculdades e empresas. 
-                        </strong> 
-                    </p>
-                </article>
+                    </article>
+                </main>
             </section>
             <section id="bonecas-computadores" class="capitulo capitulo-bonecas-computadores">
-                <header>
-                    <h1 class="capitulo__titulo">Bonecas X computadores</h1>
-                    <h2 class="capitulo__subtitulo">Problema cultural que começa na infância</h2>
-                    <img data-src="img/01-infancia.svg" width="140px" height="140px" alt="Infância">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        Pense rápido: qual era seu brinquedo favorito? É provável que, caso você seja mulher, a resposta 
-                        seja boneca ou panelinhas. Se você é homem, possivelmente respondeu à pergunta lembrando de 
-                        videogames ou computadores. <strong>Essa divisão, considerada natural por muitos, reflete estereótipos de 
-                        gênero construidos historicamente, que delegam às garotas, desde cedo, tarefas e interesses 
-                        relacionados à esfera do cuidado e ao âmbito privado</strong>. “Não podia brincar com meus primos e irmãos. 
-                        Era presenteada com bonecas e objetos cor-de-rosa, que eu detestava", conta a analista de sistemas 
-                        Larissa Pereira Gambale, 22 anos. Já a designer de produto Lucía Salamanca, 27 anos, cansou de ouvir: 
-                        “você não pode ser igual aos meninos”, “olha, ralou o joelho...Parece moleque!”, “Tente ser mais feminina…”. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Apesar de ter sido desbancada pela ciência, ainda persiste a ideia de que razões biológicas determinam 
-                        os caminhos distintos de meninos e meninas. De acordo com essa percepção, a mulher teria uma habilidade 
-                        “natural” para atividades que exigem atenção e afeto, mas não racionalidade, atributo considerado masculino. 
-                        Existem diferenças sutis no tamanho e na composição dos cérebros masculino e feminino, é verdade. A relação 
-                        entre elas e o comportamento de ambos, entretanto, continua desconhecida. Vale lembrar que a estrutura e a 
-                        função cerebral mudam em resposta à experiência, de modo que quaisquer diferenças podem relacionar-se à diferenças 
-                        em sua socialização e educação. <strong>"A maneira como nossa sociedade pensa e define o que é ser mulher e o que é ser 
-                        homem tem relação direta com o desenvolvimento de suas habilidades e competências"</strong>, diz a socióloga Bárbara 
-                        Castro, autora de uma pesquisa de doutorado que investigou a presença feminina em TI. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Tal divisão repercute nos modos de ser de homens e mulheres, influenciando escolhas futuras, inclusive as 
-                        profissionais. <strong>Não por acaso, é incomum ver meninas que se identifiquem desde cedo com as carreiras 
-                        tecnológicas e das ciências exatas</strong>. Em seu estudo, Bárbara descobriu que todas as suas entrevistadas buscavam 
-                        uma justificativa de interesse pela área amparadas na inspiração em alguém próximo que havia escolhido essa 
-                        carreira e lhes mostrado como ela poderia ser interessante. Já os homens, quando perguntados sobre como e quando 
-                        se interessaram por TI, respondiam que sempre gostaram de tecnologia e máquinas. "É um caminho que para eles se 
-                        apresenta como natural. Para elas, algo a ainda ser desbravado", diz Bárbara. 
-                    </p>
-                    <blockquote>
-                        <p>
-                            “Minha família até tentava direcionar minhas atividades para coisas mais femininas, 
-                            mas eles sempre apoiaram que eu explorasse o que quisesse. Gostava de desmontar as 
-                            bonecas para, por exemplo, tirar o motorzinho e fazer um ventilador.” 
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">Bonecas X computadores</h1>
+                        <h2 class="capitulo__subtitulo">Problema cultural que começa na infância</h2>
+                        <img class="capitulo__ilustracao" data-src="img/01-infancia.svg" width="140px" height="140px" alt="Infância">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            Pense rápido: qual era seu brinquedo favorito? É provável que, caso você seja mulher, a resposta 
+                            seja boneca ou panelinhas. Se você é homem, possivelmente respondeu à pergunta lembrando de 
+                            videogames ou computadores. <strong>Essa divisão, considerada natural por muitos, reflete estereótipos de 
+                            gênero construidos historicamente, que delegam às garotas, desde cedo, tarefas e interesses 
+                            relacionados à esfera do cuidado e ao âmbito privado</strong>. “Não podia brincar com meus primos e irmãos. 
+                            Era presenteada com bonecas e objetos cor-de-rosa, que eu detestava", conta a analista de sistemas 
+                            Larissa Pereira Gambale, 22 anos. Já a designer de produto Lucía Salamanca, 27 anos, cansou de ouvir: 
+                            “você não pode ser igual aos meninos”, “olha, ralou o joelho...Parece moleque!”, “Tente ser mais feminina…”. 
                         </p>
-                        <cite>Tatiane F., 36 anos</cite>
-                    </blockquote>
-                    <p class="capitulo__texto-corrido">
-                        Segundo a pesquisadora, essa construção atravessa gerações. As feministas inglesas, 
-                        or exemplo, já demonstraram como se estabeleceu uma relação entre tecnologia e masculinidade 
-                        historicamente. “Quando, na revolução industrial, no século 19, separa-se o trabalho produtivo 
-                        do espaço da casa e os homens é que passam a atuar mais massivamente no trabalho industrial, 
-                        eles é que manipulam as máquinas, as desenvolvem e as aperfeiçoam”, continua ela. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        A associação entre tecnologia e masculinidade continua a distanciar as meninas de TI. Elas sofrem 
-                        preconceito de amigos, colegas e da sociedade ao fazer escolhas atreladas ao universo masculino. 
-                        “Muitas vezes, são acusadas de serem homossexuais, o que não deveria ser um problema em si”, 
-                        finaliza Bárbara. “Meu pai me proibia de utilizar qualquer brinquedo masculino. Certa vez, ganhei 
-                        um pião e ele jogou fora. Achava que eu pudesse virar ‘sapatão’!. Quando decidir ir para a faculdade 
-                        de TI, por sorte ele não sabia o que era”, conta Tuany Fortunato, 26 anos. E o que dizer do estereótipo 
-                        do programador inteligente, mas sem muitas habilidades sociais, que vara noites escrevendo códigos? 
-                        “É difícil se identificar com algo que não somos”, diz diz Sílvia Amélia Bim, professora da Universidade 
-                        Tecnológica Federal do Paraná (UTFPR) e uma das coordenadoras do Emílias - Armação em Bits, projeto que 
-                        visa incentivar a tecnologia como opção de carreira para meninas, além de apoiar as que já estão no ensino 
-                        superior.
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        <strong>O processo de masculinização da informática, mais precisamente, a figura do geek anti-social, se desenvolveu 
-                        na década de 1960, a partir da instituição de programas formais da disciplina, de revistas e sociedades 
-                        profissionais e programas de certificação</strong>. Ou seja, tem pouco a ver com habilidades intelectuais de origem 
-                        biológica, mas com corporativismo. Quem conta essa história é Nathan Ensmenger, professor da Universidade 
-                        de Indiana, nos Estados Unidos, no livro <a href="" target="_blank">The Computer Boys Take Over: Computers, Programmers, and the Politics 
-                        of Technical Expertis</a> a (sem tradução no Brasil). 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        <strong>Ao mesmo tempo, novas ferramentas de contratação - incluindo as aparentemente objetivas - reforçaram a presença 
-                        masculina na área</strong>. Os testes privilegiavam problemas matemáticos, cuja resolução estava disponível em associações 
-                        e organizações universitárias de programadores. Um outro tipo de avaliação, o perfil de personalidade, inclinou-se 
-                        ainda mais para os candidatos do gênero masculino. Com base em uma série de perguntas, elaboradas por recrutadores, 
-                        tais provas procuraram identificar os melhores, tendo como  referência os traços de personalidade de profissionais de 
-                        colarinho branco (funcionários de escritório, advogados, contadores, por exemplo), com uma distinção: o funcionário 
-                        ideal tinha "desinteresse nas pessoas" e não gostava de "atividades envolvendo uma interação pessoal". 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        <strong>E foi assim que, a informática, tema de uma reportagem da revista <a href="" target="_blank">Cosmopolitan</a> que, em 1967</strong>, encorajava as mulheres 
-                        a aderir à área, virou terreno masculino. 
-                    </p>
-                    <img src="img/computer-boys-com-cosmopolitan-april-1967-1-large.jpg" alt="Computer boys com cosmopolitan april 1967">
-                    <p class="capitulo__texto-corrido">
-                        A ideia de que muitas das profissões de informática eram historicamente comuns para as garotas e de fato já foram 
-                        ocupações 'femininas' parece extraordinária, se não inacreditável. “E, no entanto, uma compreensão histórica de 
-                        como as profissões de computação adquiriram sua identidade de gênero, como elas eram "feitas masculinas" é fundamental 
-                        para qualquer tentativa de enfrentar o desequilíbrio atual", escreve Ensmenger.
-                    </p>
-                </article>
+                        <p class="capitulo__texto-corrido">
+                            Apesar de ter sido <a href="https://brasil.elpais.com/brasil/2015/11/30/ciencia/1448904392_009014.html" target="_blank">desbancada pela ciência</a>, 
+                            ainda persiste a ideia de que razões biológicas determinam 
+                            os caminhos distintos de meninos e meninas. De acordo com essa percepção, a mulher teria uma habilidade 
+                            “natural” para atividades que exigem atenção e afeto, mas não racionalidade, atributo considerado masculino. 
+                            Existem diferenças sutis no tamanho e na composição dos cérebros masculino e feminino, é verdade. A relação 
+                            entre elas e o comportamento de ambos, entretanto, continua desconhecida. Vale lembrar que a estrutura e a 
+                            função cerebral mudam em resposta à experiência, de modo que quaisquer diferenças podem relacionar-se à diferenças 
+                            em sua socialização e educação. <strong>"A maneira como nossa sociedade pensa e define o que é ser mulher e o que é ser 
+                            homem tem relação direta com o desenvolvimento de suas habilidades e competências"</strong>, diz a socióloga Bárbara 
+                            Castro, autora de uma pesquisa de doutorado que investigou a presença feminina em TI. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Tal divisão repercute nos modos de ser de homens e mulheres, influenciando escolhas futuras, inclusive as 
+                            profissionais. <strong>Não por acaso, é incomum ver meninas que se identifiquem desde cedo com as carreiras 
+                            tecnológicas e das ciências exatas</strong>. Em seu estudo, Bárbara descobriu que todas as suas entrevistadas buscavam 
+                            uma justificativa de interesse pela área amparadas na inspiração em alguém próximo que havia escolhido essa 
+                            carreira e lhes mostrado como ela poderia ser interessante. Já os homens, quando perguntados sobre como e quando 
+                            se interessaram por TI, respondiam que sempre gostaram de tecnologia e máquinas. "É um caminho que para eles se 
+                            apresenta como natural. Para elas, algo a ainda ser desbravado", diz Bárbara. 
+                        </p>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “Minha família até tentava direcionar minhas atividades para coisas mais femininas, 
+                                mas eles sempre apoiaram que eu explorasse o que quisesse. Gostava de desmontar as 
+                                bonecas para, por exemplo, tirar o motorzinho e fazer um ventilador.” 
+                            </p>
+                            <cite>Tatiane F., 36 anos</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            Segundo a pesquisadora, essa construção atravessa gerações. As feministas inglesas, 
+                            or exemplo, já demonstraram como se estabeleceu uma relação entre tecnologia e masculinidade 
+                            historicamente. “Quando, na revolução industrial, no século 19, separa-se o trabalho produtivo 
+                            do espaço da casa e os homens é que passam a atuar mais massivamente no trabalho industrial, 
+                            eles é que manipulam as máquinas, as desenvolvem e as aperfeiçoam”, continua ela. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            A associação entre tecnologia e masculinidade continua a distanciar as meninas de TI. Elas sofrem 
+                            preconceito de amigos, colegas e da sociedade ao fazer escolhas atreladas ao universo masculino. 
+                            “Muitas vezes, são acusadas de serem homossexuais, o que não deveria ser um problema em si”, 
+                            finaliza Bárbara. “Meu pai me proibia de utilizar qualquer brinquedo masculino. Certa vez, ganhei 
+                            um pião e ele jogou fora. Achava que eu pudesse virar ‘sapatão’!. Quando decidir ir para a faculdade 
+                            de TI, por sorte ele não sabia o que era”, conta Tuany Fortunato, 26 anos. E o que dizer do estereótipo 
+                            do programador inteligente, mas sem muitas habilidades sociais, que vara noites escrevendo códigos? 
+                            “É difícil se identificar com algo que não somos”, diz diz Sílvia Amélia Bim, professora da Universidade 
+                            Tecnológica Federal do Paraná (UTFPR) e uma das coordenadoras do Emílias - Armação em Bits, projeto que 
+                            visa incentivar a tecnologia como opção de carreira para meninas, além de apoiar as que já estão no ensino 
+                            superior.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>O processo de masculinização da informática, mais precisamente, a figura do geek anti-social, se desenvolveu 
+                            na década de 1960, a partir da instituição de programas formais da disciplina, de revistas e sociedades 
+                            profissionais e programas de certificação</strong>. Ou seja, tem pouco a ver com habilidades intelectuais de origem 
+                            biológica, mas com corporativismo. Quem conta essa história é Nathan Ensmenger, professor da Universidade 
+                            de Indiana, nos Estados Unidos, no livro <a href="http://thecomputerboys.com/" target="_blank">The Computer Boys Take Over: Computers, Programmers, and the Politics 
+                            of Technical Expertis</a> a (sem tradução no Brasil). 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Ao mesmo tempo, novas ferramentas de contratação - incluindo as aparentemente objetivas - reforçaram a presença 
+                            masculina na área</strong>. Os testes privilegiavam problemas matemáticos, cuja resolução estava disponível em associações 
+                            e organizações universitárias de programadores. Um outro tipo de avaliação, o perfil de personalidade, inclinou-se 
+                            ainda mais para os candidatos do gênero masculino. Com base em uma série de perguntas, elaboradas por recrutadores, 
+                            tais provas procuraram identificar os melhores, tendo como  referência os traços de personalidade de profissionais de 
+                            colarinho branco (funcionários de escritório, advogados, contadores, por exemplo), com uma distinção: o funcionário 
+                            ideal tinha "desinteresse nas pessoas" e não gostava de "atividades envolvendo uma interação pessoal". 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>E foi assim que, a informática, tema de uma reportagem da revista <a href="" target="_blank">Cosmopolitan</a> que, em 1967</strong>, encorajava as mulheres 
+                            a aderir à área, virou terreno masculino. 
+                        </p>
+                        <img src="img/computer-boys-com-cosmopolitan-april-1967-1-large.jpg" alt="Computer boys com cosmopolitan april 1967">
+                        <p class="capitulo__texto-corrido">
+                            A ideia de que muitas das profissões de informática eram historicamente comuns para as garotas e de fato já foram 
+                            ocupações 'femininas' parece extraordinária, se não inacreditável. “E, no entanto, uma compreensão histórica de 
+                            como as profissões de computação adquiriram sua identidade de gênero, como elas eram "feitas masculinas" é fundamental 
+                            para qualquer tentativa de enfrentar o desequilíbrio atual", escreve Ensmenger.
+                        </p>
+                    </article>
+                </main>
             </section>
-            <section id="linha-tempo" class="linha-tempo">
-                <h1>Elas fizeram história na tecnologia</h1>
-                <p>
-                    Diferentemente do que costumamos pensar, a evolução da área está repleta de exemplos de mulheres que tiveram contribuições 
-                    fundamentais. Navegue na linha do tempo para conhecê-las.
-                </p>
-                <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Xoc_kfOlrIqD_F6cvSp-xOrXcgU-ktm_RsUjZoRWlAg&font=Default&lang=pt-br" frameborder="0"></iframe>
+            <section class="linha-tempo">
+                <main class="container">
+                    <h1>Elas fizeram história na tecnologia</h1>
+                    <p>
+                        Diferentemente do que costumamos pensar, a evolução da área está repleta de exemplos de mulheres que tiveram contribuições 
+                        fundamentais. Navegue na linha do tempo para conhecê-las.
+                    </p>
+                    <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Xoc_kfOlrIqD_F6cvSp-xOrXcgU-ktm_RsUjZoRWlAg&font=Default&lang=pt-br" frameborder="0"></iframe>  
+                </main>
             </section>
             <section id="escola-esteriotipos" class="capitulo capitulo-escola-esteriotipos">
-                <header>
-                    <h1 class="capitulo__titulo">A escola e a naturalização dos estereótipos</h1>
-                    <h2 class="capitulo__subtitulo">"Não levo jeito para matemática" e outros mitos que afastam as garotas</h2>
-                    <img data-src="img/02-educadao.svg" width="140px" height="140px" alt="Educação">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        Nosso modelo de educação tampouco ajuda a desconstruir noções preconcebidas que ganham espaço ainda na infância, com a 
-                        dicotomia entre brincadeiras e modos de ser menino e menina. Na escola, essa separação continua a influenciar as futuras 
-                        escolhas delas. Um estudo publicado em 2016 pela Associação Americana de Pesquisas Educacionais mostra que a disparidade 
-                        de performance começa a surgir na Educação Infantil, como reflexo dos estereótipos culturais. 
-                    </p>
-                    <blockquote>
-                        <p>
-                            “Você tem certeza que quer estudar essa faculdade? Não sabemos se você consegue.” 
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">A escola e a naturalização dos estereótipos</h1>
+                        <h2 class="capitulo__subtitulo">"Não levo jeito para matemática" e outros mitos que afastam as garotas</h2>
+                        <img class="capitulo__ilustracao" data-src="img/02-educadao.svg" width="140px" height="140px" alt="Educação">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            Nosso modelo de educação tampouco ajuda a desconstruir noções preconcebidas que ganham espaço ainda na infância, com a 
+                            dicotomia entre brincadeiras e modos de ser menino e menina. <strong><a href="http://thecomputerboys.com/" target="_blank">Na escola, essa separação continua a influenciar as futuras 
+                            escolhas delas. Um estudo publicado em 2016 pela Associação Americana de Pesquisas Educacionais mostra que a disparidade 
+                            de performance começa a surgir na Educação Infantil, como reflexo dos estereótipos culturais</a></strong>. 
                         </p>
-                        <cite>pais de Lucía S., 27 anos</cite>
-                    </blockquote>
-                    <p class="capitulo__texto-corrido">
-                        Os pesquisadores acompanharam dois grupos distintos: um de 5.000 crianças, que entrou no jardim de infância em 1998, 
-                        e outro de mais de 7.500 integrantes, em 2010. Eles observaram que a diferença nas habilidades matemáticas não mudou 
-                        muito nas duas amostras, que ingressaram na pré-escola separados por 12 anos. Inicialmente, ambos tinham habilidades 
-                        matemáticas iguais. Mas a disparidade logo começou a ser identificada, e a partir da metade do ano havia mais meninos 
-                        que meninas no grupo de alunos com melhor desempenho. Chegando na terceira série, a diferença se difundiu, 
-                        particularmente entre quem tinha melhor desempenho escolar. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        O estudo também mostrou que os professores consideraram a performance das alunas inferior a dos alunos, mesmo que elas 
-                        tivessem notas idênticas às deles. As expectativas mais baixas em relação às garotas podem influenciar as habilidades 
-                        futuras delas de várias maneiras. O medo e a ansiedade podem ser um impedimento para aprender. Nos anos iniciais do ensino 
-                        fundamental, onde a maioria dos docentes é do gênero feminino, a ansiedade delas próprias em relação à matemática traz 
-                        consequências para o desempenho das meninas, influenciando as crenças das pequenas sobre quem é bom na disciplina. "Muitas 
-                        escolhem não prosseguir carreiras em ciência, tecnologia e engenharia porque não têm a confiança em sua capacidade de se 
-                        destacar em Matemática, apesar de ter capacidade e habilidades para fazê-lo", diz uma das autoras do estudo, Sian Beilock, 
-                        professora do departamento de psicologia da Universidade de Chicago, em entrevista à Programaria.
-                    </p>
-                </article>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “Você tem certeza que quer estudar essa faculdade? Não sabemos se você consegue.” 
+                            </p>
+                            <cite>pais de Lucía S., 27 anos</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            Os pesquisadores acompanharam dois grupos distintos: um de 5.000 crianças, que entrou no jardim de infância em 1998, 
+                            e outro de mais de 7.500 integrantes, em 2010. Eles observaram que a diferença nas habilidades matemáticas não mudou 
+                            muito nas duas amostras, que ingressaram na pré-escola separados por 12 anos. Inicialmente, ambos tinham habilidades 
+                            matemáticas iguais. Mas a disparidade logo começou a ser identificada, e a partir da metade do ano havia mais meninos 
+                            que meninas no grupo de alunos com melhor desempenho. Chegando na terceira série, a diferença se difundiu, 
+                            particularmente entre quem tinha melhor desempenho escolar. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            O estudo também mostrou que os professores consideraram a performance das alunas inferior a dos alunos, mesmo que elas 
+                            tivessem notas idênticas às deles. As expectativas mais baixas em relação às garotas podem influenciar as habilidades 
+                            futuras delas de várias maneiras. O medo e a ansiedade podem ser um impedimento para aprender. Nos anos iniciais do ensino 
+                            fundamental, onde a maioria dos docentes é do gênero feminino, a ansiedade delas próprias em relação à matemática traz 
+                            consequências para o desempenho das meninas, influenciando as crenças das pequenas sobre quem é bom na disciplina. "Muitas 
+                            escolhem não prosseguir carreiras em ciência, tecnologia e engenharia porque não têm a confiança em sua capacidade de se 
+                            destacar em Matemática, apesar de ter capacidade e habilidades para fazê-lo", diz uma das autoras do estudo, Sian Beilock, 
+                            professora do departamento de psicologia da Universidade de Chicago, em entrevista à Programaria.
+                        </p>
+                    </article>
+                </main>
             </section>
             <section class="subcapitulo subcapitulo-dificuldade-matematica">
-                <header>
-                    <h1>Dificuldades em matemática</h1>
-                    <h3>
-                        Meninas – mesmo as que vão melhor – se sentem menos confiantes em matemática. 2 a cada
-                        3 meninas, contra 1 em 2 meninos.
-                    </h3>
-                </header>
-                <article>
-                    <blockquote>
-                        <figure class="grafico grafico-circular grafico-preocupacao-feminina">
-                            <img data-src="img/grafico-preocupacao-feminina.svg" alt="Gráfico de preocupação feminina">
-                            <figcaption>
-                                <p>meninas preocupadas em enfrentar dificuldades em matemática</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="grafico grafico-circular grafico-preocupacao-masculina">
-                            <img data-src="img/grafico-preocupacao-masculina.svg" alt="Gráfico de preocupação masculina">
-                            <figcaption>
-                                <p>meninos preocupados em enfrentar dificuldades em matemática</p>
-                            </figcaption>
-                        </figure>
-                        <cite>
-                            Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
-                        </cite>
-                    </blockquote>
-                    <p>
-                        O medo e a ansiedade, além da habilidade matemática real, podem ser um impedimento para aprender. 
-                        Nos anos iniciais do Ensino Fundamental, onde a maioria dos docentes é do sexo feminino, a ansiedade 
-                        delas próprias em relação à matemática traz conseqüências para o desempenho das meninas, influenciando 
-                        as crenças das pequenas sobre quem é bom na disciplina. "Muitas meninas escolhem não prosseguir carreiras 
-                        em ciência, tecnologia, engenharia e Matemática porque eles não têm a confiança em sua capacidade de se 
-                        destacar em Matemática, apesar de ter capacidade e habilidades para fazê-lo", diz uma das autoras do estudo, 
-                        Sian Beilock, professora do departamento de psicologia da Universidade de Chicago, nos Estados Unidos. 
-                    </p>
-                    <p>
-                        Outro trabalho, realizado por pesquisadores da Universidade de Nova York, Princeton e Ilinois, também 
-                        nos Estados Unidos, investigou o comportamento de crianças de 5,6 e 7 anos em relação a suas habilidades 
-                        intelectuais. Com 5 anos, ambos os sexos foram convidados a ouvir uma história sobre uma pessoa “muito, 
-                        muito inteligente”, sem qualquer pista sobre o gênero do protagonista. Ao serem perguntadas sobre quem 
-                        seria ele, os grupos escolherem alguém do mesmo sexo. A partir dos 6 anos, pelo menos para as meninas, 
-                        essa identificação começa a diminuir. 
-                    </p>
-                    <p>
-                        Os relatórios Meninos e Meninas estão Preparados para a Vida?, de 2014, e ABC da Igualdade de Gêneros 
-                        na Educação: Aptidão, Comportamento e Confiança, de 2016, da Organização para a Cooperação e 
-                        Desenvolvimento Econômico (OCDE), batem na mesma tecla. O primeiro revela que a confiança dos alunos 
-                        em sua capacidade e sua motivação para aprender são fundamentais em seu desempenho em disciplinas 
-                        acadêmicas específicas. Também são valiosos atributos para enfrentar desafios e aproveitar oportunidades 
-                        quando saem da escola. As percepções das meninas sobre si mesmas determinam o quão bem elas se motivam e 
-                        perseveram ao enfrentar dificuldades para aprender matemática. Também influenciam as escolhas das delas 
-                        sobre cursos e atividades extracurriculares. O segundo mostra, a partir dos dados do Programa Internacional 
-                        de Avaliação de Alunos (PISA) que as meninas são melhores que os meninos em leitura, em todos os países 
-                        examinados. Já os meninos se destacam em matemática, apresentando melhores resultados na disciplina em 
-                        seis de cada 10 países.
-                    </p>
-                </article>
-            </section>
-            <section class="subcapitulo subcapitulo-leitura-diversao">
-                <header>
-                    <h1>Leitura por diversão</h1>
-                    <h3>
-                        As meninas são melhores leitoras que os meninos em todos os países.
-                    </h3>
-                </header>
-                <article>
-                    <blockquote>
-                        <figure class="grafico grafico-coluna grafico-leitura-feminina">
-                            <img data-src="img/grafico-leitura-feminina.svg" alt="Gráfico de leitura feminina">
-                            <figcaption>
-                                <p>Meninas lêem por diversão</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="grafico grafico-coluna grafico-leitura-masculina">
-                            <img data-src="img/grafico-leitura-masculina.svg" alt="Gráfico de leitura masculina">
-                            <figcaption>
-                                <p>Meninos lêem por diversão</p>
-                            </figcaption>
-                        </figure>
-                        <cite>
-                            Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
-                        </cite>
-                    </blockquote>
-                    <p>
-                        Os estereótipos de gênero não se restringem à matemática, impactando o gosto pela leitura e até o tipo 
-                        de livro preferido. Na obra Psicologia Diferencial, de 1974, a americana Anne Anastasi, da Universidade 
-                        de Columbia, pesquisou os interesses demonstrados por meninos e meninas, chegando à conclusão de que as 
-                        preferências são marcadas, principalmente, por fatores culturais presentes na forma como são criados, e 
-                        que as crianças incorporam a influência cultural e desenvolvem um conceito nítido dos papéis que a 
-                        sociedade atribui a homens e mulheres. Enquanto os meninos preferem temas relacionados à aventuras, 
-                        viagens e explorações, e textos informativos (como manuais), as meninas gostam de ficção, com histórias 
-                        de amor e romances, contos que tenham crianças como protagonistas e enredos que envolvam a vida em família. 
-                    </p>
-                </article>
-            </section>
-            <section class="subcapitulo subcapitulo-futura-carreira">
-                <header>
-                    <h1>Futura carreira</h1>
-                    <h3>
-                        Quatro vezes mais meninos planejam seguir uma carreira profissional em engenharia ou informática
-                    </h3>
-                </header>
-                <article>
-                    <blockquote>
-                        <figure class="grafico grafico-barra grafico-carreira-feminina">
-                            <img data-src="img/grafico-carreira-feminina.svg" alt="Gráfico de carreira feminina">
-                        </figure>
-                        <figure class="grafico grafico-barra grafico-carreira-masculina">
-                            <img data-src="img/grafico-carreira-masculina.svg" alt="Gráfico de carreira feminina">
-                        </figure>
-                        <cite>
-                            Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
-                        </cite>
-                    </blockquote>
-                    <p>
-                        Essa lógica atravessa toda a trajetória educacional das meninas, com desdobramentos nas em suas 
-                        escolhas futuras, incluindo a profissão. Ao fim da Educação Básica, uma parcela ínfima das meninas 
-                        deseja estudar tecnologia e áreas correlatas, como mostram as matrículas das principais universidades 
-                        do país. 
-                        Na Unicamp, por exemplo, só 10,7% dos estudantes aprovados no vestibular eram mulheres. Curiosamente, 
-                        elas são maioria no Ensino Superior, de acordo com o Instituto Nacional de Estudos e Pesquisas Educacionais 
-                        Anísio Teixeira (Inep). Representam  55% do total de 2 milhões e 125 mil alunos matriculados em cursos diurnos 
-                        e noturnos. Na conclusão dos estudos, 491 mil alunas formaram-se, enquanto 338 mil homens terminaram seus cursos 
-                        em 2013. Chama atenção, porém, que a preferência feminina ainda recaia sobre as áreas de humanas e saúde. Enfermagem, 
-                        por exemplo, tem 84,4% de alunas. Historicamente, as matrículas femininas no Ensino Superior estiveram concentradas 
-                        em determinadas áreas, como Ciências Humanas, Letras e Artes, reforçando a divisão sexual do trabalho (veja o gráfico 
-                        da série histórica). Já entre o público masculino, os dados mostram que as áreas de maior inserção estão ligadas 
-                        às exatas, como as engenharias e cursos relacionados à tecnologia, como Ciências da Computação, que chega a ter 85,4% de homens.
-                    </p>
-                </article>
-            </section>
-            <section class="subcapitulo subcapitulo-carreira-tecnologia">
-                <header>
-                    <h1>Carreira em tecnologia</h1>
-                    <h3>
-                        Metade dos pais no Chile, Hungria e Portugal esperam que seus filhos sigam uma carreira nas
-                        áreas tecnológicas, enquanto só 20% veem as filhas fazendo o mesmo.
-                    </h3>
-                </header>
-                <article>
-                    <blockquote>
-                        <figure class="grafico grafico-circular grafico-tecnologia-feminina">
-                            <img data-src="img/grafico-tecnologia-feminina.svg" alt="Gráfico de tecnologia feminina">
-                            <figcaption>
-                                <p>20% dos pais veem as filhas na carreira</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="grafico grafico-circular grafico-preocupacao-masculina">
-                            <img data-src="img/grafico-tecnologia-masculina.svg" alt="Gráfico de tecnologia masculina">
-                            <figcaption>
-                                <p>metade dos pais veem as filhos na carreira</p>
-                            </figcaption>
-                        </figure>
-                        <cite>
-                            Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
-                        </cite>
-                    </blockquote>
-                    <p>
-                        A inclusão das mulheres nas profissões científicas tem-se dado em ritmo mais lento do que em outras 
-                        áreas e há uma tendência das ciências exatas – matemática, física, engenharias– atraírem relativamente 
-                        poucas mulheres. Nos últimos anos, as brasileiras perderam representatividade nos cursos relacionados 
-                        à computação e, em 2013, passaram a representar apenas 15,53% dos ingressantes, segundo o Censo da 
-                        Educação Superior.
-                    </p>
-                </article>
-            </section>
-            <section class="capitulo capitulo-exclusao-preconceito">
-                <header>
-                    <h1 class="capitulo__titulo">Exclusão e preconceito </h1>
-                    <h2 class="capitulo__subtitulo">Ambiente de trabalho que não acolhe a mulher</h2>
-                    <img data-src="img/03-trabalho.svg" width="140px" height="140px" alt="Trabalhor">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        Boas notas e canudo nas mãos não são garantia para uma jovem conseguir a primeira oportunidade. O 
-                        ambiente masculino e muitas vezes pouco acolhedor acaba se tornando hostil para as mulheres. É o 
-                        que a pesquisadora Simone Strumpf, da Universidade de Londres, na Inglaterra, chama de cultura 
-                        "brogrammer", um neologismo entre "brother" e "programmer", que oscila entre confraria masculina 
-                        e clube do bolinha. "Trata-se de um ambiente de trabalho que exclui as mulheres através de normas 
-                        que estabelecem o comportamento "masculino", por exemplo, a linguagem sexista, e que reforçam os 
-                        estereótipos das funções femininas", ela explica. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Segundo ela, há outras formas de exclusão mais sutis. Por exemplo, através da expectativa de longas 
-                        horas de trabalho que se chocam com outros compromissos familiares, falta de promoção em empregos de 
-                        nível superior e simplesmente ser ignorada na tomada de decisões da equipe. Sem contar casos mais graves 
-                        de assédio moral e sexual. Casos cabeludos não faltam. Este ano, o Uber afastou seu principal executivo 
-                        após uma investigação interna sobre a cultura corporativa da empresa. A apuração teve início depois 
-                        que uma engenheira de software alegou que a direção da Uber tinha ignorado as suas queixas e as de outras 
-                        companheiras sobre situações de assédio e sexismo por parte de seus superiores. Este ano, a empresa demitiu 
-                        20 empregados como consequência de uma segunda investigação sobre casos individuais de más condutas 
-                        relacionadas com o assédio sexual e psicológico e discriminação.
-                    </p>
-                    <blockquote>
-                        <p>
-                            O ambiente masculino e muitas vezes pouco acolhedor acaba se tornando hostil para as mulheres.
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="subcapitulo__titulo">Dificuldades em matemática</h1>
+                        <h3 class="subcapitulo__subtitulo">
+                            Meninas – mesmo as que vão melhor – se sentem menos confiantes em matemática. 2 a cada
+                            3 meninas, contra 1 em 2 meninos.
+                        </h3>
+                    </header>
+                    <article class="container_conteudo">
+                        <blockquote class="subcapitulo__citacao">
+                            <figure class="grafico grafico-circular grafico-preocupacao-feminina">
+                                <img data-src="img/grafico-preocupacao-feminina.svg" alt="Gráfico de preocupação feminina">
+                                <figcaption>
+                                    <p>meninas preocupadas em enfrentar dificuldades em matemática</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="grafico grafico-circular grafico-preocupacao-masculina">
+                                <img data-src="img/grafico-preocupacao-masculina.svg" alt="Gráfico de preocupação masculina">
+                                <figcaption>
+                                    <p>meninos preocupados em enfrentar dificuldades em matemática</p>
+                                </figcaption>
+                            </figure>
+                            <cite>
+                                Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
+                            </cite>
+                        </blockquote>
+                        <p class="subcapitulo__texto-corrido">
+                            Outro trabalho, realizado por pesquisadores das universidades de Nova York, Princeton e Ilinois, também 
+                            nos Estados Unidos, investigou o comportamento de crianças de 5, 6 e 7 anos em relação a suas habilidades 
+                            intelectuais. Com 5 anos, elas foram convidadas a ouvir uma história sobre uma pessoa “muito, muito inteligente”, 
+                            sem qualquer pista sobre o gênero do protagonista. Ao serem perguntadas sobre quem seria tal pessoa, escolheram 
+                            alguém do mesmo sexo. A partir dos 6 anos, pelo menos para as meninas, essa identificação começa a diminuir.  
                         </p>
-                        <cite>Simone Strumpf, pesquisadora</cite>
-                    </blockquote>
-                </article>
-            </section>
-            <section class="vagas-seletivas">
-                <h1>Vagas seletivas</h1>
-                <div class="carrossel">
-                    <input id="carrossel__slide1" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas1.png" alt="Vaga 1">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide2" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas2.png" alt="Vaga 2">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide3" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas3.png" alt="Vaga 3">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide4" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas4.png" alt="Vaga 4">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide5" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas5.png" alt="Vaga 5">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide6" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 6">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide7" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas7.png" alt="Vaga 7">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide8" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas8.png" alt="Vaga 8">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <input id="carrossel__slide9" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
-                    <figure>
-                        <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 9">
-                        <figcaption>
-                            <p></p>
-                        </figcaption>
-                    </figure>
-
-                    <label for="carrossel__slide9" class="carrossel__controle1">‹</label>
-                    <label for="carrossel__slide2" class="carrossel__controle1">›</label>
-                    <label for="carrossel__slide1" class="carrossel__controle2">‹</label>
-                    <label for="carrossel__slide3" class="carrossel__controle2">›</label>
-                    <label for="carrossel__slide2" class="carrossel__controle3">‹</label>
-                    <label for="carrossel__slide4" class="carrossel__controle3">›</label>
-                    <label for="carrossel__slide3" class="carrossel__controle4">‹</label>
-                    <label for="carrossel__slide5" class="carrossel__controle4">›</label>
-                    <label for="carrossel__slide4" class="carrossel__controle5">‹</label>
-                    <label for="carrossel__slide6" class="carrossel__controle5">›</label>
-                    <label for="carrossel__slide5" class="carrossel__controle6">‹</label>
-                    <label for="carrossel__slide7" class="carrossel__controle6">›</label>
-                    <label for="carrossel__slide6" class="carrossel__controle7">‹</label>
-                    <label for="carrossel__slide8" class="carrossel__controle7">›</label>
-                    <label for="carrossel__slide7" class="carrossel__controle8">‹</label>
-                    <label for="carrossel__slide9" class="carrossel__controle8">›</label>
-                    <label for="carrossel__slide8" class="carrossel__controle9">‹</label>
-                    <label for="carrossel__slide1" class="carrossel__controle9">›</label>
-                </div>
-            </section>
-            <section class="capitulo capitulo-desafios-carreira">
-                <header>
-                    <h1 class="capitulo__titulo">Os desafios de quem segue na carreira</h1>
-                    <h2 class="capitulo__subtitulo">Salários menores, poucas oportunidades de crescimento e nichos femininos</h2>
-                    <img data-src="img/04-ingresso.svg" width="140px" height="140px" alt="Ingresso">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        Quem segue em empresas de tecnologia, se depara com as mesmas questões sexistas enquanto avança 
-                        - ou não - na carreira. A diferença salarial entre os gêneros é um dos primeiros entraves: 
-                        as mulheres ganham 30% menos do que homens na área de TI, segundo dados da Pesquisa Nacional 
-                        por Amostra de Domicílios (Pnad), do IBGE, compilados por Bárbara Castro para o seu estudo.
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Outro problema identificado por ela diz respeito à organização do mercado brasileiro de tecnologia. 
-                        Cerca de 93% dos negócios é de pequeno e médio porte, que comercializa software e hardware para 
-                        outras empresas. Isso cria uma dinâmica de faturamento por projetos, feitos um em seguida do outro 
-                        ou de maneira concomitante, para não perder clientes. O atendimento a diversos clientes faz parte 
-                        da rotina dos profissionais do setor, com deslocamentos constantes internos e externos às cidades 
-                        na qual se situa a sede de sua empresa. Essa estrutura impõe rotinas de trabalho que envolvem prazos
-                         apertados, jornadas de 10 a 12 horas diárias, e trabalho extra em períodos noturnos, finais de semana 
-                         e feriados. No fechamento do projeto e no teste do software, o que ocorre, em média, a cada 3 meses, 
-                         os profissionais chegam a trabalhar 72 horas seguidas. Resultado: os homens, principalmente os solteiros 
-                         e mais novos, são privilegiados, e as mulheres, principalmente as que têm filhos, preteridas.  
-                         "De uma maneira geral, as entrevistadas diziam que não poderiam ser mães atuando em TI. O trabalho 
-                         em horas desreguladas não permite à elas participar da rotina de seus filhos, o que causa frustração e, 
-                         muitas vezes, leva ao abandono da carreira", diz Bárbara.
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Em sua pesquisa, ela também descobriu que as mulheres tendem a ser afastadas dos cargos técnicos e a 
-                        chamada área dura da TI, a programação, e ocupar vagas gerenciais ou nichos, como análise de sistemas, 
-                        justamente onde se exige comunicação e conciliação de conflitos, papeis sociais de gênero tradicionalmente 
-                        atribuídos às mulheres.Tal padrão foi seguido pelas 30 executivas entrevistadas e pode estar relacionado à 
-                        desconfiança das habilidades dessas profissionais. Algumas relataram terem sofrido assédio no ambiente de 
-                        trabalho ou, ainda, se tornavam suspeitas de terem crescido na empresa em troca de favores sexuais, e não 
-                        como consequência de sua capacidade.
-                    </p>
-                </article>
-            </section>
-            <section class="cite blue">
-                <article>
-                    <blockquote>
-                        <p>
-                            “As mulheres tendem a ser afastadas dos cargos técnicos 
-                            e da chamada área dura da TI, a programação, e ocupar vagas 
-                            gerenciais ou nichos,  o que pode estar relacionado à 
-                            desconfiança das habilidades dessas profissionais.”
+                        <p class="subcapitulo__texto-corrido">
+                            Os estudos do psicólogo Andrew Meltzoff, codiretor do Instituto de Aprendizado e Ciências do Cérebro da Universidade 
+                            de Washington, apresentam mais evidências sobre o poder dos estereótipos culturais no aprendizado das crianças. A pesquisa 
+                            aponta dados parecidos: “Muito cedo, as garotas incorporam falsas concepções de que não são boas em Matemática”, escreve 
+                            os autores no artigo Estereótipos de Gênero e Matemática em Crianças da Escola Primária.
                         </p>
-                        <cite>Barbara Castro, pesquisadora</cite>
-                    </blockquote>
-                </article>
-            </section>
-            <section class="capitulo capitulo-porque-importa">
-                <header>
-                    <h1 class="capitulo__titulo">Por que importa</h1>
-                    <h2 class="capitulo__subtitulo">Bacon ipsum dolor amet beef ribs pork</h2>
-                    <img data-src="img/05-carreira.svg" width="140px" height="140px" alt="Carreira">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        A participação feminina em cursos de engenharia já foi considerada um direito das mulheres, um ponto 
-                        importante para combater a naturalização dos papéis de gênero  e estimular ambientes de trabalho mais 
-                        diversos.  "Hoje, muito mais que um direito, é também uma necessidade para o desenvolvimento da área 
-                        científica e tecnológica e do país que durante muito tempo deixou de receber a contribuição da metade da 
-                        população", diz Nanci Stancki da Luz, coordenadora do Núcleo de Gênero e Tecnologia (GETEC) da Universidade 
-                        Tecnológica Federal do Paraná (UTFPR). Afinal, o crescimento econômico sustentável depende da participação e 
-                        envolvimento das mulheres em todas as áreas, particularmente em tecnologia, que gera novos postos de trabalho 
-                        mesmo com crise econômica. O setor deve crescer 2,5% em 2017, segundo estimativas da IDC, uma consultoria 
-                        especializada no segmento. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        A tecnologia representa uma possibilidade, ainda, de geração de renda e de emancipação econômica, já que o setor 
-                        paga mais que os que costumam empregar mão-de-obra feminina. <strong>Um relatório global da Organização Internacional do 
-                        Trabalho (OIT), divulgado este ano, mostrou que a economia brasileira pode expandir em até R$ 382 bilhões ao longo 
-                        de oito anos se aumentar a inserção das mulheres no mercado de trabalho.</strong> Isso traria um incremento de cerca de 3% 
-                        ao PIB e levaria ao aumento no poder de consumo de bens e serviços. O número de profissionais formados em áreas 
-                        tecnológicas não atende à demanda crescente das empresas, cada vez mais informatizadas. "O Brasil ainda tem carência 
-                        de profissionais da área tecnológica. A presença feminina ampliará a força de trabalho necessária para nosso 
-                        desenvolvimento", completa Nanci. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Outro ponto fundamental: uma participação feminina mais massiva traria novos olhares e percepções, já que as mulheres 
-                        se apropriariam da tecnologia como produtoras e não apenas consumidoras, como no quadro atual. Assim, elas teriam a 
-                        oportunidade de resolver problemas próprios de sua condição, o que evitaria distorções como apps de saúde que não 
-                        contemplam, por exemplo, o ciclo menstrual. "Se houver junto a essa participação mais massiva uma visada feminista, 
-                        há uma grande contribuição no sentido de construir tecnologias feministas, ou seja, tecnologias que buscam, 
-                        por princípio, não discriminar e acolher a maior gama de conhecimentos possível", diz Bárbara.                        
-                    </p>
-                </article>
+                        <p class="subcapitulo__texto-corrido">
+                            E mais: o espaço físico pode contribuir para projetá-los. Se a sala tinha pôsteres de Jornada nas Estrelas e estátuas de 
+                            Spock, em vez de itens neutros, menos garotas do ensino médio queriam estar naquele ambiente. Usando análises estatísticas, 
+                            Meltzoff descobriu que as elas sentiam não "pertencer" a esse lugar.
+                        </p>
+                        <p class="subcapitulo__texto-corrido">
+                            Informações semelhantes vêm da Universidade de Tel Aviv, em Israel. Os autores realizaram o seguinte experimento, com 
+                            três grupos de estudantes, da 6ª série até o fim da escolaridade: cada um fez duas provas idênticas, e elas foram corrigidas 
+                            por dois times de professores: um que sabia os nomes dos alunos (capaz, portanto, de deduzir o sexo deles) e um que corrigiu 
+                            provas anônimas. As correções foram desiguais mesmo quando as respostas eram iguais.
+                        </p>
+                    </article>
+                </main>
             </section>
             <section class="cite green">
-                <article>
+                <main class="container">
                     <blockquote>
                         <p>
-                            Uma participação feminina mais massiva traria novos 
-                            olhares e percepções, já que as mulheres se apropriariam 
-                            da tecnologia como produtoras e não apenas consumidoras, 
-                            como no quadro atual.
+                            Viés inconsciente: estudos mostram que professores tendem a dar 
+                            notas melhores para meninos, mesmo quando a performance em relação 
+                            a meninas é semelhante.
+                        </p>
+                        <cite>Edith Sand e Victor Lavi</cite>
+                    </blockquote>
+                </main>   
+            </section>
+            <section class="capitulo capitulo-continuacao">
+                <main class="container">
+                    <article>
+                        <p class="capitulo__texto-corrido">
+                            O time que sabia os nomes deu notas mais altas aos garotos. Já a correção 
+                            anônima deu notas maiores às garotas. Mas esse efeito só foi observado nas 
+                            disciplinas de Matemática e Ciências – as provas de Inglês, por exemplo, 
+                            receberam avaliações parecidas. Os pesquisadores concluíram que os docentes 
+                            superestimaram as capacidades dos meninos, em comparação às meninas. A prática 
+                            teve consequências de longa duração: poucas jovens demonstraram interesse pelas 
+                            áreas de Ciências Exatas quanto o grupo estava prestes a se formar. "Nossos 
+                            resultados sugerem que o comportamento tendencioso dos professores na fase inicial 
+                            da escolaridade tem implicações nos ganhos salariais de longo prazo. Esse impacto é 
+                            maior para crianças de famílias nas quais o pai é mais educado que a mãe e em garotas 
+                            de nível econômico mais baixo", escrevem Edith Sand e Victor Lavy no artigo.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Os relatórios Meninos e Meninas estão Igualmente Preparados para a Vida?, e ABC da 
+                            Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança, da Organização 
+                            para a Cooperação e Desenvolvimento Econômico (OCDE), batem na mesma tecla. O primeiro 
+                            revela que a confiança dos alunos em sua capacidade e sua motivação para aprender são 
+                            fundamentais em seu desempenho em disciplinas acadêmicas. Também são valiosos atributos 
+                            para enfrentar desafios e aproveitar oportunidades quando saem da escola.<br> 
+                            As percepções das meninas sobre si mesmas determinam o quão bem elas se motivam e perseveram 
+                            ao enfrentar dificuldades para aprender matemática. Também influenciam as escolhas delas sobre 
+                            cursos e atividades extracurriculares. O segundo mostra, a partir dos dados do Programa Internacional 
+                            de Avaliação de Alunos (PISA), que elas são melhores que os meninos em leitura, em todos os países 
+                            examinados. Já eles se destacam em matemática, apresentando melhores resultados na disciplina em 
+                            seis de cada 10 países.
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section class="subcapitulo subcapitulo-leitura-diversao">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="subcapitulo__titulo">Leitura por diversão</h1>
+                        <h3 class="subcapitulo__subtitulo">
+                            As meninas são melhores leitoras que os meninos em todos os países.
+                        </h3>
+                    </header>
+                    <article class="container_conteudo">
+                        <blockquote class="subcapitulo__citacao">
+                            <figure class="grafico grafico-coluna grafico-leitura-feminina">
+                                <img data-src="img/grafico-leitura-feminina.svg" alt="Gráfico de leitura feminina">
+                                <figcaption>
+                                    <p>Meninas lêem por diversão</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="grafico grafico-coluna grafico-leitura-masculina">
+                                <img data-src="img/grafico-leitura-masculina.svg" alt="Gráfico de leitura masculina">
+                                <figcaption>
+                                    <p>Meninos lêem por diversão</p>
+                                </figcaption>
+                            </figure>
+                            <cite>
+                                Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
+                            </cite>
+                        </blockquote>
+                        <p class="subcapitulo__texto-corrido">
+                            Os estereótipos de gênero não se restringem à matemática, impactando o gosto pela leitura e até o tipo 
+                            de livro preferido. Na obra Psicologia Diferencial, de 1974, a americana Anne Anastasi, da Universidade 
+                            de Columbia, pesquisou os interesses demonstrados por meninos e meninas, chegando à conclusão de que as 
+                            preferências são marcadas, principalmente, por fatores culturais presentes na forma como são criados, e 
+                            que as crianças incorporam a influência cultural e desenvolvem um conceito nítido dos papéis que a 
+                            sociedade atribui a homens e mulheres. Enquanto os meninos preferem temas relacionados à aventuras, 
+                            viagens e explorações, e textos informativos (como manuais), as meninas gostam de ficção, com histórias 
+                            de amor e romances, contos que tenham crianças como protagonistas e enredos que envolvam a vida em família. 
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section class="subcapitulo subcapitulo-futura-carreira">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="subcapitulo__titulo">Futura carreira</h1>
+                        <h3 class="subcapitulo__subtitulo">
+                            Quatro vezes mais meninos planejam seguir uma carreira profissional em engenharia ou informática
+                        </h3>
+                    </header>
+                    <article class="container_conteudo">
+                        <blockquote class="subcapitulo__citacao">
+                            <figure class="grafico grafico-barra grafico-carreira-feminina">
+                                <img data-src="img/grafico-carreira-feminina.svg" alt="Gráfico de carreira feminina">
+                            </figure>
+                            <figure class="grafico grafico-barra grafico-carreira-masculina">
+                                <img data-src="img/grafico-carreira-masculina.svg" alt="Gráfico de carreira feminina">
+                            </figure>
+                            <cite>
+                                Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
+                            </cite>
+                        </blockquote>
+                        <p class="subcapitulo__texto-corrido">
+                            <strong>Também são comuns os casos de estudantes que são ignoradas pelos professores e colegas.</strong> “Já passei por 
+                            situações em que professores (homens) me ignoraram em relação a dúvidas e deias que eu tinha sobre as 
+                            matérias, mas para meus colegas eles estavam sempre disponíveis”, diz Sara Maria Gonçalves, 20 anos, 
+                            que estuda Sistemas de Informação. “Era menosprezada na sala de aula por gostar de me arrumar, passar 
+                            batom, pintar as unhas. Já tive que ouvir que não precisava me arrumar tanto para ir a faculdade, que 
+                            estava perdida e não sabia o que queria da vida e que fazia o curso só para passar o tempo”, diz Heloisa 
+                            Frasão, 24 anos. Ela é uma das seis meninas de uma sala com aproximadamente 40 alunos. Já Juliana Neres, 
+                            21 anos, tinha interesse em se inscrever numa competição com um grupo de amigas. “Escutei de um colega 
+                            do curso de análise e desenvolvimento de sistemas: ‘Vocês querem competir com um time de meninas ou com um 
+                            time que vai ganhar?’”. “Um professor disse que ‘mulher não devia fazer computação’ e reprovou todas as 
+                            alunas da turma”, diz Clarissa Xavier, 40 anos.
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section class="subcapitulo subcapitulo-carreira-tecnologia">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="subcapitulo__titulo">Carreira em tecnologia</h1>
+                        <h3 class="subcapitulo__subtitulo">
+                            Metade dos pais no Chile, Hungria e Portugal esperam que seus filhos sigam uma carreira nas
+                            áreas tecnológicas, enquanto só 20% veem as filhas fazendo o mesmo.
+                        </h3>
+                    </header>
+                    <article class="container_conteudo">
+                        <blockquote class="subcapitulo__citacao">
+                            <figure class="grafico grafico-circular grafico-tecnologia-feminina">
+                                <img data-src="img/grafico-tecnologia-feminina.svg" alt="Gráfico de tecnologia feminina">
+                                <figcaption>
+                                    <p>20% dos pais veem as filhas na carreira</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="grafico grafico-circular grafico-preocupacao-masculina">
+                                <img data-src="img/grafico-tecnologia-masculina.svg" alt="Gráfico de tecnologia masculina">
+                                <figcaption>
+                                    <p>metade dos pais veem as filhos na carreira</p>
+                                </figcaption>
+                            </figure>
+                            <cite>
+                                Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
+                            </cite>
+                        </blockquote>
+                        <p class="subcapitulo__texto-corrido">
+                            A inclusão das mulheres nas profissões científicas tem-se dado em ritmo mais lento do que em outras 
+                            áreas e há uma tendência das ciências exatas – matemática, física, engenharias– atraírem relativamente 
+                            poucas mulheres. Nos últimos anos, as brasileiras perderam representatividade nos cursos relacionados 
+                            à computação e, em 2013, passaram a representar apenas 15,53% dos ingressantes, segundo o Censo da 
+                            Educação Superior.
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section id="exclusao-preconceito" class="capitulo capitulo-exclusao-preconceito">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">Exclusão e preconceito </h1>
+                        <h2 class="capitulo__subtitulo">Ambiente de trabalho que não acolhe a mulher</h2>
+                        <img class="capitulo__ilustracao" data-src="img/03-trabalho.svg" width="140px" height="140px" alt="Trabalhor">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            Boas notas e canudo nas mãos não são garantia para uma jovem conseguir a primeira oportunidade. O 
+                            ambiente masculino e muitas vezes pouco acolhedor acaba se tornando difícil para elas. <strong>É o que a 
+                            pesquisadora Simone Strumpf, da Universidade de Londres chama de cultura "brogrammer", um neologismo 
+                            entre "brother" e "programmer", que oscila entre confraria masculina e clube do bolinha</strong>. "Trata-se de 
+                            um ambiente de trabalho que exclui as mulheres através de normas que estabelecem o comportamento ‘masculino’ 
+                            - por exemplo, a linguagem sexista - e que reforçam os estereótipos das funções femininas", ela explica em 
+                            entrevista à Programaria. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Uma série de exemplos confirma a fala da especialista. “<strong>Em geral, sou uma das poucas ou a única nos ambientes 
+                            de trabalho. É comum ouvir comentários desagradáveis e depois algo do tipo ‘desculpa, não percebi que tinha uma 
+                            garota aqui’”, conta Tamara Mendes, 27, que já passou várias outras saias justas</strong>. De um chefe escutou: “É difícil 
+                            encontrar mulheres com seu potencial na área técnica”. Mas a pior situação ela viveu com um colega de trabalho. 
+                            “Ao falar mal da prova de um candidato a estágio, ele disse ‘até as meninas ali conseguem fazer essa prova’, 
+                            referindo-se a mim e mais uma colega.”
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Segundo a pesquisadora Simone, há outras formas de exclusão mais sutis. Por exemplo, a expectativa de longas horas de 
+                            trabalho que se chocam com outros compromissos familiares e da falta de promoções. “Homens costumam subir mais rápido na 
+                            minha empresa. Ser mulher é sinônimo de trabalhar o dobro. ‘Brodagem’ é a palavra de ordem para crescer”, diz A. V., 24, 
+                            que não quer se identificar. “Eu já cheguei a ouvir que deveria ser mais legal, mais doce, se quisesse ser promovida, pois 
+                            os colegas não gostavam do meu jeito. Se eu fosse homem, seria considerada exigente, alguém em busca da melhor performance. 
+                            Mas, como sou mulher, sou grossa, direta demais, É difícil precisar se impor constantemente, mostrar que é capaz, mas, ao 
+                            mesmo tempo, precisar ser doce e fofa”, desabafa Paula M. “Já ouvi que não dava pra me imaginarem como gerente porque os caras 
+                            ‘não iriam se submeter a uma mulher’ e fui direcionada a tarefas em que era preciso colaboração”, relata Tatiane Fernandes, 36 anos. 
+                        </p>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “Um ex-chefe me interrompeu pra explicar algo que eu havia acabado de 
+                                explicar para ele. Em geral as pessoas não levam meus posicionamentos 
+                                a sério porque acham que eu não sei do que estou falando”                                
+                            </p>
+                            <cite>Ju G., 28 anos</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Mulheres negras sofrem duplamente. Além de masculino, o setor de tecnologia é quase exclusivamente branco. “Quando chego 
+                            em eventos ou reuniões, alguém sempre pergunta se sou mesmo da área e se pretendo trabalhar com ‘esse cabelo’”, conta Sara.</strong>  
+                            A maior dificuldade das afrodescentes ainda é o ingresso e a permanência na universidade, o que políticas públicas podem 
+                            minimizar. “Quando estava para escolher o curso no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do 
+                            Norte , pesquisei sobre informática e lá descobri o que era programação. Comecei a cursar o médio-técnico e aí me apaixonei 
+                            mesmo”, continua Sara, que se interessa por ciência, mecânica e eletricidade desde a infância, por influência do pai, que é pedreiro. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Outro fator determinante para a ausência das negras é a falta de referências. Nos Estados Unidos, apenas 2% da força de trabalho 
+                            no setor de ciências e engenharia é formada por negras. No Brasil, esse dado nem existe. Alguns números ajudam a dimensionar o problema: 
+                            entre os quase 100 mil bolsistas da área de exatas do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) só 5,5% é 
+                            composto por negras. Outro levantamento, realizado pelo Grupo de Gênero da Escola Politécnica da Universidade de São Paulo (Poligen/USP), 
+                            indica que, em 120 anos, a instituição não formou nem dez negras. Já na lista de cientistas pioneiras no Brasil, criada pelo CNPq, nenhuma 
+                            das citadas é negra. Ao circular por eventos e constatar que era uma das únicas, Silvana Bahia decidiu criar o PretaLab (http://pretalab.com), 
+                            rede que conecta essas profissionais. "Nunca achei que isso fosse para mim, mas aprender a programar me fez sentir capaz. Outras meninas 
+                            precisam ser apoiadas", conta ela. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Ser ignorada na tomada de decisões da equipe também faz parte do pacote. "Certa vez, num emprego novo, alguns rapazes fingiam que eu não 
+                            estava falando durante uma reunião. Para conseguir a atenção do grupo, tive que pedir ajuda a um colega, que falou o que eu queria dizer", 
+                            continua Paula. "Uma vez, numa reunião, fiz o mesmo comentário duas vezes e fui ignorada. Explodi. Disse que eles não estavam me escutando. 
+                            Comentário do chefe: 'Você quer um abraço? Parece tensa'", diz Lucía, 27 anos. "Sempre fui a única programadora nas equipes em que trabalhei. 
+                            Volta e meia, alguém aparecia na sala pedindo algo de programação. Mas, quando eu estava sozinha na sala, pediam para eu anotar o recado", 
+                            diz Georgia Catarina, 30 anos. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Isso sem contar casos mais graves de assédio moral e sexual. Exemplos cabeludos não faltam. Este ano, o Uber afastou seu principal executivo, 
+                            o então CEO Travis Kalanik, após uma investigação interna sobre a cultura corporativa da empresa. A apuração teve início depois que uma engenheira 
+                            de software denunciou que a direção da Uber tinha ignorado as suas queixas e as de outras companheiras sobre situações de assédio e sexismo por parte 
+                            de seus superiores. Este ano, a empresa demitiu 20 empregados como consequência de uma segunda investigação sobre casos individuais de más condutas 
+                            relacionadas a assédio sexual, psicológico e discriminação.  
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section class="vagas-seletivas">
+                <main class="container">
+                    <h1>Vagas seletivas</h1>
+                    <div class="carrossel">
+                        <input id="carrossel__slide1" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas1.png" alt="Vaga 1">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide2" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas2.png" alt="Vaga 2">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide3" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas3.png" alt="Vaga 3">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide4" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas4.png" alt="Vaga 4">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide5" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas5.png" alt="Vaga 5">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide6" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 6">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide7" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas7.png" alt="Vaga 7">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide8" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas8.png" alt="Vaga 8">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <input id="carrossel__slide9" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
+                        <figure>
+                            <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 9">
+                            <figcaption>
+                                <p></p>
+                            </figcaption>
+                        </figure>
+
+                        <label for="carrossel__slide9" class="carrossel__controle1">‹</label>
+                        <label for="carrossel__slide2" class="carrossel__controle1">›</label>
+                        <label for="carrossel__slide1" class="carrossel__controle2">‹</label>
+                        <label for="carrossel__slide3" class="carrossel__controle2">›</label>
+                        <label for="carrossel__slide2" class="carrossel__controle3">‹</label>
+                        <label for="carrossel__slide4" class="carrossel__controle3">›</label>
+                        <label for="carrossel__slide3" class="carrossel__controle4">‹</label>
+                        <label for="carrossel__slide5" class="carrossel__controle4">›</label>
+                        <label for="carrossel__slide4" class="carrossel__controle5">‹</label>
+                        <label for="carrossel__slide6" class="carrossel__controle5">›</label>
+                        <label for="carrossel__slide5" class="carrossel__controle6">‹</label>
+                        <label for="carrossel__slide7" class="carrossel__controle6">›</label>
+                        <label for="carrossel__slide6" class="carrossel__controle7">‹</label>
+                        <label for="carrossel__slide8" class="carrossel__controle7">›</label>
+                        <label for="carrossel__slide7" class="carrossel__controle8">‹</label>
+                        <label for="carrossel__slide9" class="carrossel__controle8">›</label>
+                        <label for="carrossel__slide8" class="carrossel__controle9">‹</label>
+                        <label for="carrossel__slide1" class="carrossel__controle9">›</label>
+                    </div>
+                </main>
+            </section>
+            <section id="desafios-carreira" class="capitulo capitulo-desafios-carreira">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">Os desafios de quem segue na carreira</h1>
+                        <h2 class="capitulo__subtitulo">Salários menores, poucas oportunidades de crescimento e nichos femininos</h2>
+                        <img class="capitulo__ilustracao" data-src="img/04-ingresso.svg" width="140px" height="140px" alt="Ingresso">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            Quem segue em empresas de tecnologia se depara com as mesmas questões sexistas enquanto avança - ou não - na profissão. A diferença salarial 
+                            entre os gêneros é um dos primeiros entraves, seguindo uma tendência observada em outros setores. <strong>As mulheres ganham 30% menos do que homens 
+                            na área de TI, de acordo com dados da Pesquisa Nacional por Amostra de Domicílios (Pnad), do IBGE</strong>, compilados por Bárbara Castro para o seu estudo. 
+                            "Já descobri que um colega de equipe com a mesma qualificação e cargo ganhava o dobro do meu salário", diz a analista de segurança Vanessa Galli, 35 anos.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>A diferença salarial já foi explorada em outras pesquisas, como as da economista americana Linda Babcock, da Universidade Carnegie Mellon, e autora do 
+                            livro Women Don't Ask (sem tradução para o português). Uma de suas análises aponta que as mulheres ganham menos porque são menos propensas a negociar 
+                            seus salários depois de uma oferta inicial</strong>. Os pesquisadores da equipe de Babcock conduziram o seguinte experimento: diziam aos participantes que eles 
+                            poderiam ganhar de US$ 3 a US$ 10 para participar de um jogo. Depois do término, o pesquisador ofereceu US$ 3 e perguntou se esse montante estava correto, 
+                            sem dizer que os participantes poderiam negociar e pedir mais. Se as pessoas pedissem mais, ganhariam o que pedissem até o limite de US$ 10. Os homens eram 
+                            sete vezes mais propensos ​​a pedir mais do que as mulheres. Para descrever a negociação, eles usavam metáforas como “ganhar um jogo”. Já elas, a descreviam 
+                            como "ir ao dentista".
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Outros estudos exploraram o que acontece quando ambos se comportam de forma assertiva nas negociações salariais. Quando se envolvem exatamente no mesmo 
+                            comportamento, as mulheres são malvistas por não aceitarem as primeiras ofertas e pedirem mais. “Para nós, de forma geral, negociação significa conflito. 
+                            Culturalmente, não somos estimuladas a cuidar de nossos interesses, mas a assumir o papel de cuidadoras”, diz Dani Botaro, sócia da ImpulsoBeta, uma empresa 
+                            de inteligência de gênero que apoia corporações a implementarem ações de diversidade.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            As políticas de cada empresa podem alimentar ou minar a ambição feminina. “Mulheres em posição de liderança, por exemplo, estimulam que outras funcionárias 
+                            sigam esse exemplo”, continua ela. 
+                        </p>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “O que me incomoda (e isso acontece até hoje) são os comentários do tipo 
+                                "vai lá e joga seu charme (pra conseguir algo)" ou "para você é mais fácil 
+                                conseguir essa informação com ele (sugerindo que por ser mulher consigo algo 
+                                se o outro for homem).”
+                            </p>
+                            <cite>Ana Paula</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            <strong>A organização do mercado brasileiro de tecnologia é outro grande problema</strong>. 
+                            Cerca de 93% dos negócios são de pequeno e médio porte, que comercializam 
+                            software e hardware para outras empresas. Isso cria uma dinâmica de faturamento 
+                            por projetos, feitos um em seguida do outro ou de maneira concomitante para não 
+                            perder clientes. O atendimento a diversos clientes faz parte da rotina dos profissionais 
+                            do setor, com deslocamentos constantes internos e externos às cidades na qual se situa
+                            a sede de sua empresa. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Essa estrutura impõe rotinas de trabalho que envolvem prazos apertados, jornadas 
+                            de 10 a 12 horas diárias, e trabalho extra em períodos noturnos, finais de semana 
+                            e feriados</strong>. No fechamento do projeto e no teste do software, o que ocorre, em média, 
+                            a cada 3 meses, os profissionais chegam a trabalhar 72 horas seguidas. <strong>Resultado: os 
+                            homens, principalmente os solteiros e mais novos, são privilegiados, e as mulheres, 
+                            sobretudo as que têm filhos, preteridas</strong>. “De uma maneira geral, as entrevistadas diziam 
+                            que não poderiam ser mães atuando em TI. O trabalho em horas desreguladas não permite a 
+                            elas participar da rotina de seus filhos, o que causa frustração e, muitas vezes, leva 
+                            ao abandono da carreira”, diz Bárbara. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Tal padrão foi seguido pelas 30 executivas entrevistadas por Bárbara e está relacionado 
+                            à desconfiança das habilidades dessas profissionais. Algumas relataram assédio no ambiente 
+                            de trabalho ou, ainda, se tornavam suspeitas de terem crescido na empresa em troca de favores 
+                            sexuais, e não como consequência de sua capacidade.   
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section class="cite green">
+                <main class="container">
+                    <blockquote>
+                        <p>
+                            A mulheres tendem a ser afastadas dos cargos técnicos e da chamada área dura da TI, a programação, 
+                            e ocupar vagas gerenciais ou nichos, como análise de sistemas, justamente onde se exige comunicação 
+                            e conciliação de conflitos, papeis sociais tradicionalmente considerados femininos.
                         </p>
                         <cite>Barbara Castro, pesquisadora</cite>
                     </blockquote>
-                </article>   
+                </main>
             </section>
-            <section class="capitulo capitulo-boas-praticas">
-                <header>
-                    <h1 class="capitulo__titulo">Boas práticas</h1>
-                    <h2 class="capitulo__subtitulo">Mudança sistêmica que envolve empresas, poder público e organizações sem fins lucrativos</h2>
-                    <img data-src="img/06-boas-praticas.svg" width="140px" height="140px" alt="Boas práticas">
-                </header>
-                <article>
-                    <p class="capitulo__texto-corrido">
-                        O primeiro passo para resolver o problema da diversidade de gênero em tecnologia é  desconstruir naturalizações do que é 
-                        entendido como masculino ou feminino e "normalizar" a área como uma possibilidade de carreira para as mulheres. Fazer isso 
-                        requer a articulação de várias esferas e atores. Uma boa notícia vem das organizações sem fins lucrativos: no Brasil, assim 
-                        como no restante do mundo, o número de projetos para debater o tema e atrair as meninas para a computação cresce a passos 
-                        largos. A Sociedade Brasileira de Computação (SBC), por exemplo, possui o programa Meninas Digitais. A Universidade Federal 
-                        de São Carlos (UFSCAR) acolhe o Woman@Comp. Já a UTFPR organiza iniciativas como o PyLadies e o projeto Emílias – Armação em 
-                        Bits, apoiado pelo edital Meninas e Jovens Fazendo Ciências Exatas, Engenharias e Computação, do Conselho Nacional de 
-                        Desenvolvimento Científico e Tecnológico (CNPq).
-                    </p>
-                    <blockquote>
-                        <p>
-                            “Consolidar uma educação que priorize a igualdade de gênero é fundamental. O processo de 
-                            socialização das crianças deve ser repensado.”
+            <section class="capitulo capitulo-continuacao">
+                <main class="container">
+                    <article>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Essa desconfiança em relação à capacidade feminina encontra eco em uma série de exemplos concretos</strong>. 
+                            “Sempre ouvi que mulher é boa para lidar com pessoas, não para escrever código”, conta Camilla Falconi. 
+                            "Já houve situações em que meus colegas não me deixaram terminar a explicação por acharem que eu não estava 
+                            entendendo a parte técnica", relata Mariana Carvalho, 24 anos, que atualmente faz mestrado em ciências da 
+                            computação nos Estados Unidos. <strong>Já a instrutora de programação Vanessa T., 27 anos, teve um chefe que queria 
+                            impor que ela trabalhasse com design contra sua vontade. Ela se queixa de não receber o devido crédito por 
+                            suas capacidades na área de front-end, em que é especialista</strong>. "Quando precisam citar nomes, vejo meus colegas 
+                            lembrarem até de pessoas que entraram recentemente na empresa, porém eu, que sou instrutora de cursos de 
+                            front-end, sou raramente lembrada por esta habilidade."
                         </p>
-                        <cite>Nanci Stancki da Luz, coordenadora do Núcleo de Gênero e Tecnologia (GETEC) da UTFPR</cite>
-                    </blockquote>
-                    <p class="capitulo__texto-corrido">
-                        O poder público pode fazer sua parte concebendo e implementando políticas pontuais, em diversas áreas, a começar pela 
-                        educação. São exemplos o redesenho dos currículos escolares e a introdução de disciplinas neutras para o gênero (conteúdos 
-                        de matemática sem exemplos que vinculem o aprendizado ao universo masculino, por exemplo); ensino de tecnologia neutro para 
-                        o gênero desde a primeira infância, como as oficinas de robótica da creche da USP São Carlos, por exemplo, a sensibilização 
-                        de professores e professoras para as dinâmicas sociais de gênero e seus mecanismos de criação de desigualdades. "Consolidar 
-                        uma educação que priorize a igualdade de gênero é fundamental. O processo de socialização das crianças deve ser repensado, 
-                        pois não há sentido algum na reprodução da ideia de que há alguns brinquedos/cores/comportamentos adequados para meninos e 
-                        outros, para meninas", explica Nanci.
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        Outras políticas públicas podem estimular a participação de mulheres na área tecnológica e reduzir as disparidades de gênero. 
-                        São exemplos a criação de mecanismos de fiscalização das Leis Trabalhistas, em especial à obediência do limite de horas semanais 
-                        trabalhadas, e o fortalecimento de políticas sociais para o cuidado de crianças, a fim de apoiar a mãe trabalhadora. 
-                    </p>
-                    <p class="capitulo__texto-corrido">
-                        A última ponta nesse esforço de reduzir as desigualdades são as empresas, que devem construir espaços  de trabalho que rejeitem o 
-                        machismo, o sexismo, a misoginia e estimulem a igualdade de gênero. Uma vez que se formam nas universidades e entram formalmente 
-                        na indústria, as meninas devem ser amparadas em seu ambiente de trabalho com políticas de recrutamento e retenção."Eu não acho que 
-                        as mulheres têm apenas que trabalhar mais para alcançar a inclusão de que precisamos. Em vez disso, nossa sociedade exige uma 
-                        mudança sistêmica em que as pessoas que já estão incluídas ajudam a resolver esses desequilíbrios. Isso pode acontecer por meio 
-                        de modelos femininos, mas também homens no poder que ajudam as mulheres e outras minorias a avançar e ser incluídas", diz Simone.                      
-                    </p>
-                </article>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Outros exemplos emblemáticos vêm de de gigantes da tecnologia. O mais recente envolveu o Google</strong>. A empresa foi centro 
+                            de um escândalo no Vale do Silício no começo de agosto de 2017. De forma anônima, o engenheiro James Damore escreveu um 
+                            manifesto afirmando que existem causas biológicas por trás da desigualdade na indústria da tecnologia. O funcionário do 
+                            Google acabou demitido, mas o episódio jogou mais lenha na fogueira. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Já o Facebook foi denunciado pelo jornal Wall Street Journal em maio de 2017</strong>. Dados coletados por um engenheiro da rede social 
+                            revelaram que o código escrito por mulheres foi rejeitado muito mais frequentemente do que o de seus colegas homens. Os resultados 
+                            desencadearam um debate sobre o preconceito de gênero entre os empregados mais valorizados da empresa: os que criam os recursos utilizados 
+                            por quase dois bilhões de pessoas por mês. Para muitas engenheiras do Facebook, a descoberta confirmou suspeitas antigas de que sua codificação 
+                            passava por análises mais minuciosas que a dos homens.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Como outras grandes empresas de tecnologia, como a Apple., o Google e Facebook têm lutado para aumentar a participação feminina e as minorias 
+                            sub-representadas. As mulheres representam 17% das funções técnicas da rede social, de acordo com seu último relatório de diversidade. Mas, 
+                            segundo a consultoria Accenture, a proporção delas em postos de trabalho de tecnologia cairá dois pontos percentuais até 2025 se nada for feito.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>A interferência do viés de gênero também foi identificada por um trabalho da Universidade Politécnica Estadual da Califórnia. Os pesquisadores 
+                            descobriram que o repositório de software GitHub aprovou o código escrito por mulheres a uma taxa maior do que o escrito por homens, mas apenas 
+                            se a identidade delas não fosse revelada</strong>. “Nossos resultados sugerem que o preconceito existe, independentemente da competência delas”, escrevem 
+                            os autores da pesquisa. Outro exemplo: uma pesquisa de Harvard, MIT e Universidade da Pensilvânia revelou que investidores tendem a considerar pitchs 
+                            narrados por homens mais persuasivos, lógicos e embasados em fatos que os de mulheres. Outra pesquisa, de Yale, também nos Estados Unidos, identificou 
+                            que perceber-se como objetivo e enfatizar a meritocracia pode sair pela culatra, reforçando o viés. Afinal, evitar a tendenciosidade não é o bastante 
+                            para superar o condicionamento cultural.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            O outro lado da moeda: se elas se mostram confiantes, enfrentam resistência. “Já tive uma promoção negada porque o time de programadores (todos homens) 
+                            não gostava da minha ‘agressividade’, palavras do líder de TI”, diz Alice Rangel, 29 anos. Ela não programa, mas tem experiência em startups de tecnologia 
+                            e marketing, sua área de atuação. Alice também se sente preterida em eventos e premiações. "Observo que a frequência é predominantemente masculina", revela.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Por volta dos 30 anos, as mulheres experimentam um turbilhão: as pressões sociais se intensificam e elas passam a ser questionadas sobre maternidade. 
+                            “Já fui desqualificada em vaga de emprego por ser casada e ainda não ter filhos. Mesmo falando que não tenho planos de engravidar, disseram que isso poderia 
+                            acontecer e pediria licença”, conta Vanessa. “Nunca esconderam que minhas promoções eram delegadas a homens porque achavam que uma mãe não deveria ter certos 
+                            cargos que exigiam viagens e horas extensas de trabalho”, diz Samanta Cristina Lopes, 44 anos, que trabalha com vendas e negócios na área de TI.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Como os exemplos mostram, a maternidade ainda é um tabu no mercado de trabalho. “Trata-se de um ranço cultural difícil de quebrar. Mas, cada vez mais 
+                            pessoas busca propósito no que faz, e questiona paradigmas. A visão orientada estritamente pela redução de custos pode perder força”, diz Dani, do ImpulsoBeta.
+                        </p>
+                    </article>
+                </main>
             </section>
             <section class="infografico">
-                <main>
+                <main class="container">
                     <h1>Você sofre com a síndrome do impostor?</h1>
                     <blockquote>
                         <figure>
@@ -733,34 +821,158 @@
                     </blockquote>
                 </main>
             </section>
+            <section id="porque-diversidade" class="capitulo capitulo-porque-importa">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">Por que diversidade importa</h1>
+                        <h2 class="capitulo__subtitulo">A força de trabalho feminina em TI gera renda, inclusão e novos olhares sobre os produtos</h2>
+                        <img class="capitulo__ilustracao" data-src="img/05-carreira.svg" width="140px" height="140px" alt="Carreira">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            A participação das mulheres em cursos de tecnologia já foi considerada um direito, um ponto importante para combater a 
+                            naturalização dos papéis de gênero e estimular ambientes de trabalho mais diversos. “<strong>Hoje, muito mais que um direito, é 
+                            também uma necessidade para o desenvolvimento da área científica e tecnológica e do país que durante muito tempo deixou de 
+                            receber a contribuição da metade da população”, diz Nanci Stancki da Luz</strong>, coordenadora do Núcleo de Gênero e Tecnologia (GETEC) 
+                            da UTFPR. Afinal, o crescimento econômico sustentável depende da participação e envolvimento das mulheres em todas as áreas, 
+                            particularmente em tecnologia, que gera novos postos de trabalho mesmo com crise econômica. O setor deve crescer 2,5% em 2017, 
+                            segundo estimativas da IDC, uma consultoria especializada no segmento.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>A tecnologia representa uma possibilidade, ainda, de geração de renda e de emancipação econômica, já que o setor paga mais que os 
+                            que costumam empregar mão de obra feminina</strong>. Um relatório global da Organização Internacional do Trabalho (OIT), divulgado este ano, 
+                            mostrou que a economia brasileira pode expandir em até R$ 382 bilhões ao longo de oito anos se aumentar a inserção das mulheres no 
+                            mercado de trabalho. Isso traria um incremento de cerca de 3% ao PIB e levaria ao aumento no poder de consumo de bens e serviços. 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Já um estudo da consultoria estratégica McKinsey, que vem examinando a diversidade no local de trabalho há vários anos, analisou dados de 
+                            empresas de diferentes áreas, no Canadá, América Latina, Reino Unido e Estados Unidos. A conclusão: a diversidade traz dividendos às empresas. 
+                            Organizações com diversidade de gênero e de etnia têm retorno financeiro acima da média nacional.                        
+                        </p>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “Ouvia dizer que a tecnologia não é para mulher. Resolvi descobrir o porquê e me apaixonei pela área”                                
+                            </p>
+                            <cite>Ingrid V.</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            O número de profissionais formados em áreas tecnológicas não atende à demanda crescente das empresas, 
+                            cada vez mais informatizadas. “<strong>O Brasil ainda tem carência de profissionais da área tecnológica. A presença 
+                            das mulheres ampliará a força de trabalho necessária para nosso desenvolvimento</strong>”, completa Nanci.  Um estudo 
+                            divulgado pela Softex aponta que o Brasil pode chegar a 2020 com um déficit de mão de obra qualificada em TI de 
+                            408 mil profissionais. Outro trabalho, The Network Skills in Latin America, encomendado pela Cisco a IDC, é ainda 
+                            mais pessimista, estimando que tal déficit seria de 449 mil profissionais. Computação em nuvem, mobilidade, transmissão 
+                            de video mobile, entre outras tecnologias, são alguns dos novos mercados em busca de trabalhadores.
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Outro ponto fundamental da participação feminina: trazer novos olhares e percepções, já que as mulheres se apropriariam 
+                            da tecnologia como produtoras e não apenas consumidoras, como no quadro atual</strong>. Assim, elas teriam a oportunidade de resolver 
+                            problemas próprios de sua condição, o que evitaria distorções como apps de saúde que não contemplam, por exemplo, o ciclo menstrual, 
+                            como o Health, da Apple, que só incluiu a funcionalidade depois de muita polêmica. “Hoje, temos recursos que não compreendem 
+                            totalmente a diversidade do seu público consumidor e que podem, inclusive, deixar as mulheres mais vulneráveis a questões de 
+                            segurança e privacidade”, explica Karen Figueiredo, professora da Universidade Federal do Mato Grosso (UFMT), que investiga 
+                            como as meninas decidem por determinada carreira. 
+                        </p>
+                    </article>
+                </main>
+            </section>
+            <section id="reprogramando-tecnologia" class="capitulo capitulo-reprogramando-tecnologia">
+                <main class="container">
+                    <header class="container_cabecallho">
+                        <h1 class="capitulo__titulo">Reprogramando a tecnologia</h1>
+                        <h2 class="capitulo__subtitulo">Mudança sistêmica que envolve empresas, poder público e organizações sem fins lucrativos</h2>
+                        <img class="capitulo__ilustracao" data-src="img/06-boas-praticas.svg" width="140px" height="140px" alt="Boas práticas">
+                    </header>
+                    <article class="container_conteudo">
+                        <p class="capitulo__texto-corrido">
+                            <strong>O primeiro passo para resolver o problema da diversidade de gênero em tecnologia é  desconstruir naturalizações do que é 
+                            entendido como masculino ou feminino e "normalizar" a área como uma possibilidade de carreira para as mulheres</strong>. Fazer isso 
+                            requer a articulação de várias esferas e atores. Uma boa notícia vem das organizações sem fins lucrativos: no Brasil, assim 
+                            como no restante do mundo, o número de projetos para debater o tema e atrair as garotas para a computação cresce a passos 
+                            largos. A Universidade Federal de São Carlos (UFSCAR) acolhe o Woman@Comp. A UTFPR abraça iniciativas como o PyLadies e o 
+                            projeto Emílias – Armação em Bits, apoiado pelo edital Meninas e Jovens Fazendo Ciências Exatas, Engenharias e Computação, 
+                            do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). 
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            Já a Sociedade Brasileira de Computação (SBC) possui o programa Meninas Digitais, que organiza aulas de robótica, oficinas 
+                            e minicursos sobre desenvolvimento web, jogos computacionais, construção de páginas pessoais, blogs e podcasting, além de 
+                            palestras com a apresentação de casos de sucessos da participação feminina na área. “Procuramos fornecer informações de 
+                            qualidade sobre a atuação profissional, incentivando as garotas a refletir sobre a pequena presença da mulher nessas áreas. 
+                            Também buscamos obter dados sobre o processo de escolha profissional das jovens do ensino médio/técnico para nortear nossas 
+                            ações futuras”, explica o coordenador Cristiano Maciel, da Universidade Federal do Mato Grosso (UFMT). Outro objetivo indireto 
+                            é atuar na permanência das estudantes que já fazem cursos nesta área, envolvendo-as com a causa do Meninas Digitais. o da ideia 
+                            de que há alguns brinquedos/cores/comportamentos adequados para meninos e 
+                            outros, para meninas", explica Nanci.
+                        </p>
+                        <blockquote class="capitulo__citacao">
+                            <p>
+                                “Em uma entrevista em uma empresa que estava me contratando, a psicóloga me 
+                                perguntou porque eu tinha escolhido uma profissão tão masculina. Eu perguntei 
+                                se existiam profissões ‘masculinas’ e ‘femininas’ e se ela sabia que o número 
+                                de mulheres havia crescido. Ela ficou surpresa”
+                            </p>
+                            <cite>Sara C.</cite>
+                        </blockquote>
+                        <p class="capitulo__texto-corrido">
+                            O poder público pode fazer sua parte concebendo e implementando políticas pontuais, em diversas áreas, a começar pela educação. 
+                            São exemplos o redesenho dos currículos escolares e a introdução de disciplinas neutras (<strong>conteúdos de matemática sem exemplos que 
+                            vinculem o aprendizado ao universo masculino, por exemplo), ensino de tecnologia desde a primeira infância, como as oficinas de 
+                            robótica da creche da USP São Carlos</strong>, a sensibilização de docentes para as dinâmicas sociais de gênero e seus mecanismos de criação 
+                            de desigualdades. “<strong>Consolidar uma educação que priorize a igualdade é fundamental. O processo de socialização das crianças deve ser 
+                            repensado, pois não há sentido algum na reprodução da ideia de que há alguns brinquedos/cores/comportamentos adequados para meninos 
+                            e outros para meninas”, defende Nanci</strong>.                            
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>Outras políticas públicas podem estimular a participação de mulheres na área tecnológica e reduzir as disparidades</strong>. São exemplos 
+                            a criação de mecanismos de fiscalização das leis trabalhistas, em especial a obediência do limite de horas semanais trabalhadas e 
+                            o fortalecimento de políticas sociais para o cuidado de crianças, a fim de apoiar a mãe trabalhadora.                   
+                        </p>
+                        <p class="capitulo__texto-corrido">
+                            <strong>A última ponta nesse esforço são as empresas, que devem construir espaços de trabalho que rejeitem o machismo, o sexismo, a misoginia e estimulem 
+                            a igualdade de gênero</strong>. Uma vez que se formam nas universidades e entram formalmente na indústria, as meninas devem ser amparadas em seu ambiente 
+                            de trabalho com políticas de recrutamento e retenção. “<strong>Não acho que temos apenas que trabalhar mais para alcançar a inclusão de que precisamos. 
+                            Em vez disso, nossa sociedade exige uma mudança sistêmica em que as pessoas que já estão incluídas ajudam a resolver esses desequilíbrios. Isso 
+                            pode acontecer por meio de modelos femininos, mas também homens no poder que ajudam as mulheres e outras minorias a avançar e ser incluídas”, 
+                            diz Simone, da Universidade de Londres</strong>
+                        </p>
+                    </article>
+                </main>
+            </section>
             <section class="compartilhe">
-                <h1>Compartilhe</h1>
-                <a href="https://www.facebook.com/programaria" target="_blank">
-                    <img data-src="img/logo-face.svg" alt="Logotipo do Facebook do Programaria">
-                </a>
-                <a href="https://twitter.com/programaria" target="_blank">
-                    <img data-src="img/logo-twitter.svg" alt="Logotipo do Twitter do Programaria"> 
-                </a>
+                <main class="container">
+                    <h1>Compartilhe</h1>
+                    <a href="https://www.facebook.com/programaria" target="_blank">
+                        <img data-src="img/logo-face.svg" alt="Logotipo do Facebook do Programaria">
+                    </a>
+                    <a href="https://twitter.com/programaria" target="_blank">
+                        <img data-src="img/logo-twitter.svg" alt="Logotipo do Twitter do Programaria"> 
+                    </a>
+                </main>
             </section>
         </main>
+        <footer class="creditos">
+            <main class="container">
+                <h1>Créditos</h1>
+                <dl><dt>Edição</dt><dd>Iana Chan</dd></dl>
+                <dl><dt>Reportagem</dt><dd>Bruna Nicolielo</dd></dl>
+                <dl><dt>Arte</dt><dd>Luciana Fernandes</dd></dl>
+                <dl><dt>Ilustração</dt><dd>Aimee Ferreira</dd></dl>
+                <dl><dt>Programação</dt><dd>Camila Belo</dd></dl>  
+            </main>
+        </footer>
         <aside class="menu">
             <nav>
                 <ul>
                     <li><a href="#introducao"><span>Introdução</span></a></li>
-                    <li><a href="#bonecas-computadores"><span>Bonecas X Coputadores</span></a></li>
-                    <li><a href="#linha-tempo"><span>Linha Tempo</span></a></li>
-                    <li><a href="#escola-esteriotipos"><span>Escola Esteriótipos</span></a></li>
+                    <li><a href="#bonecas-computadores"><span>Bonecas x Coputadores</span></a></li>
+                    <li><a href="#escola-esteriotipos"><span>Escola e Esteriótipos</span></a></li>
+                    <li><a href="#exclusao-preconceito"><span>Exclusão e Preconceito</span></a></li>
+                    <li><a href="#desafios-carreira"><span>Desafios na Carreira</span></a></li>
+                    <li><a href="#porque-diversidade"><span>Porque Diversidade</span></a></li>
+                    <li><a href="#reprogramando-tecnologia"><span>Reprogramando tecnologia</span></a></li>
                 </ul>
             </nav>
         </aside>
-        <footer class="creditos">
-            <h1>Créditos</h1>
-            <dl><dt>Edição</dt><dd>Iana Chan</dd></dl>
-            <dl><dt>Reportagem</dt><dd>Bruna Nicolielo</dd></dl>
-            <dl><dt>Arte</dt><dd>Luciana Fernandes</dd></dl>
-            <dl><dt>Ilustração</dt><dd>Aimee Ferreira</dd></dl>
-            <dl><dt>Programação</dt><dd>Camila Belo</dd></dl>
-        </footer>
 
         <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
