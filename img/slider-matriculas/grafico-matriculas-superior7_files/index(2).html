@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://s0.2mdn.net/8173946/1505407612063/300x250-Fechado/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="ad.size" content="width=300,height=250">
+		<style type="text/css">.container,.container>a,.container>a>div{display:block;position:absolute}#box-arte,#box-logo-pina-ini,#box-txt-01,#box-txt-02,.container,.container .borda{position:absolute}.arte,.logo-pina,.txt-01{opacity:0;overflow:hidden}body,html{background-color:#fff;height:100%;width:100%;margin:0}.container,.container .borda,.container>a{width:300px;height:250px}.container{background-color:#cda9bc;overflow:hidden}.container.dev{top:50%;left:50%;margin-left:-150px;margin-top:-125px}.container .borda{box-sizing:border-box;border:1px solid #ccc;left:0;top:0}#txt-01-1,#txt-01-4,#txt-01-5{height:15px}#txt-02-1,#txt-02-7{height:29px}#logo-pina-fim-3,#logo-pina-ini-3{height:10px;background-position:0 -22px}.flip_horizontal{-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden}.flip_vertical{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden}#box-arte{width:91px;height:187px;left:0;top:20px}.arte{background-image:url(arte.png);width:91px}#arte-1{height:127px}#arte-2{height:60px;background-position:0 -127px}#box-logo-pina-ini{width:75px;height:41px;left:142px;top:32px}.logo-pina{background-image:url(logo-pina.png);width:75px;float:left}#logo-pina-ini-1{width:58px;height:22px}#logo-pina-ini-2{width:17px;height:22px;background-position:-58px 0}#logo-pina-ini-4{height:9px;background-position:0 -32px}#box-txt-01{width:141px;height:87px;left:141px;top:143px}.txt-01{background-image:url(txt-01.png);width:141px}#txt-01-2{height:14px;background-position:0 -15px}#txt-01-3{height:16px;background-position:0 -29px}#txt-01-4{background-position:0 -45px}#txt-01-5{background-position:0 -60px}#txt-01-6{height:12px;background-position:0 -75px}#box-txt-02{width:209px;height:207px;left:45px;top:22px}.txt-02{background-image:url(txt-02.png);width:209px;float:left;overflow:hidden;opacity:0}#risco-dir,#risco-esq{background-color:#6a575f;width:1px;height:28px;position:absolute;opacity:0}#txt-02-2{height:35px;background-position:0 -29px}#txt-02-3{width:75px;height:26px;background-position:0 -64px}#txt-02-4{width:59px;height:26px;background-position:-75px -64px}#txt-02-5{width:75px;height:26px;background-position:-134px -64px}#txt-02-6{height:32px;background-position:0 -90px}#txt-02-7{background-position:0 -122px}#txt-02-8{height:30px;background-position:0 -151px}#txt-02-9{height:26px;background-position:0 -181px}#box-logo-pina-fim{width:75px;height:41px;position:absolute;left:22px;top:35px}#logo-pina-fim-1{width:58px;height:22px}#logo-pina-fim-2{width:17px;height:22px;background-position:-58px 0}#logo-pina-fim-4{height:9px;background-position:0 -32px}#btn{width:96px;height:28px;position:absolute;right:29px;top:42px}#risco-esq{left:0;top:0}#risco-dir{right:0;bottom:0}#txt-btn{background-image:url(txt-btn.png);width:68px;height:9px;position:absolute;left:14px;top:9px;opacity:0}#box-logos{width:255px;height:116px;position:absolute;left:23px;top:113px}.logos{background-image:url(logos.png);width:255px;overflow:hidden;opacity:0}#logos-1{height:42px}#logos-2{height:44px;background-position:0 -42px}#logos-3{height:30px;background-position:0 -86px}</style>
+	<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script><style type="text/css" class="umsstyle">/* ums library */
+
+#arte-1.UmsEffect.animate {
+	animation-name: UmsEffect0,UmsEffect1;
+animation-duration: 1s,0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 0s,7.2s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect0 {
+	0% {transform: translateX(-92px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect1 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(-92px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#arte-2.UmsEffect.animate {
+	animation-name: UmsEffect2,UmsEffect3;
+animation-duration: 1s,0.6s;
+animation-timing-function: ease-out,cubic-bezier(.550,.055,.675,.190);
+animation-delay: 0.4s,7.1s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect2 {
+	0% {transform: translateX(0px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect3 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(-92px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-ini-1.UmsEffect.animate {
+	animation-name: UmsEffect4;
+animation-duration: 0.7s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 0.4s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect4 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-ini-2.UmsEffect.animate {
+	animation-name: UmsEffect5;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 0.6s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect5 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-ini-3.UmsEffect.animate {
+	animation-name: UmsEffect6;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 0.7s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect6 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-ini-4.UmsEffect.animate {
+	animation-name: UmsEffect7;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 0.8s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect7 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-1.UmsEffect.animate {
+	animation-name: UmsEffect8,UmsEffect9;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 0.8s,7.5s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect8 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect9 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-2.UmsEffect.animate {
+	animation-name: UmsEffect10,UmsEffect11;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 0.9s,7.4s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect10 {
+	0% {transform: translateX(-20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect11 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-3.UmsEffect.animate {
+	animation-name: UmsEffect12,UmsEffect13;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 1s,7.3s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect12 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect13 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-4.UmsEffect.animate {
+	animation-name: UmsEffect14,UmsEffect15;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 1.1s,7.2s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect14 {
+	0% {transform: translateX(-20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect15 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-5.UmsEffect.animate {
+	animation-name: UmsEffect16,UmsEffect17;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 1.2s,7.1s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect16 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect17 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-01-6.UmsEffect.animate {
+	animation-name: UmsEffect18,UmsEffect19;
+animation-duration: 0.7s,0.4s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 1.3s,7s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect18 {
+	0% {transform: translateX(-20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect19 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(30px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#box-logo-pina-ini.UmsEffect.animate {
+	animation-name: UmsEffect20;
+animation-duration: 0.4s;
+animation-timing-function: cubic-bezier(.550,.055,.675,.190);
+animation-delay: 7.5s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect20 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(30px) translateY(0px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-1.UmsEffect.animate {
+	animation-name: UmsEffect21,UmsEffect22;
+animation-duration: 0.7s,0.5s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 7.9s,12.5s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect21 {
+	0% {transform: translateX(0px) translateY(20px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect22 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(-40px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-2.UmsEffect.animate {
+	animation-name: UmsEffect23,UmsEffect24;
+animation-duration: 0.7s,0.5s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 8s,12.6s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect23 {
+	0% {transform: translateX(0px) translateY(20px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect24 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(0px) translateY(-40px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-3.UmsEffect.animate {
+	animation-name: UmsEffect25,UmsEffect26;
+animation-duration: 0.5s,0.5s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 8.2s,12.6s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect25 {
+	0% {transform: translateX(-20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect26 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(-40px) translateY(0px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-5.UmsEffect.animate {
+	animation-name: UmsEffect27,UmsEffect28;
+animation-duration: 0.5s,0.5s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1),cubic-bezier(.550,.055,.675,.190);
+animation-delay: 8.2s,12.6s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect27 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+@keyframes UmsEffect28 {
+	0% {transform: translateX(0px) translateY(0px);opacity:1}
+	100% {transform: translateX(40px) translateY(0px);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-4.UmsEffect.animate {
+	animation-name: UmsEffect29,UmsEffect30;
+animation-duration: 0.6s,0.5s;
+animation-timing-function: cubic-bezier(.175, .885,.32,1.275),cubic-bezier(.6,-.28,.735,.045);
+animation-delay: 8.3s,12.7s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect29 {
+	0% {transform: rotateZ(-10deg) scaleX(1.4) scaleY(1.4);opacity:0}
+	100% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+}
+@keyframes UmsEffect30 {
+	0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+	100% {transform: rotateZ(0deg) scaleX(0.2) scaleY(0.2);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-6.UmsEffect.animate {
+	animation-name: UmsEffect31,UmsEffect32;
+animation-duration: 0.6s,0.5s;
+animation-timing-function: cubic-bezier(.175, .885,.32,1.275),cubic-bezier(.6,-.28,.735,.045);
+animation-delay: 8.4s,12.8s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect31 {
+	0% {transform: rotateZ(10deg) scaleX(1.4) scaleY(1.4);opacity:0}
+	100% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+}
+@keyframes UmsEffect32 {
+	0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+	100% {transform: rotateZ(0deg) scaleX(0.2) scaleY(0.2);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-7.UmsEffect.animate {
+	animation-name: UmsEffect33,UmsEffect34;
+animation-duration: 0.6s,0.5s;
+animation-timing-function: cubic-bezier(.175, .885,.32,1.275),cubic-bezier(.6,-.28,.735,.045);
+animation-delay: 8.5s,12.9s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect33 {
+	0% {transform: rotateZ(-10deg) scaleX(1.4) scaleY(1.4);opacity:0}
+	100% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+}
+@keyframes UmsEffect34 {
+	0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+	100% {transform: rotateZ(0deg) scaleX(0.2) scaleY(0.2);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-8.UmsEffect.animate {
+	animation-name: UmsEffect35,UmsEffect36;
+animation-duration: 0.6s,0.5s;
+animation-timing-function: cubic-bezier(.175, .885,.32,1.275),cubic-bezier(.6,-.28,.735,.045);
+animation-delay: 8.6s,13s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect35 {
+	0% {transform: rotateZ(10deg) scaleX(1.4) scaleY(1.4);opacity:0}
+	100% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+}
+@keyframes UmsEffect36 {
+	0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+	100% {transform: rotateZ(0deg) scaleX(0.2) scaleY(0.2);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-02-9.UmsEffect.animate {
+	animation-name: UmsEffect37,UmsEffect38;
+animation-duration: 0.6s,0.5s;
+animation-timing-function: cubic-bezier(.175, .885,.32,1.275),cubic-bezier(.6,-.28,.735,.045);
+animation-delay: 8.7s,13.1s;
+animation-iteration-count: 1,1;
+animation-direction: normal,normal;
+animation-fill-mode: forwards,forwards;
+animation-play-state: running,running;
+transform-origin: center center;
+}
+@keyframes UmsEffect37 {
+	0% {transform: rotateZ(-10deg) scaleX(1.4) scaleY(1.4);opacity:0}
+	100% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+}
+@keyframes UmsEffect38 {
+	0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);opacity:1}
+	100% {transform: rotateZ(0deg) scaleX(0.2) scaleY(0.2);opacity:0}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-fim-1.UmsEffect.animate {
+	animation-name: UmsEffect39;
+animation-duration: 0.7s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.2s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect39 {
+	0% {transform: translateX(20px) translateY(0px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-fim-2.UmsEffect.animate {
+	animation-name: UmsEffect40;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.4s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect40 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-fim-3.UmsEffect.animate {
+	animation-name: UmsEffect41;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.5s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect41 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logo-pina-fim-4.UmsEffect.animate {
+	animation-name: UmsEffect42;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.6s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect42 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#risco-esq.UmsEffect.animate {
+	animation-name: UmsEffect43;
+animation-duration: 0.6s;
+animation-timing-function: ease-in-out;
+animation-delay: 13.3s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect43 {
+	0% {opacity:1;width:1px;height:0px}
+	100% {opacity:1;width:1px;height:28px}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#risco-dir.UmsEffect.animate {
+	animation-name: UmsEffect44;
+animation-duration: 0.6s;
+animation-timing-function: ease-in-out;
+animation-delay: 13.3s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect44 {
+	0% {opacity:1;width:1px;height:0px}
+	100% {opacity:1;width:1px;height:28px}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#txt-btn.UmsEffect.animate {
+	animation-name: UmsEffect45;
+animation-duration: 0.15s;
+animation-timing-function: linear;
+animation-delay: 13.7s;
+animation-iteration-count: 3;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect45 {
+	0% {opacity:0.2}
+	100% {opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#pisca-txt.UmsPluginCallToAction.animate {
+	animation-name: UmsPluginCallToAction46;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-delay: 15s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsPluginCallToAction46 {
+	0% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:1}
+	5% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:0.5}
+	10% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:1}
+	15% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:0.5}
+	20% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:1}
+	100% {transform: translateX(0px) translateY(0px) rotateZ(0deg);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logos-1.UmsEffect.animate {
+	animation-name: UmsEffect47;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.8s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect47 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logos-2.UmsEffect.animate {
+	animation-name: UmsEffect48;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 13.9s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect48 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style><style type="text/css" class="umsstyle">/* ums library */
+
+#logos-3.UmsEffect.animate {
+	animation-name: UmsEffect49;
+animation-duration: 0.6s;
+animation-timing-function: cubic-bezier(.215,.61,.355,1);
+animation-delay: 14s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: running;
+transform-origin: center center;
+}
+@keyframes UmsEffect49 {
+	0% {transform: translateX(0px) translateY(10px);opacity:0}
+	100% {transform: translateX(0px) translateY(0px);opacity:1}
+}
+</style></head>
+<body>
+	<div id="page1" class="container dev">
+		<a href="javascript:void(0);" onclick="javascript:window.open(window.clickTag);" target="_blank">
+			<div id="box-arte">
+				<div class="arte UmsEffect animate" id="arte-1"></div>
+				<div class="arte UmsEffect animate" id="arte-2"></div>
+			</div>
+			<div id="box-logo-pina-ini" class="UmsEffect animate">
+				<div class="logo-pina UmsEffect animate" id="logo-pina-ini-1"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-ini-2"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-ini-3"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-ini-4"></div>
+			</div>
+			<div id="box-txt-01">
+				<div class="txt-01 UmsEffect animate" id="txt-01-1"></div>
+				<div class="txt-01 UmsEffect animate" id="txt-01-2"></div>
+				<div class="txt-01 UmsEffect animate" id="txt-01-3"></div>
+				<div class="txt-01 UmsEffect animate" id="txt-01-4"></div>
+				<div class="txt-01 UmsEffect animate" id="txt-01-5"></div>
+				<div class="txt-01 UmsEffect animate" id="txt-01-6"></div>
+			</div>
+			<div id="box-txt-02">
+				<div class="txt-02 UmsEffect animate" id="txt-02-1"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-2"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-3"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-4"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-5"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-6"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-7"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-8"></div>
+				<div class="txt-02 UmsEffect animate" id="txt-02-9"></div>
+			</div>
+			<div id="box-logo-pina-fim">
+				<div class="logo-pina UmsEffect animate" id="logo-pina-fim-1"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-fim-2"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-fim-3"></div>
+				<div class="logo-pina UmsEffect animate" id="logo-pina-fim-4"></div>
+			</div>
+			<div id="btn">
+				<div id="risco-esq" class="UmsEffect animate"></div>
+				<div id="risco-dir" class="UmsEffect animate"></div>
+				<div id="pisca-txt" class="UmsPluginCallToAction animate">
+					<div id="txt-btn" class="UmsEffect animate"></div>
+				</div>
+			</div>
+			<div id="box-logos">
+				<div class="logos UmsEffect animate" id="logos-1"></div>
+				<div class="logos UmsEffect animate" id="logos-2"></div>
+				<div class="logos UmsEffect animate" id="logos-3"></div>
+			</div>
+			<div class="borda"></div>
+		</a>
+	</div>
+
+	<!-- SCRIPTS CLICKTAG -->
+	<script type="text/javascript">
+		var clickTag = 'http://www.google.com';
+	</script>
+
+	<script type="text/javascript">function utf8_encode(e){if(null===e||void 0===e)return"";var i,n,t=e+"",o="",a=0;i=n=0,a=t.length;for(var r=0;a>r;r++){var s=t.charCodeAt(r),c=null;if(128>s)n++;else if(s>127&&2048>s)c=String.fromCharCode(s>>6|192,63&s|128);else if(55296!=(63488&s))c=String.fromCharCode(s>>12|224,s>>6&63|128,63&s|128);else{if(55296!=(64512&s))throw new RangeError("Unmatched trail surrogate at "+r);var m=t.charCodeAt(++r);if(56320!=(64512&m))throw new RangeError("Unmatched lead surrogate at "+(r-1));s=((1023&s)<<10)+(1023&m)+65536,c=String.fromCharCode(s>>18|240,s>>12&63|128,s>>6&63|128,63&s|128)}null!==c&&(n>i&&(o+=t.slice(i,n)),o+=c,i=n=r+1)}return n>i&&(o+=t.slice(i,a)),o}function md5(e){var i,n,t,o,a,r,s,c,m,d,l=function(e,i){return e<<i|e>>>32-i},u=function(e,i){var n,t,o,a,r;return o=2147483648&e,a=2147483648&i,n=1073741824&e,t=1073741824&i,r=(1073741823&e)+(1073741823&i),n&t?2147483648^r^o^a:n|t?1073741824&r?3221225472^r^o^a:1073741824^r^o^a:r^o^a},p=function(e,i,n){return e&i|~e&n},f=function(e,i,n){return e&n|i&~n},y=function(e,i,n){return e^i^n},g=function(e,i,n){return i^(e|~n)},h=function(e,i,n,t,o,a,r){return e=u(e,u(u(p(i,n,t),o),r)),u(l(e,a),i)},b=function(e,i,n,t,o,a,r){return e=u(e,u(u(f(i,n,t),o),r)),u(l(e,a),i)},v=function(e,i,n,t,o,a,r){return e=u(e,u(u(y(i,n,t),o),r)),u(l(e,a),i)},x=function(e,i,n,t,o,a,r){return e=u(e,u(u(g(i,n,t),o),r)),u(l(e,a),i)},w=function(e){var i,n,t="",o="";for(n=0;3>=n;n++)i=e>>>8*n&255,o="0"+i.toString(16),t+=o.substr(o.length-2,2);return t},A=[];for(e=this.utf8_encode(e),A=function(e){for(var i,n=e.length,t=n+8,o=(t-t%64)/64,a=16*(o+1),r=new Array(a-1),s=0,c=0;n>c;)i=(c-c%4)/4,s=c%4*8,r[i]=r[i]|e.charCodeAt(c)<<s,c++;return i=(c-c%4)/4,s=c%4*8,r[i]=r[i]|128<<s,r[a-2]=n<<3,r[a-1]=n>>>29,r}(e),s=1732584193,c=4023233417,m=2562383102,d=271733878,i=A.length,n=0;i>n;n+=16)t=s,o=c,a=m,r=d,s=h(s,c,m,d,A[n+0],7,3614090360),d=h(d,s,c,m,A[n+1],12,3905402710),m=h(m,d,s,c,A[n+2],17,606105819),c=h(c,m,d,s,A[n+3],22,3250441966),s=h(s,c,m,d,A[n+4],7,4118548399),d=h(d,s,c,m,A[n+5],12,1200080426),m=h(m,d,s,c,A[n+6],17,2821735955),c=h(c,m,d,s,A[n+7],22,4249261313),s=h(s,c,m,d,A[n+8],7,1770035416),d=h(d,s,c,m,A[n+9],12,2336552879),m=h(m,d,s,c,A[n+10],17,4294925233),c=h(c,m,d,s,A[n+11],22,2304563134),s=h(s,c,m,d,A[n+12],7,1804603682),d=h(d,s,c,m,A[n+13],12,4254626195),m=h(m,d,s,c,A[n+14],17,2792965006),c=h(c,m,d,s,A[n+15],22,1236535329),s=b(s,c,m,d,A[n+1],5,4129170786),d=b(d,s,c,m,A[n+6],9,3225465664),m=b(m,d,s,c,A[n+11],14,643717713),c=b(c,m,d,s,A[n+0],20,3921069994),s=b(s,c,m,d,A[n+5],5,3593408605),d=b(d,s,c,m,A[n+10],9,38016083),m=b(m,d,s,c,A[n+15],14,3634488961),c=b(c,m,d,s,A[n+4],20,3889429448),s=b(s,c,m,d,A[n+9],5,568446438),d=b(d,s,c,m,A[n+14],9,3275163606),m=b(m,d,s,c,A[n+3],14,4107603335),c=b(c,m,d,s,A[n+8],20,1163531501),s=b(s,c,m,d,A[n+13],5,2850285829),d=b(d,s,c,m,A[n+2],9,4243563512),m=b(m,d,s,c,A[n+7],14,1735328473),c=b(c,m,d,s,A[n+12],20,2368359562),s=v(s,c,m,d,A[n+5],4,4294588738),d=v(d,s,c,m,A[n+8],11,2272392833),m=v(m,d,s,c,A[n+11],16,1839030562),c=v(c,m,d,s,A[n+14],23,4259657740),s=v(s,c,m,d,A[n+1],4,2763975236),d=v(d,s,c,m,A[n+4],11,1272893353),m=v(m,d,s,c,A[n+7],16,4139469664),c=v(c,m,d,s,A[n+10],23,3200236656),s=v(s,c,m,d,A[n+13],4,681279174),d=v(d,s,c,m,A[n+0],11,3936430074),m=v(m,d,s,c,A[n+3],16,3572445317),c=v(c,m,d,s,A[n+6],23,76029189),s=v(s,c,m,d,A[n+9],4,3654602809),d=v(d,s,c,m,A[n+12],11,3873151461),m=v(m,d,s,c,A[n+15],16,530742520),c=v(c,m,d,s,A[n+2],23,3299628645),s=x(s,c,m,d,A[n+0],6,4096336452),d=x(d,s,c,m,A[n+7],10,1126891415),m=x(m,d,s,c,A[n+14],15,2878612391),c=x(c,m,d,s,A[n+5],21,4237533241),s=x(s,c,m,d,A[n+12],6,1700485571),d=x(d,s,c,m,A[n+3],10,2399980690),m=x(m,d,s,c,A[n+10],15,4293915773),c=x(c,m,d,s,A[n+1],21,2240044497),s=x(s,c,m,d,A[n+8],6,1873313359),d=x(d,s,c,m,A[n+15],10,4264355552),m=x(m,d,s,c,A[n+6],15,2734768916),c=x(c,m,d,s,A[n+13],21,1309151649),s=x(s,c,m,d,A[n+4],6,4149444226),d=x(d,s,c,m,A[n+11],10,3174756917),m=x(m,d,s,c,A[n+2],15,718787259),c=x(c,m,d,s,A[n+9],21,3951481745),s=u(s,t),c=u(c,o),m=u(m,a),d=u(d,r);return(w(s)+w(c)+w(m)+w(d)).toLowerCase()}function str_replace(e,i,n,t){var o=0,a=0,r="",s="",c=0,m=0,d=[].concat(e),l=[].concat(i),u=n,p="[object Array]"===Object.prototype.toString.call(l),f="[object Array]"===Object.prototype.toString.call(u);if(u=[].concat(u),"object"==typeof e&&"string"==typeof i){for(r=i,i=new Array,o=0;o<e.length;o+=1)i[o]=r;r="",l=[].concat(i),p="[object Array]"===Object.prototype.toString.call(l)}for(t&&(this.window[t]=0),o=0,c=u.length;c>o;o++)if(""!==u[o])for(a=0,m=d.length;m>a;a++)r=u[o]+"",s=p?void 0!==l[a]?l[a]:"":l[0],u[o]=r.split(d[a]).join(s),t&&(this.window[t]+=r.split(d[a]).length-1);return f?u:u[0]}function escapeRegExp(e){return e.replace(/([.*+?^=!:${}()|\[\]\/\\])/g,"\\$1")}function getHashValue(e){var i=location.hash.match(new RegExp(e+"=([^&]*)"));return i?i[1]:null}function addEvent(e,i,n){e.attachEvent?e.attachEvent("on"+i,n):e.addEventListener(i,n)}function live(e,i,n,t){addEvent(t||document,i,function(i){for(var t,o=i.target||i.srcElement;o&&!(t=o.id==e);)o=o.parentElement;t&&n.call(o,i)})}function umsRemoveAllClass(e,i){for(var n=0,t=document.getElementsByClassName(e);t.length>0&&(removeClass(t[0],e),t=document.getElementsByClassName(e),!(++n>100)););void 0!==i&&i()}function umsChangeAllClass(e,i,n){for(var t=0,o=document.getElementsByClassName(e);o.length>0&&(addClass(o[0],i),removeClass(o[0],e),o=document.getElementsByClassName(e),!(++t>100)););void 0!==n&&n()}function resetUmsEffects(e){umsChangeAllClass("UmsEffect","UmsEffectOld",function(){setTimeout(function(){umsChangeAllClass("UmsEffectOld","UmsEffect",e)},100)})}function umsLoop(e,i){var n=1e3*e;null!==ums_loop_timer&&(clearTimeout(ums_loop_timer),ums_loop_timer=null);var t=void 0===i?-1:i;switch(t){case 1:ums_loop_timer=setTimeout(function(){resetUmsEffects()},n);break;case-1:ums_loop_timer=setTimeout(function(){resetUmsEffects(function(){umsLoop(e,i)})},n);break;default:t>ums_loop_quant&&(ums_loop_quant++,ums_loop_timer=setTimeout(function(){resetUmsEffects(function(){umsLoop(e,i)})},n))}}function TUmsUtils(){"use strict";var e=this;this.init=function(i){e=this},this.removeUmsCustomStyle=function(e){for(var i=document.getElementsByClassName("umsstyle "+e);i.length>0;)i[0].parentNode.removeChild(i[0]),i=document.getElementsByClassName("umsstyle "+e)},this.appendStyle=function(e,i){var n=document.head||document.getElementsByTagName("head")[0],t=document.createElement("style");t.type="text/css",t.innerHTML="/* ums library */",n.appendChild(t),t.classList.add("umsstyle"),void 0!==i&&t.classList.add(i),t.innerHTML=t.innerHTML+"\n\n"+e},this.getDomElement=function(e){var i=[];if(-1!==e.indexOf("#")||-1!==e.indexOf(".")?i=document.querySelectorAll(e):null!==document.getElementById(e)?i=document.getElementById(e):document.getElementsByClassName(e).length>=1&&(i=document.getElementsByClassName(e)[0]),void 0===i)throw new Error("Element not found!");return i=void 0===i.length?[i]:i},this.init()}function TUmsIndex(){"use strict";var e=this;this.init=function(i){e=this,e.index=-1},this.get=function(){return++e.index},this.init()}function TUmsAbKeyFrames(e){"use strict";var i=this;this.init=function(e){i=this,i.animation_name=e,i.initVars()},this.initVars=function(){i.items=[]},this.add=function(e){i.items.push(e)},this.str=function(){for(var e="@keyframes "+i.animation_name+" {\n",n=0;n<i.items.length;n++)"object"==typeof i.items[n]&&(e+=i.items[n].str()+"\n");return e+="}\n"},this.init(e)}function TUmsAbKeyFrame(e){"use strict";var i=this;this.init=function(e){i=this,i.point=e,i.initVars()},this.initVars=function(){i.items=[],i.props=[]},this.umsObjToKf=function(e){var i,n,t,o=[];for(var a in e)void 0!==e[a]&&(n=e[a],t="","rotate"==a.substr(0,6)&&(t="deg"),"skew"==a.substr(0,4)&&(t="deg"),"translate"==a.substr(0,9)&&n.toString().isNumber()&&(t="px"),i=e[a]+t,o.push(a+"("+i+")"));return o.join(" ")},this.umsObjToProps=function(e){var i=[];for(var n in e)for(var t in e[n])i.push(t+":"+e[n][t]);return i.join(";")},this.translate=function(e,n,t){return void 0===n&&(n=e),i.items.translateX=e,i.items.translateY=n,i.items.translateZ=t,i},this.rotate=function(e){return i.items.rotateZ=e,i},this.scale=function(e){return i.items.scaleX=e.x,i.items.scaleY=e.y,i},this.skew=function(e){return i.items.skewX=e.x,i.items.skewY=e.y,i},this.resize=function(e){return i.props.push({width:e.w+"px",height:e.h+"px"}),i},this.opacity=function(e){return i.props.push({opacity:e}),i},this.left=function(e){return i.props.push({left:e+"px"}),i},this.top=function(e){return i.props.push({top:e+"px"}),i},this.border=function(e){return i.props.push({border:e}),i},this.property=function(e,n){var t={};return t[e]=n,i.props.push(t),i},this.transform=function(e,n){return i.items[e]=n,i},this.str=function(){var e="";Object.keys(i.items).length>0&&(e="transform: "+i.umsObjToKf(i.items)+";");var n=i.umsObjToProps(i.props);return"\t"+i.point+"% {"+e+n+"}"},this.init(e)}function TUmsAbAnimation(e){"use strict";var i=this;this.init=function(e){i=this,i.animation_builder=e,i.initVars(),i.index=umsindex.get(),i.props.name=i.animation_builder.name+i.index.toString(),i.compiled={}},this.initVars=function(){i.props={name:"untitled",duration:"1s",timing:"linear",delay:"0s",iteration:1,direction:"normal",fill_mode:"forwards",play_state:"running"}},this.translateEasingAliases=function(e){for(var i in window.umseasings)e=e.replaceAll(i,window.umseasings[i]);return e},this.timing=function(e){return i.props.timing=i.translateEasingAliases(e),i},this.repeat=function(e){return i.props.iteration="-1"==e?"infinite":e,i},this.duration=function(e){return i.props.duration=e+"s",i},this.steps=function(e){return i.props.timing="steps("+e+")",i},this.delay=function(e){return i.props.delay=e+"s",i},this.origin=function(e){return i.props.origin=e,i},this.iteration=function(e){return i.props.iteration=e,i},this.direction=function(e){return i.props.direction=e,i},this.fill_mode=function(e){return i.props.fill_mode=e,i},this.play_state=function(e){return i.props.play_state=e,i},this.keyframes=function(){var e=arguments;i._keyframes=new TUmsAbKeyFrames(i.props.name,i.index),Array.isArray(arguments[0])&&(e=arguments[0]);for(var n in e)i._keyframes.add(e[n]);return i},this.build=function(){var e={name:i.props.name,duration:i.props.duration,timing:i.props.timing,delay:i.props.delay,iteration:i.props.iteration,direction:i.props.direction,fill_mode:i.props.fill_mode,play_state:i.props.play_state},n=i._keyframes.str();i.compiled={props:e,keyframes:n},void 0!==i.props.origin&&(i.compiled.origin=i.props.origin)},this.init(e)}function TUmsAnimationBuilder(e,i){"use strict";var n=this;this.init=function(e,i){n=this,n.target=e,n.name=i,n.initVars()},this.initVars=function(){n.items=[],n.cssbody="",n.timeline=0,n.getBrowserPrefix()},this.delay=function(){return{add:function(e){n.timeline+=e},get:function(){return n.timeline}}},this.add=function(e){for(var i in e)n.items.push(e[i]);return n},this.import=function(e){var i,n,t,o,a=[],r={x:0,y:0};void 0!==e[0].init&&(r={x:e[0].init.x,y:e[0].init.y});for(var s in e){i=e[s],i.easing=void 0===i.easing?"linear":i.easing,i.delay=void 0===i.delay?0:i.delay,i.duration=void 0===i.duration?1:i.duration,i.repeat=void 0===i.repeat?1:i.repeat,i.direction=void 0===i.direction?"normal":i.direction;var c=!1,m=!1,d=!1,l=new TUmsAbKeyFrame(0),u=new TUmsAbKeyFrame(100);if(void 0!==i.scale&&(m=0!==i.scale.ini.x||0!==i.scale.ini.y||0!==i.scale.end.x||0!==i.scale.end.y),void 0!==i.skew&&(c=0!==i.skew.ini.x||0!==i.skew.ini.y||0!==i.skew.end.x||0!==i.skew.end.y),void 0!==i.resize&&(d=0!==i.resize.ini.w||0!==i.resize.ini.h||0!==i.resize.end.w||0!==i.resize.end.h),void 0!==i.move&&(l.translate(r.x,r.y),u.translate(i.move.x,i.move.y)),void 0!==i.rotate&&(l.rotate(i.rotate.ini),u.rotate(i.rotate.end)),void 0!==i.opacity&&(l.opacity(i.opacity.ini),u.opacity(i.opacity.end)),!0===c&&(l.skew(i.skew.ini),u.skew(i.skew.end)),!0===m&&(l.scale(i.scale.ini),u.scale(i.scale.end)),!0===d&&(l.resize(i.resize.ini),u.resize(i.resize.end)),void 0!==i.property){n=i.property.ini;for(t in n)l.property(t,n[t]);n=i.property.end;for(t in n)u.property(t,n[t])}if(void 0!==i.transform){n=i.transform.ini;for(o in n)l.transform(o,n[o]);n=i.transform.end;for(o in n)u.transform(o,n[o])}var p=new TUmsAbAnimation(this).delay(i.delay).duration(i.duration).timing(i.easing).repeat(i.repeat).direction(i.direction).keyframes(l,u);void 0!==i.origin&&p.origin(i.origin),void 0!==i.move&&(r.x=i.move.x,r.y=i.move.y),a.push(p)}this.add(a)},this.getBrowserPrefix=function(){n.prefix=function(){var e=window.getComputedStyle(document.documentElement,""),i=(Array.prototype.slice.call(e).join("").match(/-(moz|webkit|ms)-/)||""===e.OLink&&["","o"])[1],n="WebKit|Moz|MS|O".match(new RegExp("("+i+")","i"))[1],t=!0;return(parseFloat(bowser.version)>=47&&!0===bowser.chrome||parseFloat(bowser.version)>=11&&!0===bowser.msie||parseFloat(bowser.version)>=42&&!0===bowser.firefox||parseFloat(bowser.version)>=9&&!0===bowser.safari)&&(t=!1),t?{dom:n,lowercase:i,css:"-"+i+"-",js:i[0].toUpperCase()+i.substr(1)}:{dom:n,lowercase:"",css:"",js:""}}()},this.prefixStyle=function(e){var i=e,t=n.prefix.css,o=["animation-","keyframes ","transform:","transform-"];for(var a in o)i=str_replace(o[a],t+o[a],i);return i},this.build=function(){var e=[],i="";if(-1!==n.target.indexOf("#")||-1!==n.target.indexOf(".")?i=n.target:null!==document.getElementById(n.target)?i="#"+n.target:1==document.getElementsByClassName(n.target).length&&(i="."+n.target),""===i)throw new Error("Element not found!");i+="."+n.name+".animate";var t={name:[],duration:[],timing:[],delay:[],iteration:[],direction:[],fill_mode:[],play_state:[]},o={x:"center",y:"center"};for(var a in n.items){n.items[a].build();var r=n.items[a].compiled;void 0!==r.origin&&(o=r.origin),t.name.push(r.props.name),t.duration.push(r.props.duration),t.timing.push(r.props.timing),t.delay.push(r.props.delay),t.iteration.push(r.props.iteration),t.direction.push(r.props.direction),t.fill_mode.push(r.props.fill_mode),t.play_state.push(r.props.play_state),e.push(n.items[a].compiled.keyframes)}t.name=t.name.join(","),t.duration=t.duration.join(","),t.timing=t.timing.join(","),t.delay=t.delay.join(","),t.iteration=t.iteration.join(","),t.direction=t.direction.join(","),t.fill_mode=t.fill_mode.join(","),t.play_state=t.play_state.join(","),t.origin=o.x+" "+o.y;var s="animation-name: "+t.name+";\nanimation-duration: "+t.duration+";\nanimation-timing-function: "+t.timing+";\nanimation-delay: "+t.delay+";\nanimation-iteration-count: "+t.iteration+";\nanimation-direction: "+t.direction+";\nanimation-fill-mode: "+t.fill_mode+";\nanimation-play-state: "+t.play_state+";\ntransform-origin: "+t.origin+";\n",c=i+" {\n\t"+s+"}\n"+e.join("");c=n.prefixStyle(c),n.cssbody=c},this.appendStyle=function(e){(new TUmsUtils).appendStyle(e)},this.publish=function(){n.appendStyle(n.cssbody);for(var e=(new TUmsUtils).getDomElement(n.target),i=0;i<e.length;i++)addClass(e[i],"animate")},this.init(e,i)}function TUmsAnimationPlayer(e){"use strict";var i=this;this.init=function(e){i=this,i.elements=[];var n=e.split(",");for(var t in n)i.elements.push(document.getElementById(n[t]));i.initVars()},this.initVars=function(){i.cache=[],i.styles=[],i.stores=[]},this.addStyleSection=function(){if(void 0===i.node_style){var e=document.head||document.getElementsByTagName("head")[0];i.node_style=document.createElement("style"),i.node_style.type="text/css",i.node_style.innerHTML="/* ums library advanced */",e.appendChild(i.node_style)}},this.add=function(e){var n=md5(e);-1==i.styles.indexOf(n)&&(this.addStyleSection(),i.node_style.innerHTML=i.node_style.innerHTML+"\n\n"+e,i.styles.push(n))},this.store=function(e){i.stores.push(e)},this.publish=function(){for(var e in i.stores)i.add(i.stores[e])},this.init(e)}function TUmsAnimation(){"use strict";var e=this;this.init=function(i,n){e=this,e.items=[]},this.addBuilder=function(i){e.items.push(i)},this.play=function(){for(var i in e.items)e.items[i].publish();e.items=[]},this.init()}function TUmsAnimationFromString(e,i){"use strict";var n=this;this.init=function(e,i){n=this,n.target=e,n.streffect=i,n.apply()},this.apply=function(){var e=new TUmsAnimationBuilder(n.target,"UmsEffect");e.import(JSON.parse(n.streffect)),e.build();for(var i=(new TUmsUtils).getDomElement(n.target),t=0;t<i.length;t++)addClass(i[t],"UmsEffect");umsAnimation.addBuilder(e)},this.init(e,i)}function TUmsAnimationFromObject(e,i){"use strict";var n=this;this.init=function(e,i){n=this,n.target=e,n.objeffect=i,n.apply()},this.apply=function(){var e=new TUmsAnimationBuilder(n.target,"UmsEffect");e.import(n.objeffect),e.build();for(var i=(new TUmsUtils).getDomElement(n.target),t=0;t<i.length;t++)addClass(i[t],"UmsEffect");umsAnimation.addBuilder(e)},this.init(e,i)}function TUmsAjust(){"use strict";var e=this;this.init=function(){e=this,e.item=null},this.select=function(i){return e.item=document.getElementById(i),e},this.top=function(i){e.item.style.top=i+"px"},this.left=function(i){e.item.style.left=i+"px"},this.pos=function(i){e.item.style.top=i.x+"px",e.item.style.left=i.y+"px"},this.move=function(i,n){e.item.style.transform="translateX("+i+"px) translateY("+n+"px)"},this.getTop=function(){var i=getComputedStyle(e.item).top;return"auto"===i?0:parseFloat(i)},this.getLeft=function(){var i=getComputedStyle(e.item).left;return"auto"===i?0:parseFloat(i)},this.init()}function TUmsPluginSprite(e,i){"use strict";var n=this;this.init=function(e,i){n=this,n.target=e,n.element=n.target,n.config=i,n.cssbody="",n.compile()},this.compile=function(){var e=[];n.config.framesize=n.config.isize/n.config.frames,n.config.original_frames=n.config.frames;var i=n.config.isize;void 0===n.config.lastframe&&(n.config.lastframe=!1);var t,o=new TUmsAnimationBuilder(n.target,"UmsPluginSprite");if(1==n.config.repeat||-1==n.config.repeat)1==n.config.repeat&&n.config.lastframe&&(i-=n.config.framesize,n.config.frames=n.config.frames-1),e="h"==n.config.orientation?[new TUmsAbKeyFrame(0).left(0),new TUmsAbKeyFrame(100).left(-1*i)]:[new TUmsAbKeyFrame(0).top(0),new TUmsAbKeyFrame(100).top(-1*i)],t=[new TUmsAbAnimation(o).delay(n.config.delay).duration(n.config.duration).steps(n.config.frames).repeat(n.config.repeat).direction(n.config.direction).keyframes(e)];else{n.config.frames=n.config.original_frames;var a={};a.common={},a.common.interval=n.config.duration/n.config.frames,a.first={},a.first.repeat=n.config.repeat-1,a.second={},a.second.delay=n.config.delay+n.config.duration*a.first.repeat,a.second.steps=1,a.second.repeat=1;var r=(n.config.delay,a.common.interval,n.config.frames,n.config.frames,n.config.repeat,n.config.direction,[n.config.isize,n.config.isize-n.config.framesize]);e="h"==n.config.orientation?[[new TUmsAbKeyFrame(0).left(0),new TUmsAbKeyFrame(100).left(-1*r[0])],[new TUmsAbKeyFrame(0).left(0),new TUmsAbKeyFrame(100).left(-1*r[1])]]:[new TUmsAbKeyFrame(0).top(0),new TUmsAbKeyFrame(100).top(-1*i)],t=[new TUmsAbAnimation(o).delay(n.config.delay).duration(n.config.duration).steps(n.config.frames).repeat(a.first.repeat).direction(n.config.direction).keyframes(e[0]),new TUmsAbAnimation(o).delay(a.second.delay).duration(n.config.duration).steps(n.config.frames-1).repeat(a.second.repeat).direction(n.config.direction).keyframes(e[1])]}o.add(t),o.build();var s;if(null!==document.getElementById(n.target))s=document.getElementById(n.target);else{if(1!=document.getElementsByClassName(n.target).length)throw new Error("Element not found!");s=document.getElementsByClassName(n.target)[0]}addClass(s,"UmsPluginSprite"),umsAnimation.addBuilder(o)},this.init(e,i)}function TUmsPluginCallToAction(e,i){"use strict";var n=this;this.init=function(e,i){n=this,n.target=e,n.element=n.target,n.config=i,n.cssbody="",n.compile()},this.compile=function(){var e={blinks:n.config.blinks,time:{t1:n.config.time1,t2:n.config.time2}};e.time.tt=e.time.t1+e.time.t2,e.percents={},e.percents.p1=100*e.time.t1/e.time.tt,e.percents.p2=100-e.percents.p1,e.kfb=3+2*(e.blinks-1),e.bstep=e.percents.p1/e.kfb;for(var i=[new TUmsAbKeyFrame(0*e.bstep).opacity(n.config.opacity.ini).translate(n.config.move.ini.x,n.config.move.ini.y).scale(n.config.scale.ini).rotate(n.config.rotate.ini),new TUmsAbKeyFrame(1*e.bstep).opacity(n.config.opacity.end).translate(n.config.move.end.x,n.config.move.end.y).scale(n.config.scale.end).rotate(-1*n.config.rotate.end),new TUmsAbKeyFrame(2*e.bstep).opacity(n.config.opacity.ini).translate(n.config.move.ini.x,n.config.move.ini.y).scale(n.config.scale.ini).rotate(n.config.rotate.ini)],t=3,o=-1,a=0;a<e.blinks-1;a++)o*=-1,i.push(new TUmsAbKeyFrame(e.bstep*t).opacity(n.config.opacity.end).translate(n.config.move.end.x,n.config.move.end.y).scale(n.config.scale.end).rotate(n.config.rotate.end*o)),t++,i.push(new TUmsAbKeyFrame(e.bstep*t).opacity(n.config.opacity.ini).translate(n.config.move.ini.x,n.config.move.ini.y).scale(n.config.scale.ini).rotate(n.config.rotate.ini)),t++;i.push(new TUmsAbKeyFrame(100).opacity(n.config.opacity.ini).translate(n.config.move.ini.x,n.config.move.ini.y).scale(n.config.scale.ini).rotate(n.config.rotate.ini));var r=new TUmsAnimationBuilder(n.target,"UmsPluginCallToAction"),s=new TUmsAbAnimation(r).delay(n.config.delay).duration(e.time.tt).repeat(n.config.repeat).direction("normal").keyframes(i);r.add([s]),r.build();var c;if(null!==document.getElementById(n.target))c=document.getElementById(n.target);else{if(1!=document.getElementsByClassName(n.target).length)throw new Error("Element not found!");c=document.getElementsByClassName(n.target)[0]}addClass(c,"UmsPluginCallToAction"),umsAnimation.addBuilder(r)},this.init(e,i)}function UmsPlayer(){new TUmsAnimationFromObject("arte-1",[{delay:0,duration:1,repeat:1,direction:"normal",opacity:{ini:1,end:1},init:{x:-92,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.2,duration:.6,repeat:1,direction:"normal",opacity:{ini:1,end:1},init:{x:0,y:0},move:{x:-92,y:0},easing:"easeInCubic"}]),new TUmsAnimationFromObject("arte-2",[{delay:.4,duration:1,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:0},move:{x:0,y:0},easing:"easeOut"},{delay:7.1,duration:.6,repeat:1,direction:"normal",opacity:{ini:1,end:1},init:{x:0,y:0},move:{x:-92,y:0},easing:"easeInCubic"}]),new TUmsAnimationFromObject("logo-pina-ini-1",[{delay:.4,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-ini-2",[{delay:.6,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-ini-3",[{delay:.7,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-ini-4",[{delay:.8,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("txt-01-1",[{delay:.8,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.5,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-01-2",[{delay:.9,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:-20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.4,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-01-3",[{delay:1,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.3,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-01-4",[{delay:1.1,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:-20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.2,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-01-5",[{delay:1.2,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7.1,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-01-6",[{delay:1.3,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:-20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:7,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:30},easing:"easeInCubic"}]),new TUmsAnimationFromObject("box-logo-pina-ini",[{delay:7.5,duration:.4,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:30,y:0},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-02-1",[{delay:7.9,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:20},move:{x:0,y:0},easing:"easeOutCubic"},{delay:12.5,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:-40},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-02-2",[{delay:8,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:20},move:{x:0,y:0},easing:"easeOutCubic"},{delay:12.6,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:0,y:-40},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-02-3",[{delay:8.2,duration:.5,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:-20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:12.6,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:-40,y:0},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-02-5",[{delay:8.2,duration:.5,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"},{delay:12.6,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},init:{x:0,y:0},move:{x:40,y:0},easing:"easeInCubic"}]),new TUmsAnimationFromObject("txt-02-4",[{delay:8.3,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},scale:{ini:{x:1.4,y:1.4},end:{x:1,y:1}},rotate:{ini:-10,end:0},easing:"easeOutBack"},{delay:12.7,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},scale:{ini:{x:1,y:1},end:{x:.2,y:.2}},rotate:{ini:0,end:0},easing:"easeInBack"}]),new TUmsAnimationFromObject("txt-02-6",[{delay:8.4,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},scale:{ini:{x:1.4,y:1.4},end:{x:1,y:1}},rotate:{ini:10,end:0},easing:"easeOutBack"},{delay:12.8,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},scale:{ini:{x:1,y:1},end:{x:.2,y:.2}},rotate:{ini:0,end:0},easing:"easeInBack"}]),new TUmsAnimationFromObject("txt-02-7",[{delay:8.5,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},scale:{ini:{x:1.4,y:1.4},end:{x:1,y:1}},rotate:{ini:-10,end:0},easing:"easeOutBack"},{delay:12.9,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},scale:{ini:{x:1,y:1},end:{x:.2,y:.2}},rotate:{ini:0,end:0},easing:"easeInBack"}]),new TUmsAnimationFromObject("txt-02-8",[{delay:8.6,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},scale:{ini:{x:1.4,y:1.4},end:{x:1,y:1}},rotate:{ini:10,end:0},easing:"easeOutBack"},{delay:13,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},scale:{ini:{x:1,y:1},end:{x:.2,y:.2}},rotate:{ini:0,end:0},easing:"easeInBack"}]),new TUmsAnimationFromObject("txt-02-9",[{delay:8.7,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},scale:{ini:{x:1.4,y:1.4},end:{x:1,y:1}},rotate:{ini:-10,end:0},easing:"easeOutBack"},{delay:13.1,duration:.5,repeat:1,direction:"normal",opacity:{ini:1,end:0},scale:{ini:{x:1,y:1},end:{x:.2,y:.2}},rotate:{ini:0,end:0},easing:"easeInBack"}]),new TUmsAnimationFromObject("logo-pina-fim-1",[{delay:13.2,duration:.7,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:20,y:0},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-fim-2",[{delay:13.4,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-fim-3",[{delay:13.5,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logo-pina-fim-4",[{delay:13.6,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("risco-esq",[{delay:13.3,duration:.6,repeat:1,direction:"normal",opacity:{ini:1,end:1},resize:{ini:{w:1,h:0},end:{w:1,h:28}},easing:"easeInOut"}]),new TUmsAnimationFromObject("risco-dir",[{delay:13.3,duration:.6,repeat:1,direction:"normal",opacity:{ini:1,end:1},resize:{ini:{w:1,h:0},end:{w:1,h:28}},easing:"easeInOut"}]),new TUmsAnimationFromObject("txt-btn",[{delay:13.7,duration:.15,repeat:3,direction:"normal",opacity:{ini:.2,end:1},easing:"linear"}]),new TUmsPluginCallToAction("pisca-txt",{delay:15,repeat:-1,blinks:2,time1:1,time2:3,opacity:{ini:1,end:.5},scale:{ini:1,end:1.05},rotate:{ini:0,end:0},move:{ini:{x:0,y:0},end:{x:0,y:0}}}),new TUmsAnimationFromObject("logos-1",[{delay:13.8,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logos-2",[{delay:13.9,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),new TUmsAnimationFromObject("logos-3",[{delay:14,duration:.6,repeat:1,direction:"normal",opacity:{ini:0,end:1},init:{x:0,y:10},move:{x:0,y:0},easing:"easeOutCubic"}]),umsAnimation.play()}!function(e,i){function n(o){if(a||s||"load"==o.type||r.test(i.readyState)){for(a?(i.removeEventListener(c,n,!1),e.removeEventListener("load",n,!1)):(i.detachEvent(m,n),e.detachEvent("onload",n));t.length;)t.shift()();s=!0}}var t,o=i.documentElement,a=!!e.addEventListener,r=/^(loade|c)/,s=r.test(i.readyState),c="DOMContentLoaded",m="onreadystatechange";e.domReady=function(r){return s?r():(t||(a?(i.addEventListener(c,n,!1),e.addEventListener("load",n,!1)):(i.attachEvent(m,n),e.attachEvent("onload",n),o.doScroll&&function e(){if(!s){try{o.doScroll("left")}catch(i){return setTimeout(e,50)}s=!0,n()}}()),t=[]),void t.push(r))}}(window,document),function(e,i){"undefined"!=typeof module&&module.exports?module.exports=i():"function"==typeof define&&define.amd?define(i):this.bowser=i()}(0,function(){function e(e){function n(i){var n=e.match(i);return n&&n.length>1&&n[1]||""}var t,o=n(/(ipod|iphone|ipad)/i).toLowerCase(),a=/like android/i.test(e),r=!a&&/android/i.test(e),s=/CrOS/.test(e),c=n(/edge\/(\d+(\.\d+)?)/i),m=n(/version\/(\d+(\.\d+)?)/i),d=/tablet/i.test(e),l=!d&&/[^-]mobi/i.test(e);/opera|opr/i.test(e)?t={name:"Opera",opera:i,version:m||n(/(?:opera|opr)[\s\/](\d+(\.\d+)?)/i)}:/yabrowser/i.test(e)?t={name:"Yandex Browser",yandexbrowser:i,version:m||n(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)}:/windows phone/i.test(e)?(t={name:"Windows Phone",windowsphone:i},c?(t.msedge=i,t.version=c):(t.msie=i,t.version=n(/iemobile\/(\d+(\.\d+)?)/i))):/msie|trident/i.test(e)?t={name:"Internet Explorer",msie:i,version:n(/(?:msie |rv:)(\d+(\.\d+)?)/i)}:s?t={name:"Chrome",chromeBook:i,chrome:i,version:n(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:/chrome.+? edge/i.test(e)?t={name:"Microsoft Edge",msedge:i,version:c}:/chrome|crios|crmo/i.test(e)?t={name:"Chrome",chrome:i,version:n(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)}:o?(t={name:"iphone"==o?"iPhone":"ipad"==o?"iPad":"iPod"},m&&(t.version=m)):/sailfish/i.test(e)?t={name:"Sailfish",sailfish:i,version:n(/sailfish\s?browser\/(\d+(\.\d+)?)/i)}:/seamonkey\//i.test(e)?t={name:"SeaMonkey",seamonkey:i,version:n(/seamonkey\/(\d+(\.\d+)?)/i)}:/firefox|iceweasel/i.test(e)?(t={name:"Firefox",firefox:i,version:n(/(?:firefox|iceweasel)[ \/](\d+(\.\d+)?)/i)},
+/\((mobile|tablet);[^\)]*rv:[\d\.]+\)/i.test(e)&&(t.firefoxos=i)):/silk/i.test(e)?t={name:"Amazon Silk",silk:i,version:n(/silk\/(\d+(\.\d+)?)/i)}:r?t={name:"Android",version:m}:/phantom/i.test(e)?t={name:"PhantomJS",phantom:i,version:n(/phantomjs\/(\d+(\.\d+)?)/i)}:/blackberry|\bbb\d+/i.test(e)||/rim\stablet/i.test(e)?t={name:"BlackBerry",blackberry:i,version:m||n(/blackberry[\d]+\/(\d+(\.\d+)?)/i)}:/(web|hpw)os/i.test(e)?(t={name:"WebOS",webos:i,version:m||n(/w(?:eb)?osbrowser\/(\d+(\.\d+)?)/i)},/touchpad\//i.test(e)&&(t.touchpad=i)):t=/bada/i.test(e)?{name:"Bada",bada:i,version:n(/dolfin\/(\d+(\.\d+)?)/i)}:/tizen/i.test(e)?{name:"Tizen",tizen:i,version:n(/(?:tizen\s?)?browser\/(\d+(\.\d+)?)/i)||m}:/safari/i.test(e)?{name:"Safari",safari:i,version:m}:{name:n(/^(.*)\/(.*) /),version:function(i){var n=e.match(i);return n&&n.length>1&&n[2]||""}(/^(.*)\/(.*) /)},!t.msedge&&/(apple)?webkit/i.test(e)?(t.name=t.name||"Webkit",t.webkit=i,!t.version&&m&&(t.version=m)):!t.opera&&/gecko\//i.test(e)&&(t.name=t.name||"Gecko",t.gecko=i,t.version=t.version||n(/gecko\/(\d+(\.\d+)?)/i)),t.msedge||!r&&!t.silk?o&&(t[o]=i,t.ios=i):t.android=i;var u="";t.windowsphone?u=n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i):o?(u=n(/os (\d+([_\s]\d+)*) like mac os x/i),u=u.replace(/[_\s]/g,".")):r?u=n(/android[ \/-](\d+(\.\d+)*)/i):t.webos?u=n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i):t.blackberry?u=n(/rim\stablet\sos\s(\d+(\.\d+)*)/i):t.bada?u=n(/bada\/(\d+(\.\d+)*)/i):t.tizen&&(u=n(/tizen[\/\s](\d+(\.\d+)*)/i)),u&&(t.osversion=u);var p=u.split(".")[0];return d||"ipad"==o||r&&(3==p||4==p&&!l)||t.silk?t.tablet=i:(l||"iphone"==o||"ipod"==o||r||t.blackberry||t.webos||t.bada)&&(t.mobile=i),t.msedge||t.msie&&t.version>=10||t.yandexbrowser&&t.version>=15||t.chrome&&t.version>=20||t.firefox&&t.version>=20||t.safari&&t.version>=6||t.opera&&t.version>=10||t.ios&&t.osversion&&t.osversion.split(".")[0]>=6||t.blackberry&&t.version>=10.1?t.a=i:t.msie&&t.version<10||t.chrome&&t.version<20||t.firefox&&t.version<20||t.safari&&t.version<6||t.opera&&t.version<10||t.ios&&t.osversion&&t.osversion.split(".")[0]<6?t.c=i:t.x=i,t}var i=!0,n=e("undefined"!=typeof navigator?navigator.userAgent:"");return n.test=function(e){for(var i=0;i<e.length;++i){var t=e[i];if("string"==typeof t&&t in n)return!0}return!1},n._detect=e,n});var umsv={};String.prototype.replaceAll=function(e,i){return this.replace(new RegExp(escapeRegExp(e),"g"),i)},String.prototype.isNumber=function(){return/^\d+$/.test(this.replace("-","").replace("+",""))};var deepExtend=function(e){e=e||{};for(var i=1;i<arguments.length;i++){var n=arguments[i];if(n)for(var t in n)n.hasOwnProperty(t)&&("object"==typeof n[t]?deepExtend(e[t],n[t]):e[t]=n[t])}return e},extend=function(){var e={};for(var i in arguments){var n=arguments[i];for(var t in n)Object.prototype.hasOwnProperty.call(n,t)&&(e[t]=n[t])}return e};window.umseasings={easeInCubic:"cubic-bezier(.550,.055,.675,.190)",easeOutCubic:"cubic-bezier(.215,.61,.355,1)",easeInOutCubic:"cubic-bezier(.645,.045,.355,1)",easeInCirc:"cubic-bezier(.6,.04,.98,.335)",easeOutCirc:"cubic-bezier(.075,.82,.165,1)",easeInOutCirc:"cubic-bezier(.785,.135,.15,.86)",easeInExpo:"cubic-bezier(.95,.05,.795,.035)",easeOutExpo:"cubic-bezier(.19,1,.22,1)",easeInOutExpo:"cubic-bezier(1,0,0,1)",easeInQuad:"cubic-bezier(.55,.085,.68,.53)",easeOutQuad:"cubic-bezier(.25,.46,.45,.94)",easeInOutQuad:"cubic-bezier(.455,.03,.515,.955)",easeInQuart:"cubic-bezier(.895,.03,.685,.22)",easeOutQuart:"cubic-bezier(.165,.84,.44,1)",easeInOutQuart:"cubic-bezier(.77,0,.175,1)",easeInQuint:"cubic-bezier(.755,.05,.855,.06)",easeOutQuint:"cubic-bezier(.23,1,.32,1)",easeInOutQuint:"cubic-bezier(.86,0,.07,1)",easeInSine:"cubic-bezier(.47,0,.745,.715)",easeOutSine:"cubic-bezier(.39,.575,.565,1)",easeInOutSine:"cubic-bezier(.445,.05,.55,.95)",easeInBack:"cubic-bezier(.6,-.28,.735,.045)",easeOutBack:"cubic-bezier(.175, .885,.32,1.275)",easeInOutBack:"cubic-bezier(.68,-.55,.265,1.55)",easeInOut:"ease-in-out",easeIn:"ease-in",easeOut:"ease-out"};var hasClass,addClass,removeClass;"classList"in document.documentElement?(hasClass=function(e,i){return e.classList.contains(i)},addClass=function(e,i){e.classList.add(i)},removeClass=function(e,i){e.classList.remove(i)},allClass=function(e){return e.classList}):(hasClass=function(e,i){return new RegExp("\\b"+i+"\\b").test(e.className)},addClass=function(e,i){hasClass(e,i)||(e.className+=" "+i)},removeClass=function(e,i){e.className=e.className.replace(new RegExp("\\b"+i+"\\b","g"),"")},allClass=function(e){return e.className.join(" ")});var ums_loop_quant=0,ums_loop_timer=null,umsindex=new TUmsIndex,umsAnimation=new TUmsAnimation,umsAjust=new TUmsAjust;domReady(function(){UmsPlayer()});</script>
+
+</body></html>
