@@ -110,7 +110,7 @@ strong {
 }
 [id^="slider__slide"] + figure img {
     display: block;
-    max-width: 60%;
+    max-width: 451.5px;
 }
 [id^="slider__slide"]:checked + figure {
     position: static;
@@ -418,14 +418,14 @@ strong {
     width: 200px;
     margin-bottom: 30px;
 }
+.capitulo + .capitulo, .subcapitulo + .capitulo {
+    padding-top: 0;
+}
 .capitulo-introducao .logo-ca-technologies {
     margin: 0 0 31.5px 0;
 }
 .capitulo-introducao .capitulo__subtitulo {
     margin-bottom: 68.3px;
-}
-.capitulo-bonecas-computadores {
-    padding-top: 0;
 }
 .capitulo-bonecas-computadores .container_conteudo .capitulo__ilustracao {
     width: 100%;
@@ -913,6 +913,12 @@ strong {
     width: 100%;
     text-decoration: none;
 }
+@media (min-width: 992px) {
+    .compartilhe {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 
 .creditos {
@@ -944,6 +950,14 @@ strong {
     line-height: 1.67;
     margin-left: 0;
 }
+@media (min-width: 992px) {
+    .creditos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
 
 .menu {
     position: fixed;
