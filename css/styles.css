@@ -88,6 +88,62 @@ strong {
 }
 
 
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 26px;
+}
+.slider p {
+    font-family: 'Lato';
+	font-size: 15px;
+    color: #4d4d4d;
+    margin-top: 28.2px;
+    margin-bottom: 12px;
+}
+[id^="slider__slide"] + figure {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    margin: 0;
+    transition: opacity .6s ease-out;
+}
+[id^="slider__slide"] + figure img {
+    display: block;
+    max-width: 60%;
+}
+[id^="slider__slide"]:checked + figure {
+    position: static;
+    opacity: 100
+}
+[class^="slider__controle"] {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Lato;
+	font-size: 15px;
+	font-weight: bold;
+	color: #828282;
+}
+[class^="slider__controle"]:hover {
+	color: #dc4b4b;
+}
+[class^="slider__controle"] + [class^="slider__controle"] {
+    margin-top: 15px;
+}
+#slider__slide1:checked ~ .slider__controle1,
+#slider__slide2:checked ~ .slider__controle2,
+#slider__slide3:checked ~ .slider__controle3,
+#slider__slide4:checked ~ .slider__controle4,
+#slider__slide5:checked ~ .slider__controle5,
+#slider__slide6:checked ~ .slider__controle6,
+#slider__slide7:checked ~ .slider__controle7,
+#slider__slide8:checked ~ .slider__controle8,
+#slider__slide9:checked ~ .slider__controle9 {
+    color: #dc4b4b;
+}
+
+
 /* RANGE */
 .range {
     position: relative;
