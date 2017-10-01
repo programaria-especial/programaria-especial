@@ -1,9 +1,9 @@
 // LAZY LOAD
 function registerListener(event, func) {
     if (window.addEventListener) {
-        window.addEventListener(event, func)
+        window.addEventListener(event, func);
     } else {
-        window.attachEvent('on' + event, func)
+        window.attachEvent("on" + event, func);
     }
 }
 
@@ -21,28 +21,31 @@ function isInViewport(el){
 var imgs = [];
 
 function setLazyLoad(){
-    imgs = document.querySelectorAll('img[data-src]');
+    imgs = document.querySelectorAll(".lazy-load");
 }
 
 function cleanLazyLoad(){
     imgs = Array.prototype.filter.call(imgs, function(img){ 
-        return img.getAttribute('data-src');
+        return img.getAttribute("data-src");
     });
 }
 
-function lazyLoad(){
-    for(var i = 0; i < imgs.length; i++) {
-        if(isInViewport(imgs[i])){
-            imgs[i].src = imgs[i].getAttribute('data-src');
-            imgs[i].removeAttribute('data-src');
+function lazyLoad() {
+    imgs.forEach(function(img){ 
+        if (isInViewport(img)) {
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+            setTimeout(function() { 
+                img.classList.add("fade-in");
+            }, 1000);
         }
-    }
+    });
 
     cleanLazyLoad();
 }
 
-registerListener('load', setLazyLoad);
-registerListener('scroll', lazyLoad);
+registerListener("load", setLazyLoad);
+registerListener("scroll", lazyLoad);
 
 
 
@@ -54,15 +57,15 @@ function onChangeRange() {
     
     var rangePorcentagem = this.parentElement.querySelector(".range__porcentagem");
 
-    rangePorcentagem.innerHTML = value + '%';
+    rangePorcentagem.innerHTML = value + "%";
     var porcentagem = (value / 100) * this.offsetWidth;
     
     if (value < 51) {
-        rangePorcentagem.style.left = (porcentagem + 53) + 'px';
-        rangePorcentagem.style.textAlign = 'right';
+        rangePorcentagem.style.left = (porcentagem + 53) + "px";
+        rangePorcentagem.style.textAlign = "right";
     } else {
-        rangePorcentagem.style.left = (porcentagem - 53 - rangePorcentagem.offsetWidth) + 'px';
-        rangePorcentagem.style.textAlign = 'left';
+        rangePorcentagem.style.left = (porcentagem - 53 - rangePorcentagem.offsetWidth) + "px";
+        rangePorcentagem.style.textAlign = "left";
     }
 }
 
@@ -86,15 +89,15 @@ document.querySelectorAll(".teste__pergunta").forEach(function(teste) {
     teste.addEventListener("submit", onRespostaSubmit, true);
 });
 
-var menuLinks = $('a[href^="#"]');
-menuLinks.on('click', function(event) {
-    menuLinks.removeClass('active');
+var menuLinks = $("a[href^='#']");
+menuLinks.on("click", function(event) {
+    menuLinks.removeClass("active");
     var menuLink = $(this);
-    menuLink.addClass('active');
-    var target = $(menuLink.attr('href'));
+    menuLink.addClass("active");
+    var target = $(menuLink.attr("href"));
     if (target.length) {
         event.preventDefault();
-        $('html, body').stop().animate({
+        $("html, body").stop().animate({
             scrollTop: target.offset().top
         }, 1000);
     }

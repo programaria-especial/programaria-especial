@@ -16,6 +16,16 @@ strong {
 }
 
 
+/* LAZY LOAD */
+.lazy-load {
+    opacity: 0;
+}
+.lazy-load.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+
 /* GRAFICO */
 .grafico {
     margin: 0 0 16px 0;
@@ -168,7 +178,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url('../img/mao_resposta.svg');
+    background-image: url('../img/teste/teste-mao-cinza.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -179,7 +189,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url('../img/mao_respostal.svg');
+    background-image: url('../img/teste/teste-mao-cinza.svg');
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: 0px 58px;
@@ -193,7 +203,7 @@ strong {
     width: 53px;
     padding: 0;
     margin: 5px 0 0 0;
-    background-image: url('../img/mao_resposta.svg');
+    background-image: url('../img/teste/teste-mao-cinza.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -226,7 +236,7 @@ strong {
 }
 .range__porcentagens li:before {
     position: absolute;
-    content: attr(data-numbero);
+    content: attr(data-numero);
     top: -1em;
 }
 .range__porcentagens li:nth-child(1):before {
@@ -370,7 +380,7 @@ strong {
     font-style: italic; 
     line-height: 1.39;
     color: #dc4b4b;
-    margin: 0 0 30px 0;
+    margin: 0 0 37.94em 0;
 }
 .capitulo__texto-corrido {
     font-family: 'Libre Baskerville';
@@ -413,7 +423,7 @@ strong {
     display: block;
     padding-top: 14px;
 }
-.capitulo .capitulo__ilustracao {
+.capitulo__ilustracao {
     height: 143.7px;
     width: 200px;
     margin-bottom: 30px;
@@ -431,6 +441,14 @@ strong {
     width: 100%;
 }
 @media (min-width: 768px) {
+    .capitulo__subtitulo {
+        font-size: 25px;
+        line-height: 1.4;
+        margin-bottom: 2.96em;
+    }
+    .capitulo__texto-corrido {
+        font-size: 18px;
+    }
     .capitulo-bonecas-computadores #reportagem-cosmopolitan {
         height: auto;
         max-width: 355px;
@@ -534,6 +552,9 @@ strong {
     width: 45%;
 }
 @media (min-width: 768px) {
+    .subcapitulo__texto-corrido {
+        font-size: 18px;
+    }
     .subcapitulo-dificuldade-matematica .subcapitulo__citacao,
     .subcapitulo-carreira-tecnologia .subcapitulo__citacao {
         display: flex;
@@ -805,7 +826,7 @@ strong {
     height: 100%;
     width: 20px;
     content: '';
-    background-image: url('../img/detalhe-esquerda.svg');
+    background-image: url('../img/infografico-circuitos.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }

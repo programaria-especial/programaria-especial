@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Programaria Especial</title>
-        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -16,7 +16,7 @@
                 <main class="container">
                     <header class="container__cabecalho">
                         <figure class="logo-ca-technologies">
-                            <img src="img/logo-ca-technologies.svg" alt="Logo da CA Technologies">
+                            <img src="img/logo/logo-ca-technologies.svg" alt="Logo da CA Technologies">
                             <figcaption>
                                 <p>Esta matéria tem o apoio de</p>
                             </figcaption>
@@ -39,11 +39,11 @@
                                 <div class="range">
                                     <input id="range1" class="range__input" type="range" min="0" max="100"/>
                                     <ul class="range__porcentagens">
-                                        <li data-numbero="0"></li>
-                                        <li data-numbero="25"></li>
-                                        <li data-numbero="50"></li>
-                                        <li data-numbero="75"></li>
-                                        <li data-numbero="100"></li>
+                                        <li data-porcentagem="0"></li>
+                                        <li data-porcentagem="25"></li>
+                                        <li data-porcentagem="50"></li>
+                                        <li data-porcentagem="75"></li>
+                                        <li data-porcentagem="100"></li>
                                     </ul>
                                     <span class="range__porcentagem"></span>
                                     <span class="range__resposta-certa"></span>
@@ -60,11 +60,11 @@
                                 <div class="range">
                                     <input id="range2" class="range__input" type="range" min="0" max="100"/>
                                     <ul class="range__porcentagens">
-                                        <li data-numbero="0"></li>
-                                        <li data-numbero="25"></li>
-                                        <li data-numbero="50"></li>
-                                        <li data-numbero="75"></li>
-                                        <li data-numbero="100"></li>
+                                        <li data-porcentagem="0"></li>
+                                        <li data-porcentagem="25"></li>
+                                        <li data-porcentagem="50"></li>
+                                        <li data-porcentagem="75"></li>
+                                        <li data-porcentagem="100"></li>
                                     </ul>
                                     <span class="range__porcentagem"></span>
                                     <span class="range__resposta-certa"></span>
@@ -95,7 +95,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">Bonecas X computadores</h1>
                         <h2 class="capitulo__subtitulo">Problema cultural que começa na infância</h2>
-                        <img class="capitulo__ilustracao" data-src="img/01-infancia.svg" width="140px" height="140px" alt="Infância">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-infancia.svg" alt="Menina criança brincando com carrinho de boneca">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -178,7 +178,7 @@
                             <strong>E foi assim que, a informática, tema de uma reportagem da revista <a href="" target="_blank">Cosmopolitan</a> que, em 1967</strong>, encorajava as mulheres 
                             a aderir à área, virou terreno masculino. 
                         </p>
-                        <img id="reportagem-cosmopolitan" class="capitulo__ilustracao" src="img/computer-boys-com-cosmopolitan-april-1967-1-large.jpg" alt="Computer boys com cosmopolitan april 1967">
+                        <img id="reportagem-cosmopolitan" class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-reportagem.jpg" alt="Matéria de jornal entitulada Computer boys com cosmopolitan de Abril de 1967">
                         <p class="capitulo__texto-corrido">
                             A ideia de que muitas das profissões de informática eram historicamente comuns para as garotas e de fato já foram 
                             ocupações 'femininas' parece extraordinária, se não inacreditável. “E, no entanto, uma compreensão histórica de 
@@ -203,7 +203,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">A escola e a naturalização dos estereótipos</h1>
                         <h2 class="capitulo__subtitulo">"Não levo jeito para matemática" e outros mitos que afastam as garotas</h2>
-                        <img class="capitulo__ilustracao" data-src="img/02-educadao.svg" width="140px" height="140px" alt="Educação">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-educacao.svg" alt="Menina em idade de escola fugindo de números">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -251,13 +251,13 @@
                     <article class="container__conteudo">
                         <blockquote class="subcapitulo__citacao">
                             <figure class="grafico grafico-circular grafico-preocupacao-feminina">
-                                <img data-src="img/grafico-preocupacao-feminina.svg" alt="Gráfico de preocupação feminina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-preocupacao-feminina.svg" alt="Gráfico de preocupação feminina">
                                 <figcaption>
                                     <p>meninas preocupadas em enfrentar dificuldades em matemática</p>
                                 </figcaption>
                             </figure>
                             <figure class="grafico grafico-circular grafico-preocupacao-masculina">
-                                <img data-src="img/grafico-preocupacao-masculina.svg" alt="Gráfico de preocupação masculina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-preocupacao-masculina.svg" alt="Gráfico de preocupação masculina">
                                 <figcaption>
                                     <p>meninos preocupados em enfrentar dificuldades em matemática</p>
                                 </figcaption>
@@ -374,13 +374,13 @@
                     <article class="container__conteudo">
                         <blockquote class="subcapitulo__citacao">
                             <figure class="grafico grafico-coluna grafico-leitura-feminina">
-                                <img data-src="img/grafico-leitura-feminina.svg" alt="Gráfico de leitura feminina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-leitura-feminina.svg" alt="Gráfico de leitura feminina">
                                 <figcaption>
                                     <p>Meninas lêem por diversão</p>
                                 </figcaption>
                             </figure>
                             <figure class="grafico grafico-coluna grafico-leitura-masculina">
-                                <img data-src="img/grafico-leitura-masculina.svg" alt="Gráfico de leitura masculina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-leitura-masculina.svg" alt="Gráfico de leitura masculina">
                                 <figcaption>
                                     <p>Meninos lêem por diversão</p>
                                 </figcaption>
@@ -416,37 +416,37 @@
                             <div class="slider">
                                 <input id="slider__slide1" type="radio"name="slider-slide" aria-hidden="true" hidden checked>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior1.png" alt="Gráfico 1">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-ciencia-computacao.png" alt="Gráfico de mulheres matriculadas em Ciência da Computação">
                                 </figure>
         
                                 <input id="slider__slide2" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior2.png" alt="Gráfico 2">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-engenharia.png" alt="Gráfico de mulheres matriculadas em Engenharia">
                                 </figure>
         
                                 <input id="slider__slide3" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior3.png" alt="Gráfico 3">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-artes.png" alt="Gráfico de mulheres matriculadas em Artes">
                                 </figure>
         
                                 <input id="slider__slide4" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior4.png" alt="Gráfico 4">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-psicologia.png" alt="Gráfico de mulheres matriculadas em Psicologia">
                                 </figure>
         
                                 <input id="slider__slide5" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior5.png" alt="Gráfico 5">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-direito.png" alt="Gráfico de mulheres matriculadas em Direito">
                                 </figure>
         
                                 <input id="slider__slide6" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior6.png" alt="Gráfico 6">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-medicina.png" alt="Gráfico de mulheres matriculadas em Medicina">
                                 </figure>
         
                                 <input id="slider__slide7" type="radio"name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
-                                    <img data-src="img/slider-matriculas/grafico-matriculas-superior7.png" alt="Gráfico 7">
+                                    <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-pedagogia.png" alt="Gráfico de mulheres matriculadas em Pedagogia">
                                 </figure>
         
                                 <p>Clique e compare <br>com outros cursos</p>
@@ -458,9 +458,7 @@
                                 <label for="slider__slide6" class="slider__controle6">Medicina</label>
                                 <label for="slider__slide7" class="slider__controle7">Pedagogia</label>
                             </div>
-                            <cite>
-                                Fonte: Gênero e Número
-                            </cite>
+                            <cite>Fonte: Gênero e Número</cite>
                         </blockquote>
                         
 
@@ -500,13 +498,13 @@
                     <article class="container__conteudo">
                         <blockquote class="subcapitulo__citacao">
                             <figure class="grafico grafico-circular grafico-tecnologia-feminina">
-                                <img data-src="img/grafico-tecnologia-feminina.svg" alt="Gráfico de tecnologia feminina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-tecnologia-feminina.svg" alt="Gráfico de tecnologia feminina">
                                 <figcaption>
                                     <p>20% dos pais veem as filhas na carreira</p>
                                 </figcaption>
                             </figure>
                             <figure class="grafico grafico-circular grafico-preocupacao-masculina">
-                                <img data-src="img/grafico-tecnologia-masculina.svg" alt="Gráfico de tecnologia masculina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-tecnologia-masculina.svg" alt="Gráfico de tecnologia masculina">
                                 <figcaption>
                                     <p>metade dos pais veem as filhos na carreira</p>
                                 </figcaption>
@@ -535,10 +533,10 @@
                     <article class="container__conteudo">
                         <blockquote class="subcapitulo__citacao">
                             <figure class="grafico grafico-barra grafico-carreira-feminina">
-                                <img data-src="img/grafico-carreira-feminina.svg" alt="Gráfico de carreira feminina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-carreira-feminina.svg" alt="Gráfico de carreira feminina">
                             </figure>
                             <figure class="grafico grafico-barra grafico-carreira-masculina">
-                                <img data-src="img/grafico-carreira-masculina.svg" alt="Gráfico de carreira feminina">
+                                <img class="lazy-load" data-src="img/grafico/grafico-carreira-masculina.svg" alt="Gráfico de carreira feminina">
                             </figure>
                             <cite>
                                 Fonte: ABC da Igualdade de Gêneros na Educação: Aptidão, Comportamento e Confiança
@@ -565,7 +563,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">Exclusão e preconceito </h1>
                         <h2 class="capitulo__subtitulo">Ambiente de trabalho que não acolhe a mulher</h2>
-                        <img class="capitulo__ilustracao" data-src="img/03-trabalho.svg" width="140px" height="140px" alt="Trabalhor">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-trabalho.svg" alt="Mulher exluída de conversa entre homens no trabalho">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -645,74 +643,47 @@
                     <div class="carrossel">
                         <input id="carrossel__slide1" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas1.png" alt="Vaga 1">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas1.png" alt="Vaga 1">
                         </figure>
 
                         <input id="carrossel__slide2" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas2.png" alt="Vaga 2">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas2.png" alt="Vaga 2">
                         </figure>
 
                         <input id="carrossel__slide3" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas3.png" alt="Vaga 3">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas3.png" alt="Vaga 3">
                         </figure>
 
                         <input id="carrossel__slide4" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas4.png" alt="Vaga 4">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas4.png" alt="Vaga 4">
                         </figure>
 
                         <input id="carrossel__slide5" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas5.png" alt="Vaga 5">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas5.png" alt="Vaga 5">
                         </figure>
 
                         <input id="carrossel__slide6" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 6">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 6">
                         </figure>
 
                         <input id="carrossel__slide7" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas7.png" alt="Vaga 7">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas7.png" alt="Vaga 7">
                         </figure>
 
                         <input id="carrossel__slide8" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas8.png" alt="Vaga 8">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas8.png" alt="Vaga 8">
                         </figure>
 
                         <input id="carrossel__slide9" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 9">
-                            <figcaption>
-                                <p></p>
-                            </figcaption>
+                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 9">
                         </figure>
 
                         <label for="carrossel__slide9" class="carrossel__controle1">‹</label>
@@ -741,7 +712,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">Os desafios de quem segue na carreira</h1>
                         <h2 class="capitulo__subtitulo">Salários menores, poucas oportunidades de crescimento e nichos femininos</h2>
-                        <img class="capitulo__ilustracao" data-src="img/04-ingresso.svg" width="140px" height="140px" alt="Ingresso">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-ingresso.svg" alt="Mulher em degrau abaixo de homem na carreira tecnológica">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -883,14 +854,14 @@
                     <h1>Você sofre com a síndrome do impostor?</h1>
                     <blockquote>
                         <figure>
-                            <img src="img/01-trofeu.svg" alt="Lupa apontando para um trofel com sinal de proibido">
+                            <img class="lazy-load" data-src="img/infografico/infografico-trofeu.svg" alt="Lupa apontando para um trofel com sinal de proibido">
                             <figcaption>
                                 Mulheres constantemente duvidam de sua capacidade. Quando recebem um elogio, não se sentem 
                                 merecedoras do reconhecimento, como se tivesse ocorrido um engano.
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/02-trevos.svg" alt="Folhas de trevo da sorte">
+                            <img class="lazy-load" data-src="img/infografico/infografico-trevos.svg" alt="Três folhas de trevo da sorte">
                             <figcaption>
                                 Mulheres atribuem seu sucessos mais a fatores externos do que as suas próprias capacidades 
                                 e qualidades inatas. Insistem nos argumentos “Tive sorte” ou “Recebi ajuda de outras pessoas”.
@@ -898,14 +869,14 @@
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/03-espelho.svg" alt="Espelho circular quebrado">
+                            <img class="lazy-load" data-src="img/infografico/infografico-espelho.svg" alt="Espelho redondo quebrado">
                             <figcaption>
                                 Em uma situação onde um homem e uma mulher recebem um retorno negativo, a mulher sente uma 
                                 queda muito maior em sua confiança e amor-próprio.
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/04-vaso.svg" alt="Vaso de barro rachado">
+                            <img class="lazy-load" data-src="img/infografico/infografico-vaso.svg" alt="Vaso de barro rachado">
                             <figcaption>
                                 Quando fracassa, a mulher tem uma tendência maior a acreditar que foi por causa de uma 
                                 incapacidade intrínseca. Um homem quando fracassa aponta fatores como “não estudei o suficiente” 
@@ -913,14 +884,14 @@
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/05-estrelas.svg" alt="Uma estrela de cinco">
+                            <img class="lazy-load" data-src="img/infografico/infografico-estrelas.svg" alt="Uma estrela de cinco">
                             <figcaption>
                                 Mulheres se subestimam sistematicamente. Elas costumam julgar seu desempenho pior do que ele 
                                 realmente é. Mesmo com credenciais parecidas com a dos homens, tendem a se dar notas mais baixas.
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="img/06-escadas.svg" alt="Mulher cercada por pontos de interrogação subindo a escada que representa sua carreira">
+                            <img class="lazy-load" data-src="img/infografico/infografico-escadas.svg" alt="Mulher cercada por pontos de interrogação subindo a escada que representa sua carreira">
                             <figcaption>
                                 Quando uma mulher busca realização profissional, em vez de ganharem um reforço positivo como os 
                                 homens, elas são penalizadas pelo sucesso. Para se protegerem da depreciação dos outros, muitas 
@@ -936,7 +907,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">Por que diversidade importa</h1>
                         <h2 class="capitulo__subtitulo">A força de trabalho feminina em TI gera renda, inclusão e novos olhares sobre os produtos</h2>
-                        <img class="capitulo__ilustracao" data-src="img/05-carreira.svg" width="140px" height="140px" alt="Carreira">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-carreira.svg" alt="Menina de costas em frente a uma alta escada">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -991,7 +962,7 @@
                     <header class="container__cabecalho">
                         <h1 class="capitulo__titulo">Reprogramando a tecnologia</h1>
                         <h2 class="capitulo__subtitulo">Mudança sistêmica que envolve empresas, poder público e organizações sem fins lucrativos</h2>
-                        <img class="capitulo__ilustracao" data-src="img/06-boas-praticas.svg" width="140px" height="140px" alt="Boas práticas">
+                        <img class="capitulo__ilustracao lazy-load" data-src="img/capitulo-ilustracoes/capitulo-ilustracoes-boas-praticas.svg" alt="Circuitos ligando menina sentada sentada ao seu notebook no colo">
                     </header>
                     <article class="container__conteudo">
                         <p class="capitulo__texto-corrido">
@@ -1052,10 +1023,10 @@
                 <main class="container">
                     <h1>Compartilhe</h1>
                     <a href="https://www.facebook.com/programaria" target="_blank">
-                        <img data-src="img/logo-face.svg" alt="Logotipo do Facebook do Programaria">
+                        <img class="lazy-load" data-src="img/logo/logo-face.svg" alt="Logotipo do Facebook do Programaria">
                     </a>
                     <a href="https://twitter.com/programaria" target="_blank">
-                        <img data-src="img/logo-twitter.svg" alt="Logotipo do Twitter do Programaria"> 
+                        <img class="lazy-load" data-src="img/logo/logo-twitter.svg" alt="Logotipo do Twitter do Programaria"> 
                     </a>
                 </main>
             </section>
@@ -1088,6 +1059,6 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-        <script src="js/scripts.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

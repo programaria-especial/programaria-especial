@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+	<g transform="rotate(-90)">
+		<circle cx="-100" cy="100" r="60" fill="none" stroke="#e6e6e6" stroke-width="40" stroke-dasharray="0 10000">
+			<animate attributeName="stroke-dasharray" from="0 10000" to="376.992 10000" dur="1.6s" fill="freeze" />
+		</circle>
+		<circle cx="-100" cy="100" r="60" fill="none" stroke="#8d8cbf" stroke-width="40" stroke-dasharray="0 10000">
+			<animate attributeName="stroke-dasharray" from="0 10000" to="75.398 10000" dur="3.5s" fill="freeze" />
+		</circle>
+	</g>
+	<text x="140" y="60" text-anchor="middle" fill="#ffffff" stroke="#ffffff" style="font-family: 'Squada One', cursive; font-size: 18px">
+		20%
+	</text>
+</svg>
