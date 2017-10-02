@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Programaria Especial</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.min.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -414,49 +414,51 @@
                     <article class="container__conteudo">
                         <blockquote class="subcapitulo__citacao">
                             <div class="slider">
-                                <input id="slider__slide1" type="radio"name="slider-slide" aria-hidden="true" hidden checked>
+                                <input id="slider__slide1" type="radio" name="slider-slide" aria-hidden="true" hidden checked>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-ciencia-computacao.png" alt="Gráfico de mulheres matriculadas em Ciência da Computação">
                                 </figure>
         
-                                <input id="slider__slide2" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide2" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-engenharia.png" alt="Gráfico de mulheres matriculadas em Engenharia">
                                 </figure>
         
-                                <input id="slider__slide3" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide3" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-artes.png" alt="Gráfico de mulheres matriculadas em Artes">
                                 </figure>
         
-                                <input id="slider__slide4" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide4" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-psicologia.png" alt="Gráfico de mulheres matriculadas em Psicologia">
                                 </figure>
         
-                                <input id="slider__slide5" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide5" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-direito.png" alt="Gráfico de mulheres matriculadas em Direito">
                                 </figure>
         
-                                <input id="slider__slide6" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide6" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-medicina.png" alt="Gráfico de mulheres matriculadas em Medicina">
                                 </figure>
         
-                                <input id="slider__slide7" type="radio"name="slider-slide" aria-hidden="true" hidden>
+                                <input id="slider__slide7" type="radio" name="slider-slide" aria-hidden="true" hidden>
                                 <figure>
                                     <img class="lazy-load" data-src="img/slider-matriculas/slide-matriculas-pedagogia.png" alt="Gráfico de mulheres matriculadas em Pedagogia">
                                 </figure>
-        
-                                <p>Clique e compare <br>com outros cursos</p>
-                                <label for="slider__slide1" class="slider__controle1">Ciência da Computação</label>
-                                <label for="slider__slide2" class="slider__controle2">Engenharia</label>
-                                <label for="slider__slide3" class="slider__controle3">Artes</label>
-                                <label for="slider__slide4" class="slider__controle4">Psicologia</label>
-                                <label for="slider__slide5" class="slider__controle5">Direito</label>
-                                <label for="slider__slide6" class="slider__controle6">Medicina</label>
-                                <label for="slider__slide7" class="slider__controle7">Pedagogia</label>
+                               
+                                <div class="slider_controles">
+                                    <p>Clique e compare <br>com outros cursos</p>
+                                    <label for="slider__slide1" class="slider__controle1 ativo">Ciência da Computação</label>
+                                    <label for="slider__slide2" class="slider__controle2">Engenharia</label>
+                                    <label for="slider__slide3" class="slider__controle3">Artes</label>
+                                    <label for="slider__slide4" class="slider__controle4">Psicologia</label>
+                                    <label for="slider__slide5" class="slider__controle5">Direito</label>
+                                    <label for="slider__slide6" class="slider__controle6">Medicina</label>
+                                    <label for="slider__slide7" class="slider__controle7">Pedagogia</label>
+                                </div>
                             </div>
                             <cite>Fonte: Gênero e Número</cite>
                         </blockquote>
@@ -643,47 +645,56 @@
                     <div class="carrossel">
                         <input id="carrossel__slide1" type="radio"name="carrossel-slide" aria-hidden="true" hidden checked>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas1.png" alt="Vaga 1">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena1.png" alt="Vaga 1">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande1.png" alt="Vaga 1">
                         </figure>
 
                         <input id="carrossel__slide2" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas2.png" alt="Vaga 2">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena2.png" alt="Vaga 2">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande2.png" alt="Vaga 2">
                         </figure>
 
                         <input id="carrossel__slide3" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas3.png" alt="Vaga 3">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena3.png" alt="Vaga 3">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande3.png" alt="Vaga 3">
                         </figure>
 
                         <input id="carrossel__slide4" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas4.png" alt="Vaga 4">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena4.png" alt="Vaga 4">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande4.png" alt="Vaga 4">
                         </figure>
 
                         <input id="carrossel__slide5" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas5.png" alt="Vaga 5">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena5.png" alt="Vaga 5">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande5.png" alt="Vaga 5">
                         </figure>
 
                         <input id="carrossel__slide6" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 6">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena6.png" alt="Vaga 6">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande6.png" alt="Vaga 6">
                         </figure>
 
                         <input id="carrossel__slide7" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas7.png" alt="Vaga 7">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena7.png" alt="Vaga 7">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande7.png" alt="Vaga 7">
                         </figure>
 
                         <input id="carrossel__slide8" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas8.png" alt="Vaga 8">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena8.png" alt="Vaga 8">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande8.png" alt="Vaga 8">
                         </figure>
 
                         <input id="carrossel__slide9" type="radio"name="carrossel-slide" aria-hidden="true" hidden>
                         <figure>
-                            <img class="lazy-load" data-src="img/carrossel-vagas/carrossel-vagas6.png" alt="Vaga 9">
+                            <img class="hide-desktop lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-pequena6.png" alt="Vaga 9">
+                            <img class="hide-mobile lazy-load" data-src="img/carrossel-vagas/carrossel-vagas-grande6.png" alt="Vaga 9">
                         </figure>
 
                         <label for="carrossel__slide9" class="carrossel__controle1">‹</label>
@@ -1059,6 +1070,6 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.min.js"></script>
     </body>
 </html>

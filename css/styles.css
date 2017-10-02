@@ -14,6 +14,20 @@ p {
 strong {
     font-weight: 700;
 }
+.hide-mobile {
+    display: none !important;
+}
+.hide-desktop {
+    display: block !important;
+}
+@media (min-width: 992px) {
+    .hide-mobile {
+        display: block !important;
+    }
+    .hide-desktop {
+        display: none !important;
+    }
+}
 
 
 /* LAZY LOAD */
@@ -124,7 +138,7 @@ strong {
 }
 [id^="slider__slide"]:checked + figure {
     position: static;
-    opacity: 100
+    opacity: 100;
 }
 [class^="slider__controle"] {
     display: block;
@@ -151,6 +165,13 @@ strong {
 #slider__slide8:checked ~ .slider__controle8,
 #slider__slide9:checked ~ .slider__controle9 {
     color: #dc4b4b;
+}
+@media (min-width: 992px) {
+    .slider_controles {
+        position: absolute;
+        top: calc(54px - 28.2px);
+        right: 0;
+    }
 }
 
 
@@ -454,7 +475,8 @@ strong {
 .capitulo-introducao .capitulo__subtitulo {
     margin-bottom: 68.3px;
 }
-.capitulo-bonecas-computadores .container_conteudo .capitulo__ilustracao {
+.capitulo-bonecas-computadores #reportagem-cosmopolitan {
+    height: auto;
     width: 100%;
 }
 @media (min-width: 768px) {
@@ -474,7 +496,6 @@ strong {
         font-size: 26px;
     }
     .capitulo-bonecas-computadores #reportagem-cosmopolitan {
-        height: auto;
         max-width: 355px;
     }
 }
