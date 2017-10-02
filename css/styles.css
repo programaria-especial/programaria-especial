@@ -380,7 +380,7 @@ strong {
     font-style: italic; 
     line-height: 1.39;
     color: #dc4b4b;
-    margin: 0 0 37.94em 0;
+    margin: 0 0 10px 0;
 }
 .capitulo__texto-corrido {
     font-family: 'Libre Baskerville';
@@ -444,7 +444,7 @@ strong {
     .capitulo__subtitulo {
         font-size: 25px;
         line-height: 1.4;
-        margin-bottom: 2.96em;
+        margin-bottom: 26.7px;
     }
     .capitulo__texto-corrido {
         font-size: 18px;
@@ -572,7 +572,7 @@ strong {
         padding-right: 0;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .subcapitulo-dificuldade-matematica .subcapitulo__citacao,
     .subcapitulo-leitura-diversao .subcapitulo__citacao,
     .subcapitulo-carreira-tecnologia .subcapitulo__citacao {
@@ -979,61 +979,63 @@ strong {
 }
 
 
-
-.menu {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.menu a {    
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 30px;
-    min-width: 200px;
-    color: transparent;
-    text-decoration: none;
-}
-.menu a:after {
-    background-color: #cccccc;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 20px;
-    margin-left: auto;
-    transition: width .25s ease-in-out,background-color .25s ease-in-out;
-}
-.menu a.active:after {
-    background-color: #5ae091;
-}
-.menu a:hover {
-    color: #5ae091;
-}
-.menu a:hover:after {
-    width: 60px;
-    animation-fill-mode: forwards;
-}
-.menu a span {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 70px;
-    font-family: 'Squada One';
-	font-size: 20px;
-	text-align: right;
-	color: #5ae091;
-    opacity: 0;
-    white-space: nowrap;
-    will-change: transform;
-    transition: transform .25s ease-in-out,opacity .25s ease-in-out;
-}
-.menu a:hover span {
-    opacity: 1;
-    transform: translate(-20px,-50%);
+/* MENU */
+@media (min-width: 992px) {
+    .menu {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu a {    
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 30px;
+        min-width: 200px;
+        color: transparent;
+        text-decoration: none;
+    }
+    .menu a:after {
+        background-color: #cccccc;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 20px;
+        margin-left: auto;
+        transition: width .25s ease-in-out,background-color .25s ease-in-out;
+    }
+    .menu a.active:after {
+        background-color: #5ae091;
+    }
+    .menu a:hover {
+        color: #5ae091;
+    }
+    .menu a:hover:after {
+        width: 60px;
+        animation-fill-mode: forwards;
+    }
+    .menu a span {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 70px;
+        font-family: 'Squada One';
+        font-size: 20px;
+        text-align: right;
+        color: #5ae091;
+        opacity: 0;
+        white-space: nowrap;
+        will-change: transform;
+        transition: transform .25s ease-in-out,opacity .25s ease-in-out;
+    }
+    .menu a:hover span {
+        opacity: 1;
+        transform: translate(-20px,-50%);
+    }
 }
