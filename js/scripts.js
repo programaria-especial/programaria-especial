@@ -51,6 +51,8 @@ registerListener("scroll", lazyLoad);
 
 // RANGE
 function onChangeRange() {
+    this.classList.add("manipulado");
+
     var value = this.value;   
     
     this.style.left = value + "px";

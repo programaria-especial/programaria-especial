@@ -207,6 +207,15 @@ strong {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.range__input.manipulado::-webkit-slider-thumb {
+    background-image: url('../img/teste/teste-mao-verde.svg');
+}
+.range__input.manipulado::-moz-range-thumb {
+    background-image: url('../img/teste/teste-mao-verde.svg');
+}
+.range__input.manipulado::-ms-thumb {
+    background-image: url('../img/teste/teste-mao-verde.svg');
+}
 .range__input::-webkit-slider-runnable-track {
     height: 10px;
     background-color: #5ae091;
@@ -331,8 +340,16 @@ strong {
     line-height: 1.0;
 }
 @media (min-width: 768px) {
+    .cabecalho {
+        height: 865px;
+    }
     .cabecalho__titulo {
         max-width: 45%;
+    }
+    .cabecalho__titulo, 
+    .cabecalho__titulo:before {
+        font-size: 65px;
+        line-height: 0.92;
     }
 }
 @media (min-width: 992px) {
@@ -441,6 +458,10 @@ strong {
     width: 100%;
 }
 @media (min-width: 768px) {
+    .capitulo__titulo {
+        font-size: 48px;
+        line-height: 0.78;
+    }
     .capitulo__subtitulo {
         font-size: 25px;
         line-height: 1.4;
@@ -448,6 +469,9 @@ strong {
     }
     .capitulo__texto-corrido {
         font-size: 18px;
+    }
+    .capitulo__citacao p {
+        font-size: 26px;
     }
     .capitulo-bonecas-computadores #reportagem-cosmopolitan {
         height: auto;
@@ -459,26 +483,28 @@ strong {
         padding-left: 0;
         padding-right: 0;
     }
-    .capitulo .capitulo__citacao {
+    .capitulo__citacao {
         padding-left: 20px;
+        padding-right: 20px;
     }
-    .capitulo .capitulo__citacao,
-    .capitulo .capitulo__ilustracao {
+    .capitulo__citacao, .capitulo__ilustracao {
         position: absolute;
         left: 100%;
+        height: auto;
         width: 37.93%;
         box-sizing: border-box;
         margin: 0;
+    }
+    .capitulo-bonecas-computadores .capitulo__citacao {
+        margin-top: -30%;
     }
     .capitulo-bonecas-computadores #reportagem-cosmopolitan {
         padding-left: 20px;
         bottom: 70px;
     }
-    
     .capitulo-escola-esteriotipos .capitulo__citacao {
-        margin-top: 8%;
+        margin-top: 16%;
     }
-    
     .capitulo-exclusao-preconceito .capitulo__citacao {
         top: 50%;
     }
@@ -803,6 +829,11 @@ strong {
 .cite.green blockquote cite {
     color: #828282;
 }
+@media (min-width: 768px) {
+    .cite blockquote p {
+        font-size: 26px;
+    }
+}
 @media (min-width: 992px) {
     .cite {
         padding-left: 0;
@@ -934,6 +965,12 @@ strong {
     width: 100%;
     text-decoration: none;
 }
+@media (min-width: 768px) {
+    .compartilhe h1 {
+        font-size: 48px;
+        line-height: 0.78;
+    }
+}
 @media (min-width: 992px) {
     .compartilhe {
         padding-left: 0;
@@ -970,6 +1007,12 @@ strong {
     font-size: 18px;
     line-height: 1.67;
     margin-left: 0;
+}
+@media (min-width: 768px) {
+    .creditos h1 {
+        font-size: 48px;
+        line-height: 0.78;
+    }
 }
 @media (min-width: 992px) {
     .creditos {
